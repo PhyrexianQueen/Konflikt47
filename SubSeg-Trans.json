@@ -1,0 +1,97 @@
+
+			{
+				"name": "Kubelwagen Transport (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Totenrotte Platoon"	}, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Axis" }]			
+					},
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 14,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 18,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 22,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Damage Value: 6+\n Wheeled Vehicle\n Transport: 3",
+				"equipment": []
+			},
+			{
+				"name": "Kubelwagen Transport - Recce (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Axis" }]			
+					},
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 14,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 18,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 22,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Damage Value: 6+\n Wheeled Vehicle\n Transport: 3",
+				"equipment": []
+			},

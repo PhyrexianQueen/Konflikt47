@@ -1,0 +1,175 @@
+
+			{
+				"name": "Schwertruppen Panzerschreck Anti-Tank Team",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon" }, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Axis" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Panzerschreck",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Assault Rifle",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "AT Team",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 96,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 112,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Schwetruppen w/ Assault Rifles",
+						"points": 21,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 1,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Schwetruppen w/ Assault Rifles",
+						"points": 24,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 1,
+						"addsModels": 1
+					},
+					{
+						"name": "LMGs",
+						"points": 9,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 Panzerschreck Operator\n 1 Riflemen",
+				"equipment": ["Panzerschreck"]
+			},
+			{
+				"name": "Schwertruppen Panzerschreck Anti-Tank Team - Heavy Weapons Platoon",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Axis" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Panzerschreck",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Assault Rifle",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "AT Team",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 96,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 112,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Schwetruppen w/ Assault Rifles",
+						"points": 21,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 1,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Schwetruppen w/ Assault Rifles",
+						"points": 24,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 1,
+						"addsModels": 1
+					},
+					{
+						"name": "LMGs",
+						"points": 9,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 Panzerschreck Operator\n 1 Riflemen",
+				"equipment": ["Panzerschreck"]
+			},

@@ -1,0 +1,137 @@
+
+			{
+				"name": "Sd.Kfz 234/X Puma Heavy Armored Car",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "Axis" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 172,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 215,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 258,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted Schwerefeld Projektor",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Medium AT Gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -600,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Recce"],
+				"specialText": "Damage Value: 8+\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "Sd.Kfz 234/X Puma Heavy Armored Car",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Axis" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 172,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 215,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 258,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted Schwerefeld Projektor",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Medium AT Gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -600,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Recce"],
+				"specialText": "Damage Value: 8+\n Wheeled Vehicle",
+				"equipment": []
+			},

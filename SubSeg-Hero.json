@@ -1,0 +1,215 @@
+
+			{
+				"name": "'Der Erntemann' Oberstarzt Albrecht von Zögling (CMDR)",
+				"validationKeys": ["CompCommander","PlatCommander"],
+				"order":1,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "Totenrotte Platoon" }, { "in": "Axis" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"riftDice": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Hero Unit, Rift Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 3
+					},
+					{
+						"key": "primary",
+						"property": "Pistol & Medical Implements",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Fists",
+						"quantity": 0
+					}
+				],
+				"sortPriority": 1,
+				"limit": 1,
+				"limits": [
+					{
+						"key": "Commander",
+						"limit": 1,
+						"perParent": true
+					},
+					{
+						"key": "Hero",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 121,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Totenkorps",
+						"points": 21,
+						"increment": true,
+						"max": 6,
+						"maxKey": "gun",
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					}
+				],
+				"keywords": ["Deadly 2","Bulky","Fearless","Horror","Lumbering","Specialist Medic","Tough Fighters"],
+				"specialText": "1 Hero\n Rift Mastery: 2\n Luck: 1",
+				"equipment": ["Pistol","Medical Implements"]
+			},
+			{
+				"name": "'Der Erntemann' Oberstarzt Albrecht von Zögling",
+				"order":1,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon" }, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon" }, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Axis" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"riftDice": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Hero Unit, Rift Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 3
+					},
+					{
+						"key": "primary",
+						"property": "Pistol & Medical Implements",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Fists",
+						"quantity": 0
+					}
+				],
+				"sortPriority": 1,
+				"limit": 1,
+				"limits": [
+					{
+						"key": "Hero",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 121,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Totenkorps",
+						"points": 21,
+						"increment": true,
+						"max": 6,
+						"maxKey": "gun",
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					}
+				],
+				"keywords": ["Deadly 2","Bulky","Fearless","Horror","Lumbering","Specialist Medic","Tough Fighters"],
+				"specialText": "1 Hero\n Rift Mastery: 2\n Luck: 1",
+				"equipment": ["Pistol","Medical Implements"]
+			},
+			{
+				"name": "'Der Erntemann' Oberstarzt Albrecht von Zögling",
+				"order":1,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "Totenrotte Platoon" }, { "in": "Axis" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"riftDice": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Hero Unit, Rift Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 3
+					},
+					{
+						"key": "primary",
+						"property": "Pistol & Medical Implements",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Fists",
+						"quantity": 0
+					}
+				],
+				"sortPriority": 1,
+				"limit": 1,
+				"limits": [
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 121,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Totenkorps",
+						"points": 21,
+						"increment": true,
+						"max": 6,
+						"maxKey": "gun",
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"]
+					}
+				],
+				"keywords": ["Deadly 2","Bulky","Fearless","Horror","Lumbering","Specialist Medic","Tough Fighters"],
+				"specialText": "1 Hero\n Rift Mastery: 2\n Luck: 1",
+				"equipment": ["Pistol","Medical Implements"]
+			},

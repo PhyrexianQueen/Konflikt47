@@ -1,0 +1,176 @@
+
+			{
+				"name": "Totenrotte Platoon Commander",
+				"validationKeys": ["PlatCommander"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Totenrotte Platoon" }, { "in": "Axis" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+						"property": "Pistol",
+						"quantity": 1
+					}
+				],
+				"sortpriority": 2,
+				"limits": [
+					{
+						"key": "Commander",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 40,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "NCO Schwarzlicht P 08SzL Lugers",
+						"points": 3,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Schwarzlicht P 08SzL Lugers",
+						"points": 3,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "NCO SMGs",
+						"points": 5,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "SMGs",
+						"points": 5,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "NCO Assault Rifle",
+						"points": 7,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Assault Rifles",
+						"points": 7,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "NCO Schwarzlicht MP 40SzL Schmeisser",
+						"points": 7,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Schwarzlicht MP 40SzL Schmeisser",
+						"points": 7,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Officer: Guts",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Officer: Rift Mastery",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Axis"
+						]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 Officer",
+				"equipment": ["Pistol","Advanced Boy Armor"]
+			},

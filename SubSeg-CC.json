@@ -1,0 +1,157 @@
+
+			{
+				"name": "Stahltruppen Officer",
+				"validationKeys": ["CompCommander"],
+				"order":1,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon" }, { "in": "Axis" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "StG 44Zs",
+						"quantity": 1
+					}
+				],
+				"sortpriority": 2,
+				"limits": [
+					{
+						"key": "Commander",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 95,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 30,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "NCO LMG",
+						"points": 8,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "LMGs",
+						"points": 8,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "NCO Light AT Gun",
+						"points": 35,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Light AT Gun",
+						"points": 35,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Panzerfausts",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Fanatics",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Officer: Guts",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Officer: Rift Mastery",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Axis"
+						]
+					}
+				],
+				"keywords": ["Large","Wide Formation","Augmented"],
+				"specialText": "1 Officer\n Damage Value: 7+",
+				"equipment": ["StG 44Zs"]
+			},
