@@ -219,7 +219,7 @@
 			},
 			{
 				"name": "Sweden (PL)",
-				"PL": false,
+				"PL": true,
 				"additionalRules": [
 				]
 			},
@@ -756,6 +756,20 @@
 				]
 			},
 			{
+				"name": "Assistant LMG",
+				"specialRules": ["Team Weapon"],
+				"adjustlocalQuantities": [
+					{
+						"key": "secondary",
+						"quantity": -1
+					},
+					{
+						"property": "LMG",
+						"quantity": 1
+					}
+				]
+			},
+			{
 				"name": "LMGs",
 				"specialRules": ["Team Weapon"],
 				"adjustlocalQuantities": [
@@ -947,6 +961,102 @@
 					},
 					{
 						"property": "NCO Shin Gunto Sword & Pistol",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "Forward Facing Type 61 Light Shiboru Cannon",
+				"specialRules": [""],
+				"modifiesStats": [
+					{
+						"stat": "riftDice",
+						"modifier": 1
+					}
+				],
+				"adjustlocalQuantities": [
+					{
+						"key": "riftDice",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "NCO Type 10 Shiboru Rifle",
+				"specialRules": [""],
+				"modifiesStats": [
+					{
+						"stat": "riftDice",
+						"modifier": 1
+					}
+				],
+				"adjustlocalQuantities": [
+					{
+						"key": "riftDice",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "Type 10 Shiboru Rifle",
+				"specialRules": [""],
+				"modifiesStats": [
+					{
+						"stat": "riftDice",
+						"modifier": 1
+					}
+				],
+				"adjustlocalQuantities": [
+					{
+						"key": "riftDice",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "Turret Mounted Type 61 Light Shiboru Cannon",
+				"specialRules": [""],
+				"modifiesStats": [
+					{
+						"stat": "riftDice",
+						"modifier": 1
+					}
+				],
+				"adjustlocalQuantities": [
+					{
+						"key": "riftDice",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "Turret Mounted Type 99 Shiboru Cannon with Coaxial MMG",
+				"specialRules": [""],
+				"modifiesStats": [
+					{
+						"stat": "riftDice",
+						"modifier": 1
+					}
+				],
+				"adjustlocalQuantities": [
+					{
+						"key": "riftDice",
+						"quantity": 1
+					}
+				]
+			},
+			{
+				"name": "Turret Mounted Type 99 Shiboru Cannon",
+				"specialRules": [""],
+				"modifiesStats": [
+					{
+						"stat": "riftDice",
+						"modifier": 1
+					}
+				],
+				"adjustlocalQuantities": [
+					{
+						"key": "riftDice",
 						"quantity": 1
 					}
 				]
@@ -1587,7 +1697,7 @@
 			},
 			{
 				"name": "Barbed Wire",
-				"definition": "Impassable to Infantry and Unarmored Vehicles; Bolt Action, 3rd Edition: Pg. 296"
+				"definition": "Impassable to Infantry and UnArmored Vehicles; Bolt Action, 3rd Edition: Pg. 296"
 			},
 			{
 				"name": "Dug In",
@@ -2845,7 +2955,7 @@
 						"quantity": 1
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limits": [
 					{
 						"key": "Commander",
@@ -2904,7 +3014,8 @@
 						"addsModels": 1,
 						"unlockedByLocal": ["Inexperienced"],
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						]
 					},
 					{
@@ -2915,7 +3026,8 @@
 						"addsModels": 1,
 						"unlockedByLocal": ["Regular"],
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						]
 					},
 					{
@@ -2926,7 +3038,16 @@
 						"addsModels": 1,
 						"unlockedByLocal": ["Veteran"],
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
 						]
 					},
 					{
@@ -2962,7 +3083,8 @@
 						"localLimit": 1,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						]
 					},
 					{
@@ -2974,7 +3096,32 @@
 						"localLimit": 2,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "NCO Rifle",
+						"points": 1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "SMGs",
+						"points": 1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
 						]
 					},
 					{
@@ -3035,12 +3182,22 @@
 						]
 					},
 					{
+						"name": "Yoroi-kumi Anti Tank Launcher",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
 						"name": "Officer: Guts",
 						"points": 10,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"chooseOneKey": "hero",
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						]
 					},
 					{
@@ -3049,7 +3206,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"chooseOneKey": "hero",
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						]
 					}
 				],
@@ -3086,7 +3244,7 @@
 						"quantity": 1
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limits": [
 					{
 						"key": "Commander",
@@ -3248,7 +3406,7 @@
 						"quantity": 1
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limits": [
 					{
 						"key": "Commander",
@@ -3376,15 +3534,14 @@
 				"equipment": ["StG 44Zs"]
 			},
 			{
-				"name": "Company Commander (J) (BA)",
-				"baUnits": true,
+				"name": "Company Commander with Battle-Frame Heavy Armor (K'47)",
 				"validationKeys": ["CompCommander"],
 				"order":1,
 				"factions": [],
 				"availableIn": [
 					{
 						"all": [{ "in": "HQ Platoon" }, { "in": "Empire of Japan" }]			
-					} 
+					}
 				],
 				"points": 0,
 				"models": 1,
@@ -3401,11 +3558,11 @@
 					},
 					{
 						"key": "primary",
-						"property": "Pistol & Shin Gunto Sword",
+						"property": "SMG",
 						"quantity": 1
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limits": [
 					{
 						"key": "Commander",
@@ -3415,96 +3572,225 @@
 				],
 				"options": [
 					{
-						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
-						"points": 42,
-						"requireChooseOneKey": "morale"
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 87,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"Empire of Japan"
+						]
 					},
 					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 60,
-						"requireChooseOneKey": "morale"
+						"name": "Additional Men",
+						"points": 24,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
 					},
+					{
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "NCO LMG",
+						"points": 11,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "LMGs",
+						"points": 11,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Officer: Guts",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Officer: Rift Mastery",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 Officer",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Company Commander with Assault-Frame Heavy Armor (K'47)",
+				"validationKeys": ["CompCommander"],
+				"order":1,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon" }, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Combat Blade",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "Commander",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
 					{
 						"name": "Veteran",
 						"addsPrefix": "Veteran ",
-						"points": 78,
-						"requireChooseOneKey": "morale"
+						"points": 91,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"Empire of Japan"
+						]
 					},
 					{
 						"name": "Additional Men",
-						"points": 7,
+						"points": 26,
 						"increment": true,
-						"max": 4,
+						"max": 2,
 						"addsModels": 1,
-						"unlockedByLocal": ["Inexperienced"]
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
 					},
 					{
-						"name": "Additional Men",
+						"name": "NCO LMG",
+						"points": 11,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "LMGs",
+						"points": 11,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Officer: Guts",
 						"points": 10,
-						"increment": true,
-						"max": 4,
-						"addsModels": 1,
-						"unlockedByLocal": ["Regular"]
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Empire of Japan"
+						]
 					},
 					{
-						"name": "Additional Men",
-						"points": 13,
-						"increment": true,
-						"max": 4,
-						"addsModels": 1,
-						"unlockedByLocal": ["Veteran"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
-					},
-					{
-						"name": "NCO Rifle",
-						"points": 1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
-					},
-					{
-						"name": "Pistols",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 3,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+						"name": "Officer: Rift Mastery",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Empire of Japan"
+						]
 					}
 				],
-				"keywords": ["Period: E|M|L","Fanatics"],
+				"keywords": ["Heavy","Deadly (2)"],
 				"specialText": "1 Officer",
-				"equipment": ["Pistol","Shin Gunto Sword"]
+				"equipment": ["SMGs"]
 			},
 			{
 				"name": "Major-General Orde Wingate (BA)",
@@ -3537,7 +3823,7 @@
 						"quantity": 1
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limit": 1,
 				"limits": [
 					{
@@ -3616,7 +3902,7 @@
 						"quantity": 1
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limit": 1,
 				"limits": [
 					{
@@ -3695,7 +3981,7 @@
 						"quantity": 1
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limit": 1,
 				"limits": [
 					{
@@ -3777,7 +4063,7 @@
 						"quantity": 3
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limit": 1,
 				"limits": [
 					{
@@ -3858,7 +4144,7 @@
 						"quantity": 3
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limit": 1,
 				"limits": [
 					{
@@ -3929,7 +4215,7 @@
 						"quantity": 2
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limit": 1,
 				"limits": [
 					{
@@ -4136,7 +4422,7 @@
 						"quantity": 1
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limits": [
 					{
 						"key": "Commander",
@@ -4195,7 +4481,8 @@
 						"addsModels": 1,
 						"unlockedByLocal": ["Inexperienced"],
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						]
 					},
 					{
@@ -4206,7 +4493,8 @@
 						"addsModels": 1,
 						"unlockedByLocal": ["Regular"],
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						]
 					},
 					{
@@ -4217,7 +4505,8 @@
 						"addsModels": 1,
 						"unlockedByLocal": ["Veteran"],
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						]
 					},
 					{
@@ -4228,6 +4517,14 @@
 						"addsModels": 1,
 						"limit": 1,
 						"special": true
+					},
+					{
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
 					},
 					{
 						"name": "NCO Schwarzlicht P 08SzL Luger",
@@ -4302,27 +4599,53 @@
 						]
 					},
 					{
-						"name": "NCO SMG",
-						"points": 3,
+						"name": "NCO Rifle",
+						"points": 1,
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
-							"Axis"
+							"Empire of Japan"
 						]
 					},
 					{
-						"name": "SMGs",
-						"points": 3,
+						"name": "Rifles",
+						"points": 1,
 						"increment": true,
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 2,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
-							"Axis"
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "NCO SMG",
+						"points": 5,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis",
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "SMGs",
+						"points": 5,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis",
+							"Empire of Japan"
 						]
 					},
 					{
@@ -4335,12 +4658,22 @@
 						]
 					},
 					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
 						"name": "Officer: Guts",
 						"points": 10,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"chooseOneKey": "hero",
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						]
 					},
 					{
@@ -4349,7 +4682,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"chooseOneKey": "hero",
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						]
 					}
 				],
@@ -4398,7 +4732,7 @@
 						"quantity": 1
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limits": [
 					{
 						"key": "Commander",
@@ -4582,7 +4916,7 @@
 						"quantity": 1
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limits": [
 					{
 						"key": "Commander",
@@ -4738,7 +5072,7 @@
 						"quantity": 1
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limits": [
 					{
 						"key": "Commander",
@@ -4887,26 +5221,13 @@
 				"equipment": ["Pistol","Advanced Boy Armor"]
 			},
 			{
-				"name": "Platoon Commander (J) (BA)",
-				"baUnits": true,
-				"validationKeys": ["PlatCommander"],
+				"name": "Platoon Commander with Battle-Frame Heavy Armor (K'47)",
+				"validationKeys": ["CompCommander"],
+				"order":1,
 				"factions": [],
-				"order": 1,
 				"availableIn": [
 					{
-						"all": [{ "in": "Assault Platoon" }, { "in": "Empire of Japan" }]			
-					},
-					{
-						"all": [{ "in": "Recce Platoon" }, { "in": "Empire of Japan" }]			
-					},
-					{
-						"all": [{ "in": "Engineer Platoon" }, { "in": "Empire of Japan" }]			
-					},
-					{
-						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Empire of Japan" }]			
-					},
-					{
-						"all": [{ "in": "Artillery Platoon" }, { "in": "Empire of Japan" }]			
+						"all": [{ "in": "HQ Platoon" }, { "in": "Empire of Japan" }]			
 					}
 				],
 				"points": 0,
@@ -4924,11 +5245,11 @@
 					},
 					{
 						"key": "primary",
-						"property": "Pistol & Shin Gunto Sword",
+						"property": "SMG",
 						"quantity": 1
 					}
 				],
-				"sortpriority": 2,
+				"sortPriority": 2,
 				"limits": [
 					{
 						"key": "Commander",
@@ -4938,91 +5259,228 @@
 				],
 				"options": [
 					{
-						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
-						"points": 21,
-						"requireChooseOneKey": "morale"
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 48,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"Empire of Japan"
+						]
 					},
 					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 30,
-						"requireChooseOneKey": "morale"
+						"name": "Additional Men",
+						"points": 22,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
 					},
+					{
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "NCO LMG",
+						"points": 11,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "LMGs",
+						"points": 11,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Officer: Guts",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Officer: Rift Mastery",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 Officer",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Platoon Commander with Assault-Frame Heavy Armor (K'47)",
+				"validationKeys": ["CompCommander"],
+				"order":1,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon" }, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Combat Blade",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "Commander",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
 					{
 						"name": "Veteran",
 						"addsPrefix": "Veteran ",
-						"points": 39,
-						"requireChooseOneKey": "morale"
+						"points": 52,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"Empire of Japan"
+						]
 					},
 					{
 						"name": "Additional Men",
-						"points": 7,
+						"points": 26,
 						"increment": true,
-						"max": 4,
+						"max": 2,
 						"addsModels": 1,
-						"unlockedByLocal": ["Inexperienced"]
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
 					},
 					{
-						"name": "Additional Men",
+						"name": "NCO LMG",
+						"points": 11,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "LMGs",
+						"points": 11,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Officer: Guts",
 						"points": 10,
-						"increment": true,
-						"max": 4,
-						"addsModels": 1,
-						"unlockedByLocal": ["Regular"]
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Empire of Japan"
+						]
 					},
 					{
-						"name": "Additional Men",
-						"points": 13,
-						"increment": true,
-						"max": 4,
-						"addsModels": 1,
-						"unlockedByLocal": ["Veteran"]
-					},
-					{
-						"name": "NCO Rifle",
-						"points": 1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
-					},
-					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
-					},
-					{
-						"name": "Pistols",
-						"points": -1,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 4,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+						"name": "Officer: Rift Mastery",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Empire of Japan"
+						]
 					}
 				],
-				"keywords": ["Period: E|M|L","Fanatics"],
+				"keywords": ["Heavy","Deadly (2)"],
 				"specialText": "1 Officer",
-				"equipment": ["Pistol","Shin Gunto Sword"]
+				"equipment": ["SMGs"]
 			},
 			{
-				"name": "Kempeitai Officer (BA)",
-				"baUnits": true,
+				"name": "Kempeitai Inspirational Officer (K'47)",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -5045,7 +5503,7 @@
 					},
 					{
 						"key": "primary",
-						"property": "Pistol & Shin Gunto Sword",
+						"property": "Pistol",
 						"quantity": 1
 					}
 				],
@@ -5078,7 +5536,7 @@
 					},
 					{
 						"name": "Additional Men",
-						"points": 7,
+						"points": 6,
 						"increment": true,
 						"unlockedByLocal": ["Inexperienced"],
 						"max": 2,
@@ -5086,7 +5544,7 @@
 					},
 					{
 						"name": "Additional Men",
-						"points": 10,
+						"points": 9,
 						"increment": true,
 						"unlockedByLocal": ["Regular"],
 						"max": 2,
@@ -5094,70 +5552,72 @@
 					},
 					{
 						"name": "Additional Men",
-						"points": 13,
+						"points": 12,
 						"increment": true,
 						"unlockedByLocal": ["Veteran"],
 						"max": 2,
 						"addsModels": 1
 					},
 					{
-						"name": "Bicycles",
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "NCO Rifle",
 						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Yamato Damashii (Paratroopers)"]
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
 					},
 					{
-						"name": "Yamato Damashii (Home Defence)",
-						"points": 0,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (Paratroopers)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF)",
-						"points": 0,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced","Regular"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF Vet)",
-						"points": 0,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Iron Discipline (SNLF)",
+						"name": "Rifles",
 						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Yamato Damashii (SNLF Vet)"],
-						"availableIn": ["Empire of Japan"],
-						"requireChooseOneKey": "reqSNLF"
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
 					},
 					{
-						"name": "Yamato Damashii (Veteran Jungle Fighters)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
+						"name": "NCO SMG",
+						"points": 5,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "SMGs",
+						"points": 5,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
 					}
 				],
-				"keywords": ["Period: E|M","Fanatics","Strict Discipline","Fanatics"],
+				"keywords": ["Strict Discipline"],
 				"specialText": "1 Officer",
-				"equipment": ["Pistol","Shin Gunto Sword"]
+				"equipment": ["Pistol"]
 			},
 			{
 				"name": "Commissar (BA)",
@@ -5338,6 +5798,30 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"Axis"
+						]
+					},
+					{
+						"name": "Rifles",
+						"points": 1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "SMGs",
+						"points": 5,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
 						]
 					}
 				],
@@ -5600,6 +6084,12 @@
 						"all": [{ "in": "Recce Platoon"	}, { "in": "British Commonwealth" }]			
 					},
 					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
 						"all": [{ "in": "Assault Platoon"	}, { "in": "Sweden (PL)" }]			
 					},
 					{
@@ -5701,7 +6191,8 @@
 						"localLimit": 1,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						]
 					},
 					{
@@ -5713,7 +6204,32 @@
 						"localLimit": 2,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "NCO Rifle",
+						"points": 1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Rifles",
+						"points": 1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
 						]
 					},
 					{
@@ -5770,107 +6286,6 @@
 				"equipment": ["Pistols"]
 			},
 			{
-				"name": "Forward Air Observer (J) (BA)",
-				"baUnits": true,
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]			
-					},
-					{
-						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]			
-					}
-				],
-				"points": 0,
-				"models": 1,
-				"localQuantityDisplay": [
-					{
-						"key": "unitType",
-						"property": "Basic Unit",
-						"quantity": 1
-					},
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					},
-					{
-						"key": "primary",
-						"property": "Pistol & Shin Gunto Sword",
-						"quantity": 1
-					}
-				],
-				"sortPriority": 9,
-				"limits": [
-					{
-						"key": "Observer",
-						"limit": 1,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 75,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"addsPrefix": "Veteran ",
-						"points": 90,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 11,
-						"increment": true,
-						"unlockedByLocal": ["Regular"],
-						"max": 2,
-						"addsModels": 1
-					},
-					{
-						"name": "Additional Men",
-						"points": 14,
-						"increment": true,
-						"unlockedByLocal": ["Veteran"],
-						"max": 2,
-						"addsModels": 1
-					},
-					{
-						"name": "Pistols",
-						"points": -1,
-						"increment": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 2
-					},
-					{
-						"name": "NCO SMG",
-						"points": 3,
-						"increment": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1
-					},
-					{
-						"name": "NCO Rifle",
-						"points": 1,
-						"increment": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1
-					}
-				],
-				"keywords": ["Period: E|M|L","Infiltrator","Observer","Fanatics","No Ground-attack Aircraft"],
-				"specialText": "1 Forward Observer",
-				"equipment": ["Pistol","Shin Gunto Sword"]
-			},
-			{
 				"name": "Forward Artillery Observer (K'47)",
 				"factions": [],
 				"order": 1,
@@ -5886,6 +6301,12 @@
 					},
 					{
 						"all": [{ "in": "Recce Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]			
 					},
 					{
 						"all": [{ "in": "Assault Platoon"	}, { "in": "Sweden (PL)" }]			
@@ -6001,7 +6422,8 @@
 						"localLimit": 1,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						]
 					},
 					{
@@ -6013,7 +6435,32 @@
 						"localLimit": 2,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "NCO Rifle",
+						"points": 1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Rifles",
+						"points": 1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
 						]
 					},
 					{
@@ -6480,6 +6927,7 @@
 				"name": "Sniper Team (K'47)",
 				"factions": [],
 				"order": 1,
+				"riftDice": 0,
 				"availableIn": [
 					{
 						"all": [{ "in": "Assault Platoon"	}, { "in": "Axis" }]			
@@ -6489,6 +6937,9 @@
 					},
 					{
 						"all": [{ "in": "Assault Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]			
 					},
 					{
 						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]			
@@ -6546,6 +6997,19 @@
 						]
 					},
 					{
+						"name": "NCO Type 10 Shiboru Rifle",
+						"points": 10,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"availableIn": [
+							"Empire of Japan"
+						],
+						"addRiftDice": 1
+					},
+					{
 						"name": "Assistant Rifle",
 						"points": 1,
 						"increment": true,
@@ -6554,7 +7018,8 @@
 						"maxKey": "gun",
 						"localLimit": 1,
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						]
 					},
 					{
@@ -6566,7 +7031,8 @@
 						"maxKey": "gun",
 						"localLimit": 1,
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						]
 					},
 					{
@@ -7523,114 +7989,6 @@
 				"equipment": ["AT Rifle Team"]
 			},
 			{
-				"name": "Anti-Tank Rifle Team (BA)",
-				"baUnits": true,
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Assault Platoon"	}, { "in": "Axis" }]			
-					},
-					{
-						"all": [{ "in": "Recce Platoon"	}, { "in": "Axis" }]			
-					}
-				],
-				"points": 0,
-				"models": 2,
-				"localQuantityDisplay": [
-					{
-						"key": "unitType",
-						"property": "Basic Unit",
-						"quantity": 1
-					},
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					},
-					{
-						"key": "primary",
-						"property": "AT Rifle",
-						"quantity": 1
-					},
-					{
-						"key": "secondary",
-						"property": "Loader/Assistant",
-						"quantity": 1
-					}
-				],
-				"sortPriority": 5,
-				"limits": [
-					{
-						"key": "AT Team",
-						"limit": 1,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
-						"points": 18,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 25,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"addsPrefix": "Veteran ",
-						"points": 33,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Defend the Fatherland! (Gebirgsjäger)",
-						"points": 1,
-						"perModel": true,
-						"availableIn": ["Axis"],
-						"unlockedByLocal": ["Veteran"],
-						"chooseOneKey": "natRuA"
-					},
-					{
-						"name": "Gebirgsjäger Winter Equipment",
-						"points": 0,
-						"perModel": true,
-						"availableIn": ["Axis"],
-						"unlockedByLocal":"Defend the Fatherland! (Gebirgsjäger)"
-					},
-					{
-						"name": "Defend the Fatherland! (Fallschirmjäger)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Axis"],
-						"chooseOneKey": "natRuA"
-					},
-					{
-						"name": "Defend the Fatherland! (Waffen-SS InEx)",
-						"points": 2,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced"],
-						"availableIn": ["Axis"],
-						"chooseOneKey": "natRuA"
-					},
-					{
-						"name": "Defend the Fatherland! (Waffen-SS)",
-						"points": 2,
-						"perModel": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"availableIn": ["Axis"],
-						"chooseOneKey": "natRuA"
-					}
-				],
-				"keywords": ["Period: E|M"],
-				"specialText": "1 AT Rifle Operator\n 1 Weapon Assistant",
-				"equipment": ["AT Rifle Team"]
-			},
-			{
 				"name": "Anti-Tank Rifle Team (SU) (BA)",
 				"baUnits": true,
 				"factions": [],
@@ -8198,7 +8556,7 @@
 						"all": [{ "in": "Assault Platoon" }, { "in": "Axis" }]			
 					},
 					{
-						"all": [{ "in": "ARmored Walker Platoon"	}, { "in": "Axis" }]			
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Axis" }]			
 					},
 					{
 						"all": [{ "in": "Recce Platoon"	}, { "in": "Axis" }]			
@@ -8259,12 +8617,6 @@
 				"factions": [],
 				"order": 1,
 				"availableIn": [
-					{
-						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Axis" }]			
-					},
-					{
-						"all": [{ "in": "ARmored Walker Platoon"	}, { "in": "Axis" }]			
-					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Axis" }]			
 					}
@@ -8328,7 +8680,7 @@
 						"all": [{ "in": "Assault Platoon" }, { "in": "Axis" }]			
 					},
 					{
-						"all": [{ "in": "ARmored Walker Platoon"	}, { "in": "Axis" }]			
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Axis" }]			
 					},
 					{
 						"all": [{ "in": "Recce Platoon"	}, { "in": "Axis" }]			
@@ -8415,12 +8767,6 @@
 				"order": 1,
 				"availableIn": [
 					{
-						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Axis" }]			
-					},
-					{
-						"all": [{ "in": "ARmored Walker Platoon"	}, { "in": "Axis" }]			
-					},
-					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Axis" }]			
 					}
 				],
@@ -8500,13 +8846,15 @@
 				"equipment": ["Panzerschreck"]
 			},
 			{
-				"name": "Anti-Tank Rifle Team (J) (BA)",
-				"baUnits": true,
+				"name": "Anti-Tank Rifle Team (K'47)",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
 					{
 						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]			
 					},
 					{
 						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]			
@@ -8548,89 +8896,28 @@
 					{
 						"name": "Inexperienced",
 						"addsPrefix": "Inexperienced ",
-						"points": 21,
+						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"addsPrefix": "Regular ",
-						"points": 30,
+						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"addsPrefix": "Veteran ",
-						"points": 39,
+						"points": 33,
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 5,
-						"increment": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"max": 3,
-						"addsModels": 1
-					},
-					{
-						"name": "Bicycles",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Yamato Damashii (Paratroopers)"]
-					},
-					{
-						"name": "Yamato Damashii (Home Defence)",
-						"points": 0,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (Paratroopers)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF)",
-						"points": 0,
-						"unlockedByLocal": ["Inexperienced","Regular"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF Vet)",
-						"points": 0,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Iron Discipline (SNLF)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Yamato Damashii (SNLF Vet)"],
-						"availableIn": ["Empire of Japan"],
-						"requireChooseOneKey": "reqSNLF"
-					},
-					{
-						"name": "Yamato Damashii (Veteran Jungle Fighters)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
 					}
 				],
-				"keywords": ["Period: E|M|L","Fanatics","Fixed","High Rate of Fire"],
+				"keywords": [],
 				"specialText": "1 AT Rifle Operator\n 1 Weapon Assistant",
 				"equipment": ["AT Rifle Team"]
 			},
 			{
-				"name": "Anti-Tank Rifle Team (J) - Heavy Weapons Platoon (BA)",
-				"baUnits": true,
+				"name": "Anti-Tank Rifle Team - Heavy Weapons Platoon (K'47)",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -8674,85 +8961,155 @@
 					{
 						"name": "Inexperienced",
 						"addsPrefix": "Inexperienced ",
-						"points": 21,
+						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
 						"addsPrefix": "Regular ",
-						"points": 30,
+						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"addsPrefix": "Veteran ",
-						"points": 39,
+						"points": 33,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "1 AT Rifle Operator\n 1 Weapon Assistant",
+				"equipment": ["AT Rifle Team"]
+			},
+			{
+				"name": "Battle-Frame Panzerschreck Anti-Tank Team",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Panzerschreck",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "SMG",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "AT Team",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 110,
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "Additional Men",
-						"points": 5,
+						"name": "Assistant LMG",
+						"points": 11,
 						"increment": true,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"max": 3,
-						"addsModels": 1
-					},
-					{
-						"name": "Bicycles",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Yamato Damashii (Paratroopers)"]
-					},
-					{
-						"name": "Yamato Damashii (Home Defence)",
-						"points": 0,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (Paratroopers)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF)",
-						"points": 0,
-						"unlockedByLocal": ["Inexperienced","Regular"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF Vet)",
-						"points": 0,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Iron Discipline (SNLF)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Yamato Damashii (SNLF Vet)"],
-						"availableIn": ["Empire of Japan"],
-						"requireChooseOneKey": "reqSNLF"
-					},
-					{
-						"name": "Yamato Damashii (Veteran Jungle Fighters)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
 					}
 				],
-				"keywords": ["Period: E|M|L","Fanatics","Fixed","High Rate of Fire"],
-				"specialText": "1 AT Rifle Operator\n 1 Weapon Assistant",
-				"equipment": ["AT Rifle Team"]
+				"keywords": ["Heavy"],
+				"specialText": "1 Panzerschreck Operator\n 1 Riflemen",
+				"equipment": ["Panzerschreck"]
+			},
+			{
+				"name": "Battle-Frame Panzerschreck Anti-Tank Team - Heavy Weapons Platoon",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Panzerschreck",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "SMG",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "AT Team",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Assistant LMG",
+						"points": 11,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 Panzerschreck Operator\n 1 Riflemen",
+				"equipment": ["Panzerschreck"]
 			},
 			{
 				"name": "Improvised Anti-Tank Team (BA)",
@@ -11538,70 +11895,13 @@
 				"equipment": ["AT Rifle Team"]
 			},
 			{
-				"name": "Flamethrower Team (BA)",
-				"baUnits": true,
+				"name": "Flamethrower Team (K'47)",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
 					{
 						"all": [{ "in": "Engineer Platoon"	}, { "in": "Axis" }]			
-					}
-				],
-				"points": 0,
-				"models": 2,
-				"localQuantityDisplay": [
-					{
-						"key": "unitType",
-						"property": "Basic Unit",
-						"quantity": 1
 					},
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					},
-					{
-						"key": "primary",
-						"property": "Flamethrower",
-						"quantity": 1
-					},
-					{
-						"property": "Loader/Assistant",
-						"quantity": 1
-					}
-				],
-				"sortPriority": 5,
-				"limits": [
-					{
-						"key": "Flamethrower",
-						"limit": 3,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 50,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"addsPrefix": "Veteran ",
-						"points": 65,
-						"requireChooseOneKey": "morale"
-					}
-				],
-				"keywords": [],
-				"specialText": "1 Flamethrower Operator\n 1 Weapon Assitant",
-				"equipment": ["Infantry Flamethrower"]
-			},
-			{
-				"name": "Flamethrower Team (J) (BA)",
-				"baUnits": true,
-				"factions": [],
-				"order": 1,
-				"availableIn": [
 					{
 						"all": [{ "in": "Engineer Platoon"	}, { "in": "Empire of Japan" }]			
 					}
@@ -11625,7 +11925,7 @@
 						"quantity": 1
 					},
 					{
-						"property": "Loader/Assistant",
+						"property": "Pistol",
 						"quantity": 1
 					}
 				],
@@ -11651,67 +11951,18 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "Additional Men",
-						"points": 5,
-						"increment": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"max": 2,
-						"addsModels": 1
-					},
-					{
 						"name": "AT Grenades",
 						"points": 2,
+						"perModel": true,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"perModel": true
-					},
-					{
-						"name": "Bicycles",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Yamato Damashii (Paratroopers)"]
-					},
-					{
-						"name": "Yamato Damashii (Paratroopers)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF)",
-						"points": 0,
-						"unlockedByLocal": ["Inexperienced","Regular"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF Vet)",
-						"points": 0,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Iron Discipline (SNLF)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Yamato Damashii (SNLF Vet)"],
-						"availableIn": ["Empire of Japan"],
-						"requireChooseOneKey": "reqSNLF"
-					},
-					{
-						"name": "Yamato Damashii (Veteran Jungle Fighters)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
+						"availableIn": [
+							"Empire of Japan"
+						]
 					}
 				],
-				"keywords": ["Period: E|M|L","Fanatics"],
+				"keywords": [],
 				"specialText": "1 Flamethrower Operator\n 1 Weapon Assitant",
-				"equipment": ["Flamethrower - Team Weapon"]
+				"equipment": ["Infantry Flamethrower"]
 			},
 			{
 				"name": "Flamethrower Team (US) (BA)",
@@ -14533,12 +14784,18 @@
 				"equipment": ["Light Mortar"]
 			},
 			{
-				"name": "Light Mortar Team (A) (K'47)",
+				"name": "Light Mortar Team (K'47)",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
 					{
 						"all": [{ "in": "Assault Platoon"	}, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Totenrotte Platoon"	}, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]			
 					}
 				],
 				"points": 0,
@@ -14598,13 +14855,16 @@
 				"equipment": ["Light Mortar"]
 			},
 			{
-				"name": "Light Mortar Team (A) Heavy Weapons Platoon (K'47)",
+				"name": "Light Mortar Team - Heavy Weapons Platoon (K'47)",
 				"validationKeys": ["HeavyWepTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
 					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
 					}
 				],
 				"points": 0,
@@ -14979,259 +15239,6 @@
 				"equipment": ["Light Mortar"]
 			},
 			{
-				"name": "Light Mortar Team (J) (BA)",
-				"baUnits": true,
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]			
-					}
-				],
-				"points": 0,
-				"models": 2,
-				"localQuantityDisplay": [
-					{
-						"key": "unitType",
-						"property": "Basic Unit",
-						"quantity": 1
-					},
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					},
-					{
-						"key": "primary",
-						"property": "Mortar Operator",
-						"quantity": 1
-					},
-					{
-						"key": "secondary",
-						"property": "Loader/Assistant",
-						"quantity": 1
-					}
-				],
-				"sortPriority": 5,
-				"limits": [
-					{
-						"key": "Mortar",
-						"limit": 2,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
-						"points": 23,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 33,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"addsPrefix": "Veteran ",
-						"points": 43,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Assistant",
-						"points": 5,
-						"increment": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"max": 1,
-						"addsModels": 1
-					},					
-					{
-						"name": "Bicycles",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Yamato Damashii (Paratroopers)"]
-					},
-					{
-						"name": "Yamato Damashii (Home Defence)",
-						"points": 0,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (Paratroopers)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF)",
-						"points": 0,
-						"unlockedByLocal": ["Inexperienced","Regular"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF Vet)",
-						"points": 0,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Iron Discipline (SNLF)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Yamato Damashii (SNLF Vet)"],
-						"availableIn": ["Empire of Japan"],
-						"requireChooseOneKey": "reqSNLF"
-					},
-					{
-						"name": "Yamato Damashii (Veteran Jungle Fighters)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					}
-				],
-				"keywords": ["Period: E|M|L","Fanatics","Low Angle Fire"],
-				"specialText": "1 Mortar Operator\n 1 Weapon Assitants",
-				"equipment": ["Light Mortar"]
-			},
-			{
-				"name": "Light Mortar Team (J) Heavy Weapons Platoon (BA)",
-				"baUnits": true,
-				"validationKeys": ["HeavyWepTeams"],
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
-					}
-				],
-				"points": 0,
-				"models": 2,
-				"localQuantityDisplay": [
-					{
-						"key": "unitType",
-						"property": "Basic Unit",
-						"quantity": 1
-					},
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					},
-					{
-						"key": "primary",
-						"property": "Mortar Operator",
-						"quantity": 1
-					},
-					{
-						"key": "secondary",
-						"property": "Loader/Assistant",
-						"quantity": 1
-					}
-				],
-				"sortPriority": 4,
-				"limits": [
-					{
-						"key": "Main Team",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
-						"points": 23,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 33,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"addsPrefix": "Veteran ",
-						"points": 43,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Assistant",
-						"points": 5,
-						"increment": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"max": 1,
-						"addsModels": 1
-					},					
-					{
-						"name": "Bicycles",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Yamato Damashii (Paratroopers)"]
-					},
-					{
-						"name": "Yamato Damashii (Home Defence)",
-						"points": 0,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (Paratroopers)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF)",
-						"points": 0,
-						"unlockedByLocal": ["Inexperienced","Regular"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF Vet)",
-						"points": 0,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Iron Discipline (SNLF)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Yamato Damashii (SNLF Vet)"],
-						"availableIn": ["Empire of Japan"],
-						"requireChooseOneKey": "reqSNLF"
-					},
-					{
-						"name": "Yamato Damashii (Veteran Jungle Fighters)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					}
-				],
-				"keywords": ["Period: E|M|L","Fanatics","Low Angle Fire"],
-				"specialText": "1 Mortar Operator\n 1 Weapon Assitants",
-				"equipment": ["Light Mortar"]
-			},
-			{
 				"name": "Light Mortar Team (USA) (BA)",
 				"baUnits": true,
 				"factions": [],
@@ -15444,6 +15451,9 @@
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "British Commonwealth" }]			
 					},
 					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Soviet Bloc" }]			
 					},
 					{
@@ -15514,6 +15524,7 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
+							"Empire of Japan",
 							"Soviet Bloc",
 							"Sweden (PL)",
 							"United States of America"
@@ -15521,139 +15532,6 @@
 					}
 				],
 				"keywords": [],
-				"specialText": "1 Mortar Operator\n 2 Weapon Assitants",
-				"equipment": ["Medium Mortar"]
-			},
-			{
-				"name": "Medium Mortar Team (J) (BA)",
-				"baUnits": true,
-				"validationKeys": ["HeavyWepTeams"],
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
-					}
-				],
-				"points": 0,
-				"models": 3,
-				"localQuantityDisplay": [
-					{
-						"key": "unitType",
-						"property": "Basic Unit",
-						"quantity": 1
-					},
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					},
-					{
-						"key": "primary",
-						"property": "Mortar Operator",
-						"quantity": 1
-					},
-					{
-						"key": "secondary",
-						"property": "Loader/Assistant",
-						"quantity": 2
-					}
-				],
-				"sortPriority": 4,
-				"limits": [
-					{
-						"key": "Main Team",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
-						"points": 35,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 50,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"addsPrefix": "Veteran ",
-						"points": 65,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "AA Mines",
-						"points": 5
-					},
-					{
-						"name": "Add Spotter",
-						"points": 10,
-						"increment": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"max": 1,
-						"addsModels": 1
-					},
-					{
-						"name": "Additional Assistant",
-						"points": 5,
-						"increment": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"max": 2,
-						"addsModels": 1
-					},
-					{
-						"name": "Yamato Damashii (Home Defence)",
-						"points": 0,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (Paratroopers)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF)",
-						"points": 0,
-						"unlockedByLocal": ["Inexperienced","Regular"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF Vet)",
-						"points": 0,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Iron Discipline (SNLF)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Yamato Damashii (SNLF Vet)"],
-						"availableIn": ["Empire of Japan"],
-						"requireChooseOneKey": "reqSNLF"
-					},
-					{
-						"name": "Yamato Damashii (Veteran Jungle Fighters)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					}
-				],
-				"keywords": ["Period: E|M|L","Fanatics","No Smoke Rounds"],
 				"specialText": "1 Mortar Operator\n 2 Weapon Assitants",
 				"equipment": ["Medium Mortar"]
 			},
@@ -15668,6 +15546,9 @@
 					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
 					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Soviet Bloc" }]			
@@ -15740,6 +15621,7 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
+							"Empire of Japan",
 							"Soviet Bloc",
 							"Sweden (PL)",
 							"United States of America"
@@ -15747,89 +15629,6 @@
 					}
 				],
 				"keywords": [],
-				"specialText": "1 Mortar Operator\n 3 Weapon Assitants",
-				"equipment": ["Heavy Mortar"]
-			},
-			{
-				"name": "Heavy Mortar Team (J) (BA)",
-				"baUnits": true,
-				"validationKeys": ["HeavyWepTeams"],
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
-					}
-				],
-				"points": 0,
-				"models": 4,
-				"localQuantityDisplay": [
-					{
-						"key": "unitType",
-						"property": "Basic Unit",
-						"quantity": 1
-					},
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					},
-					{
-						"key": "primary",
-						"property": "Mortar Operator",
-						"quantity": 1
-					},
-					{
-						"key": "secondary",
-						"property": "Loader/Assistant",
-						"quantity": 3
-					}
-				],
-				"sortPriority": 4,
-				"limits": [
-					{
-						"key": "Main Team",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
-						"points": 46,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 65,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"addsPrefix": "Veteran ",
-						"points": 84,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Add Spotter",
-						"points": 10,
-						"increment": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"max": 1,
-						"addsModels": 1
-					},
-					{
-						"name": "Additional Assistant",
-						"points": 5,
-						"increment": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"max": 2,
-						"addsModels": 1
-					}
-				],
-				"keywords": ["Period: E|M|L"],
 				"specialText": "1 Mortar Operator\n 3 Weapon Assitants",
 				"equipment": ["Heavy Mortar"]
 			},
@@ -15932,13 +15731,16 @@
 				"equipment": ["MMG"]
 			},
 			{
-				"name": "Medium Machine Gun (A) (K'47)",
+				"name": "Medium Machine Gun (K'47)",
 				"validationKeys": ["HeavyWepTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
 					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
 					}
 				],
 				"points": 0,
@@ -15996,127 +15798,6 @@
 				"keywords": [],
 				"specialText": "1 MG Operator\n 2 Weapon Assitants",
 				"equipment": ["German MMG"]
-			},
-			{
-				"name": "Medium Machine Gun (J) (BA)",
-				"baUnits": true,
-				"validationKeys": ["HeavyWepTeams"],
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
-					}
-				],
-				"points": 0,
-				"models": 3,
-				"localQuantityDisplay": [
-					{
-						"key": "unitType",
-						"property": "Basic Unit",
-						"quantity": 1
-					},
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					},
-					{
-						"key": "primary",
-						"property": "MG Operator",
-						"quantity": 1
-					},
-					{
-						"key": "secondary",
-						"property": "Loader/Assistant",
-						"quantity": 2
-					}
-				],
-				"sortPriority": 4,
-				"limits": [
-					{
-						"key": "Main Team",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
-						"points": 35,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 50,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"addsPrefix": "Veteran ",
-						"points": 65,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Assistant",
-						"points": 5,
-						"increment": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"max": 2,
-						"addsModels": 1
-					},
-					{
-						"name": "Yamato Damashii (Home Defence)",
-						"points": 0,
-						"perModel": true,
-						"unlockedByLocal": ["Inexperienced"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (Paratroopers)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF)",
-						"points": 0,
-						"unlockedByLocal": ["Inexperienced","Regular"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Yamato Damashii (SNLF Vet)",
-						"points": 0,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					},
-					{
-						"name": "Iron Discipline (SNLF)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Yamato Damashii (SNLF Vet)"],
-						"availableIn": ["Empire of Japan"],
-						"requireChooseOneKey": "reqSNLF"
-					},
-					{
-						"name": "Yamato Damashii (Veteran Jungle Fighters)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Empire of Japan"],
-						"chooseOneKey": "natRuJa"
-					}
-				],
-				"keywords": ["Period: E|M|L","Fanatics"],
-				"specialText": "1 MG Operator\n 2 Weapon Assitants",
-				"equipment": ["MMG"]
 			},
 			{
 				"name": "Heavy Machine Gun (BA)",
@@ -25975,6 +25656,1881 @@
 				"equipment": ["SMGs"]
 			},
 			{
+				"name": "Imperial Japanese Infantry Squad (K'47)",
+				"validationKeys": ["RifleTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]
+					}
+				],
+				"points": 0,
+				"models": 7,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Rifles",
+						"quantity": 7
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 49,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 70,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 91,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Rifle Grenade Modfication",
+						"points": 6,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": 1,
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": 4,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Light Mortar",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Infantry Flamethrower",
+						"points": 30,
+						"increment": true,
+						"unlockedByLocal": ["Engineers"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Tough Fighters",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Engineers",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Shirkers",
+						"points": -2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Green",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 NCO\n 6 Riflemen",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Imperial Japanese Infantry Squad (K'47)",
+				"validationKeys": ["RifleTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 7,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Rifles",
+						"quantity": 7
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 49,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 70,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 91,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Rifle Grenade Modfication",
+						"points": 6,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "NCO SMG",
+						"points": 4,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": 1,
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": 4,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Light Mortar",
+						"points": 20,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Infantry Flamethrower",
+						"points": 30,
+						"increment": true,
+						"unlockedByLocal": ["Engineers"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Tough Fighters",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Engineers",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Shirkers",
+						"points": -2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Green",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 NCO\n 6 Riflemen",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Imperial Japanese Shiboru Rifle Squad (K'47)",
+				"validationKeys": ["RifleTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]
+					}
+				],
+				"points": 0,
+				"models": 7,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Type 10 Shiboru Rifle",
+						"quantity": 7
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 161,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 23,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Tough Fighters",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Engineers",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Only Human"],
+				"specialText": "1 NCO\n 6 Riflemen",
+				"equipment": ["Type 10 Shiboru Rifle"]
+			},
+			{
+				"name": "Imperial Japanese Shiboru Rifle Squad (K'47)",
+				"validationKeys": ["RifleTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 7,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Type 10 Shiboru Rifle",
+						"quantity": 7
+					}
+				],
+				"sortPriority": 4,
+				"unlockKey": "Columnist",
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 161,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 23,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Tough Fighters",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Engineers",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Only Human"],
+				"specialText": "1 NCO\n 6 Riflemen",
+				"equipment": ["Type 10 Shiboru Rifle"]
+			},
+			{
+				"name": "Battle-Frame Armored SMG Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 22,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Panzerschreck",
+						"points": 66,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Battle-Frame Armored SMG Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"unlockKey": "Columnist",
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 22,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Panzerschreck",
+						"points": 66,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Battle-Frame Armored Shiboru Rifle Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Type 10 Shiboru Rifles",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 146,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 28,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Panzerschreck",
+						"points": 66,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Type 10 Shiboru Rifles"]
+			},
+			{
+				"name": "Battle-Frame Armored Shiboru Rifle Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Type 10 Shiboru Rifles",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 146,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 28,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Panzerschreck",
+						"points": 66,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Type 10 Shiboru Rifles"]
+			},
+			{
+				"name": "Assault-Frame Armored Shiboru Rifle Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Type 10 Shiboru Rifles",
+						"quantity": 5
+					},
+					{
+						"key": "secondary",
+						"property": "Combat Blade",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 166,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 32,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Deadly (2)","Heavy"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Type 10 Shiboru Rifles"]
+			},
+			{
+				"name": "Assault-Frame Armored Shiboru Rifle Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Type 10 Shiboru Rifles",
+						"quantity": 5
+					},
+					{
+						"key": "secondary",
+						"property": "Combat Blade",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 166,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 32,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Deadly (2)","Heavy"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Type 10 Shiboru Rifles"]
+			},
+			{
+				"name": "Assault-Frame Armored SMG Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Type 10 Shiboru Rifles",
+						"quantity": 5
+					},
+					{
+						"key": "secondary",
+						"property": "Combat Blade",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 130,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 26,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Deadly (2)","Heavy"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Assault-Frame Armored SMG Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 5
+					},
+					{
+						"key": "secondary",
+						"property": "Combat Blade",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 130,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 26,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Deadly (2)","Heavy"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Shibito Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Fists",
+						"quantity": 6
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 114,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Shibito",
+						"points": 19,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 6,
+						"addsModels": 1
+					}
+				],
+				"keywords": ["Fearless","Horror","Infiltrator","Limited Intelligence","Tough Fighters"],
+				"specialText": "6 Shibito",
+				"equipment": ["Fists"]
+			},
+			{
+				"name": "Shibito Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Fists",
+						"quantity": 6
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 114,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Shibito",
+						"points": 19,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 6,
+						"addsModels": 1
+					}
+				],
+				"keywords": ["Fearless","Horror","Infiltrator","Limited Intelligence","Tough Fighters"],
+				"specialText": "6 Shibito",
+				"equipment": ["Fists"]
+			},
+			{
+				"name": "Ghost Attack Shiboru Rifle Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 2,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 2
+					},
+					{
+						"key": "primary",
+						"property": "Type 10 Shiboru Rifle",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 160,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 32,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Engineers",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Fieldcraft","Hard to Kill","Infiltrator","Horror","Fast"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Type 10 Shiboru Rifle"]
+			},
+			{
+				"name": "Ghost Attack Shiboru Rifle Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 2,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 2
+					},
+					{
+						"key": "primary",
+						"property": "Type 10 Shiboru Rifle",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 160,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 32,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Engineers",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Fieldcraft","Hard to Kill","Infiltrator","Horror","Fast"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Type 10 Shiboru Rifle"]
+			},
+			{
+				"name": "Ghost Attack SMGs Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 130,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 26,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Engineers",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Fieldcraft","Hard to Kill","Infiltrator","Horror","Fast"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Ghost Attack SMGs Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 130,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 26,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional NCO Combat Blade",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Yoroi-kumi Anti Tank Launchers",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Engineers",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Empire of Japan"
+						]
+					}
+				],
+				"keywords": ["Fieldcraft","Hard to Kill","Infiltrator","Horror","Fast"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["SMGs"]
+			},
+			{
 				"name": "Heavy Artillery (K'47)",
 				"validationKeys": ["ArtyTeams"],
 				"factions": [],
@@ -25985,6 +27541,9 @@
 					},
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Empire of Japan" }]			
 					},
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
@@ -26044,7 +27603,7 @@
 					{
 						"name": "Add Spotter",
 						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"unlockedByLocal": ["Regular","Veteran"],
 						"addsModels": 1
 					}
 				],
@@ -26063,6 +27622,9 @@
 					},
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Empire of Japan" }]			
 					},
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
@@ -26122,7 +27684,7 @@
 					{
 						"name": "Add Spotter",
 						"points": 10,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"unlockedByLocal": ["Regular","Veteran"],
 						"addsModels": 1
 					}
 				],
@@ -26138,6 +27700,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Empire of Japan" }]			
 					},
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
@@ -26176,7 +27741,8 @@
 						"addsPrefix": "Inexperienced ",
 						"points": 32,
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						],
 						"requireChooseOneKey": "morale"
 					},
@@ -26185,7 +27751,8 @@
 						"addsPrefix": "Regular ",
 						"points": 45,
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						],
 						"requireChooseOneKey": "morale"
 					},
@@ -26194,7 +27761,8 @@
 						"addsPrefix": "Veteran ",
 						"points": 59,
 						"availableIn": [
-							"Axis"
+							"Axis",
+							"Empire of Japan"
 						],
 						"requireChooseOneKey": "morale"
 					},
@@ -26216,6 +27784,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Empire of Japan" }]			
 					},
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
@@ -26278,8 +27849,20 @@
 					},
 					{
 						"name": "Gun Shield",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "gShield",
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Gun Shield",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"points": 5,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+						"availableIn": [
+							"Axis"
+						]
 					}
 				],
 				"keywords": [],
@@ -26453,6 +28036,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Empire of Japan" }]			
 					}
 				],
 				"points": 0,
@@ -26504,7 +28090,19 @@
 					{
 						"name": "Gun Shield",
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"points": 5
+						"points": 0,
+						"requireChooseOneKey": "gShield",
+						"availableIn": [
+							"Empire of Japan"
+						]
+					},
+					{
+						"name": "Gun Shield",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 5,
+						"availableIn": [
+							"Axis"
+						]
 					}
 				],
 				"keywords": [],
@@ -27013,6 +28611,202 @@
 				],
 				"keywords": ["Transport"],
 				"specialText": "Damage Value: 6+\n Wheeled Vehicle\n Transport: 3",
+				"equipment": []
+			},
+			{
+				"name": "Truck Transport (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 22,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 27,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 32,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Forward Facing Pintle Mounted LMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 15
+					}
+				],
+				"keywords": ["Transport","Tow"],
+				"specialText": "Damage Value: 6+\n Wheeled Vehicle\n Transport: 12\n Tow: L/M AT Gun, L Howitzer, L AA Gun",
+				"equipment": []
+			},
+			{
+				"name": "Truck Transport - Recce (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 22,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 27,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 32,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Forward Facing Pintle Mounted LMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 15
+					}
+				],
+				"keywords": ["Transport","Tow"],
+				"specialText": "Damage Value: 6+\n Wheeled Vehicle\n Transport: 12\n Tow: L/M AT Gun, L Howitzer, L AA Gun",
+				"equipment": []
+			},
+			{
+				"name": "Type 95 Lurogane Scout Car Transport (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 15,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 19,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 23,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Damage Value: 6+\n Wheeled Vehicle\n Transport: 4",
+				"equipment": []
+			},
+			{
+				"name": "Type 95 Lurogane Scout Car Transport - Recce (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 15,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 19,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 23,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Damage Value: 6+\n Wheeled Vehicle\n Transport: 4",
 				"equipment": []
 			},
 			{
@@ -28129,6 +29923,458 @@
 				"equipment": ["Hull Mounted Light Autocannon","Pintle Mounted German MMG"]
 			},
 			{
+				"name": "Type 6 Ke-Ho Light Walker",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 95,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 114,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Multi-Legged","Recce"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Hull Mounted Twin MMGs"]
+			},
+			{
+				"name": "Type 6 Ke-Ho Light Walker",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 95,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 114,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Multi-Legged","Recce"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Hull Mounted Twin MMGs"]
+			},
+			{
+				"name": "Type 6-Kai Ke-Ho Light Walker",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 95,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 114,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Forward Facing Light AT Gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Forward Facing Type 61 Light Shiboru Cannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 80,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Multi-Legged","Recce"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Hull Mounted Twin MMGs"]
+			},
+			{
+				"name": "Type 6-Kai Ke-Ho Light Walker",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 95,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 114,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Forward Facing Light AT Gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Forward Facing Type 61 Light Shiboru Cannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 80,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Multi-Legged","Recce"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Hull Mounted Twin MMGs"]
+			},
+			{
+				"name": "Type 7 Sasori Light Walker",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 95,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 114,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Multi-Legged","Recce"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Type 61 Light Shiboru Cannon","Hull Mounted Twin MMGs"]
+			},
+			{
+				"name": "Type 7 Sasori Light Walker",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					}
+				],
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 95,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 114,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Multi-Legged","Recce"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Type 61 Light Shiboru Cannon","Hull Mounted Twin MMGs"]
+			},
+			{
+				"name": "Inago Medium Battle Walker Walker",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 294,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Forward Facing Medium AT Gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Forward Facing Light Rocket System",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -40,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Two-Legged"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Forward Facing Twin Light Autocannon","Left and Right Arms"]
+			},
+			{
+				"name": "Inago Medium Battle Walker Walker",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 294,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Forward Facing Medium AT Gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Forward Facing Light Rocket System",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -40,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Two-Legged"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Forward Facing Twin Light Autocannon","Left and Right Arms"]
+			},
+			{
 				"name": "Pz.Kpfw. IV AusF. X Medium Tank (K'47)",
 				"validationKeys": ["TotalVehicle"],
 				"factions": [],
@@ -28769,7 +31015,7 @@
 					{
 						"name": "Turret Mounted Medium AT Gun",
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"points": -600,
+						"points": -60,
 						"requireChooseOneKey": "priWeapon"
 					}
 				],
@@ -28838,13 +31084,163 @@
 					{
 						"name": "Turret Mounted Medium AT Gun",
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"points": -600,
+						"points": -60,
 						"requireChooseOneKey": "priWeapon"
 					}
 				],
 				"keywords": ["Recce"],
 				"specialText": "Damage Value: 8+\n Wheeled Vehicle",
 				"equipment": []
+			},
+			{
+				"name": "Type 97-Kai Shiboru Chi-Ha Light Tank",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 172,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 215,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 258,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted Type 61 Light Shiboru Cannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Type 99 Shiboru Cannon with Coaxial MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 25,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Medium AT Gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -60,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": [],
+				"specialText": "Damage Value: 8+\n Tracked Vehicle",
+				"equipment": ["Hull Mounted MMG","Rear Facing Turret Mounted MMG"]
+			},
+			{
+				"name": "Type 97-Kai Shiboru Chi-Ha Light Tank",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 172,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 215,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 258,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted Type 61 Light Shiboru Cannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Type 99 Shiboru Cannon with Coaxial MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 25,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Medium AT Gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -60,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": [],
+				"specialText": "Damage Value: 8+\n Tracked Vehicle",
+				"equipment": ["Hull Mounted MMG","Rear Facing Turret Mounted MMG"]
 			},
 			{
 				"name": "Barbed Wire (BA)",
@@ -28856,6 +31252,144 @@
 				"options": [],
 				"keywords": [],
 				"equipment": ["Barbed Wire"]
+			},
+			{
+				"name": "Type 3-Kai Shiboru Chi-Nu Medium Tank",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 220,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 275,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 330,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted Type 99 Shiboru Cannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 25,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Medium AT Gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -80,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": [],
+				"specialText": "Damage Value: 9+\n Tracked Vehicle",
+				"equipment": ["Hull Mounted MMG","Rear Facing Turret Mounted MMG"]
+			},
+			{
+				"name": "Type 3-Kai Shiboru Chi-Nu Medium Tank",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Empire of Japan" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 220,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 275,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 330,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted Type 99 Shiboru Cannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 25,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Medium AT Gun",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -80,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": [],
+				"specialText": "Damage Value: 9+\n Tracked Vehicle",
+				"equipment": ["Hull Mounted MMG","Rear Facing Turret Mounted MMG"]
 			},
 			{
 				"name": "Anti-Tank Ditches (BA)",
