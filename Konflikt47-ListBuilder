@@ -2030,7 +2030,7 @@
 					{
 						"requiredChildren": [
 							{
-								"key": ["ASTeams"],
+								"key": "ASTeams",
 								"quantity": 2,
 								"message": "This platoon requires at least 2 Specialist or Advanced Teams"
 							}
@@ -3463,9 +3463,8 @@
 						"name": "NCO Light AT Gun",
 						"points": 35,
 						"increment": true,
-						"max": "parentModels",
+						"max": 1,
 						"maxKey": "gun",
-						"localLimit": 1,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"Axis"
@@ -3475,9 +3474,8 @@
 						"name": "Light AT Gun",
 						"points": 35,
 						"increment": true,
-						"max": "parentModels",
+						"max": 1,
 						"maxKey": "gun",
-						"localLimit": 2,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"Axis"
@@ -4358,6 +4356,21 @@
 						"all": [{ "in": "Artillery Platoon" }, { "in": "British Commonwealth" }]			
 					},
 					{
+						"all": [{ "in": "Assault Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
 						"all": [{ "in": "Assault Platoon" }, { "in": "Soviet Bloc" }]			
 					},
 					{
@@ -4973,7 +4986,7 @@
 						"name": "NCO Light AT Gun",
 						"points": 35,
 						"increment": true,
-						"max": "parentModels",
+						"max": 1,
 						"maxKey": "gun",
 						"localLimit": 1,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
@@ -4985,9 +4998,9 @@
 						"name": "Light AT Gun",
 						"points": 35,
 						"increment": true,
-						"max": "parentModels",
+						"max": 1,
 						"maxKey": "gun",
-						"localLimit": 2,
+						"localLimit": 1,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"Axis"
@@ -5222,12 +5235,24 @@
 			},
 			{
 				"name": "Platoon Commander with Battle-Frame Heavy Armor (K'47)",
-				"validationKeys": ["CompCommander"],
+				"validationKeys": ["PlatCommander"],
 				"order":1,
 				"factions": [],
 				"availableIn": [
 					{
-						"all": [{ "in": "HQ Platoon" }, { "in": "Empire of Japan" }]			
+						"all": [{ "in": "Assault Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Empire of Japan" }]			
 					}
 				],
 				"points": 0,
@@ -5353,12 +5378,24 @@
 			},
 			{
 				"name": "Platoon Commander with Assault-Frame Heavy Armor (K'47)",
-				"validationKeys": ["CompCommander"],
+				"validationKeys": ["PlatCommander"],
 				"order":1,
 				"factions": [],
 				"availableIn": [
 					{
-						"all": [{ "in": "HQ Platoon" }, { "in": "Empire of Japan" }]			
+						"all": [{ "in": "Assault Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Empire of Japan" }]			
 					}
 				],
 				"points": 0,
