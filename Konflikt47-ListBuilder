@@ -2142,11 +2142,7 @@
 								"key": "PlatCommander",
 								"quantity": 1,
 								"message": "This platoon requires at least 1 Platoon Commander."
-							}
-						]
-					},
-					{
-						"requiredChildren": [
+							},
 							{
 								"key": "ASTeams",
 								"quantity": 2,
@@ -2282,7 +2278,7 @@
 					{
 						"requiredChildren": [
 							{
-								"key": "AdvanceTeams",
+								"key": "BATeams",
 								"quantity": 1,
 								"message": "This platoon requires at least 1 Rifle Team"
 							},
@@ -3699,7 +3695,7 @@
 				"equipment": ["Assault Rifle"]
 			},
 			{
-				"name": "Stahltruppen Officer (K'47)",
+				"name": "Company Commander Stahltruppen Officer (K'47)",
 				"validationKeys": ["CompCommander"],
 				"order":1,
 				"riftDice": 1,
@@ -5196,7 +5192,7 @@
 				"equipment": ["Pistol"]
 			},
 			{
-				"name": "Schwertruppen Officer (K'47)",
+				"name": "Schwertruppen Platoon Commander (K'47)",
 				"validationKeys": ["PlatCommander"],
 				"factions": [],
 				"order": 1,
@@ -5379,7 +5375,7 @@
 				"equipment": ["Assault Rifle"]
 			},
 			{
-				"name": "Stahltruppen Officer (K'47)",
+				"name": "Stahltruppen Platoon Commander (K'47)",
 				"validationKeys": ["PlatCommander"],
 				"factions": [],
 				"order": 1,
@@ -9815,7 +9811,7 @@
 				"equipment": ["Light AT Gun"]
 			},
 			{
-				"name": "Automated Mobile Platform 'Hunter' - Special Platoon (K'47)",
+				"name": "Automated Mobile Platform 'Hunter' - Special Platoon (K'47) ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -16966,7 +16962,7 @@
 				"equipment": ["HMG"]
 			},
 			{
-				"name": "Automated Mobile Platform 'Lancer' (K'47)",
+				"name": "Automated Mobile Platform 'Lancer' (K'47) ",
 				"validationKeys": ["HeavyWepTeams"],
 				"factions": [],
 				"order": 1,
@@ -17056,7 +17052,7 @@
 				"equipment": ["Light Howtizer"]
 			},
 			{
-				"name": "Automated Mobile Platform 'Bombardier' (K'47)",
+				"name": "Automated Mobile Platform 'Bombardier' (K'47) ",
 				"validationKeys": ["HeavyWepTeams"],
 				"factions": [],
 				"order": 1,
@@ -17319,7 +17315,6 @@
 			{
 				"name": "Alarm Unit (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -17384,7 +17379,6 @@
 			{
 				"name": "Alarm Unit (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -17452,7 +17446,6 @@
 			{
 				"name": "Begleit StuG Escort Infantry (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -17576,7 +17569,6 @@
 			{
 				"name": "Begleit StuG Escort Infantry (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -17703,7 +17695,6 @@
 			{
 				"name": "Brandenburgers Special Forces (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -17813,7 +17804,6 @@
 			{
 				"name": "Brandenburgers Special Forces (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -17926,7 +17916,6 @@
 			{
 				"name": "Cossack Unit (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -18031,7 +18020,6 @@
 			{
 				"name": "Cossack Unit (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -18139,7 +18127,6 @@
 			{
 				"name": "Fallschirmjäger (Early) (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -18248,7 +18235,6 @@
 			{
 				"name": "Fallschirmjäger (Early) (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -18360,7 +18346,6 @@
 			{
 				"name": "Fallschirmjäger (Late) (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -18476,7 +18461,6 @@
 			{
 				"name": "Fallschirmjäger (Late) (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -18595,7 +18579,6 @@
 			{
 				"name": "Feldgendarmerie (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -18700,7 +18683,6 @@
 			{
 				"name": "Feldgendarmerie (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -18808,7 +18790,6 @@
 			{
 				"name": "Feldjäjerkorps (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -18940,7 +18921,6 @@
 			{
 				"name": "Feldjäjerkorps (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -19075,7 +19055,6 @@
 			{
 				"name": "French Milice (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -19152,7 +19131,6 @@
 			{
 				"name": "French Milice (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -19232,7 +19210,6 @@
 			{
 				"name": "Gebirgsjäger (Early) (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -19329,7 +19306,6 @@
 			{
 				"name": "Gebirgsjäger (Early) (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -19429,7 +19405,6 @@
 			{
 				"name": "Gebirgsjäger (Late) (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -19551,7 +19526,6 @@
 			{
 				"name": "Gebirgsjäger (Late) (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -19676,7 +19650,6 @@
 			{
 				"name": "Green Fallshirmjäger (Late) (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -19787,7 +19760,6 @@
 			{
 				"name": "Green Fallshirmjäger (Late) (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -19901,7 +19873,6 @@
 			{
 				"name": "SS Fallshirmjägers (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"compendium": true,
 				"order": 1,
@@ -20012,7 +19983,6 @@
 			{
 				"name": "SS Fallshirmjägers (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"compendium": true,
 				"order": 1,
@@ -20126,7 +20096,6 @@
 			{
 				"name": "Green Grenadiers (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -20225,7 +20194,6 @@
 			{
 				"name": "Green Grenadiers (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -20327,7 +20295,6 @@
 			{
 				"name": "Heer Grenadiers (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -20438,7 +20405,6 @@
 			{
 				"name": "Heer Grenadiers (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -20546,7 +20512,6 @@
 			{
 				"name": "Heer Infantry (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -20649,7 +20614,6 @@
 			{
 				"name": "Heer Infantry (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -20755,7 +20719,6 @@
 			{
 				"name": "Heer Veteran Grenadiers (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -20874,7 +20837,6 @@
 			{
 				"name": "Heer Veteran Grenadiers (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -20990,7 +20952,6 @@
 			{
 				"name": "Hitler Youth (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -21071,7 +21032,6 @@
 			{
 				"name": "Hitler Youth (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -21155,7 +21115,6 @@
 			{
 				"name": "Kradschützen (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -21263,7 +21222,6 @@
 			{
 				"name": "Kradschützen (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -21368,7 +21326,6 @@
 			{
 				"name": "Kriegsmarine (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -21461,7 +21418,6 @@
 			{
 				"name": "Kriegsmarine (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -21557,7 +21513,6 @@
 			{
 				"name": "Luftwaffe Field Divisions (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -21659,7 +21614,6 @@
 			{
 				"name": "Luftwaffe Field Divisions (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -21758,7 +21712,6 @@
 			{
 				"name": "Ostruppen (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -21842,7 +21795,6 @@
 			{
 				"name": "Ostruppen (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -21929,7 +21881,6 @@
 			{
 				"name": "Panzergrenadiers (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -22071,7 +22022,6 @@
 			{
 				"name": "Panzergrenadiers (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -22210,7 +22160,6 @@
 			{
 				"name": "Replacement Army Unit (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -22294,7 +22243,6 @@
 			{
 				"name": "Replacement Army Unit (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -22381,7 +22329,6 @@
 			{
 				"name": "ROA (Russian Liberation Army) Unit (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -22474,7 +22421,6 @@
 			{
 				"name": "ROA (Russian Liberation Army) Unit (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -22564,7 +22510,6 @@
 			{
 				"name": "Sicherungs (Security) Battalion Unit (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -22648,7 +22593,6 @@
 			{
 				"name": "Sicherungs (Security) Battalion Unit (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -22735,7 +22679,6 @@
 			{
 				"name": "Spähtruppen (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -22836,7 +22779,6 @@
 			{
 				"name": "Spähtruppen (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -22961,7 +22903,6 @@
 			{
 				"name": "Strafbattalion Penal Unit (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -23059,7 +23000,6 @@
 			{
 				"name": "Strafbattalion Penal Unit (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -23160,7 +23100,6 @@
 			{
 				"name": "Volksgrenadier (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -23272,7 +23211,6 @@
 			{
 				"name": "Volksgrenadier (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -23381,7 +23319,6 @@
 			{
 				"name": "Volkssturm (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -23474,7 +23411,6 @@
 			{
 				"name": "Volkssturm (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -23564,7 +23500,6 @@
 			{
 				"name": "Waffen-SS Cavalry (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -23680,7 +23615,6 @@
 			{
 				"name": "Waffen-SS Cavalry (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -23793,7 +23727,6 @@
 			{
 				"name": "Waffen-SS Infantry (Early) (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -23885,7 +23818,6 @@
 			{
 				"name": "Waffen-SS Infantry (Early) (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -23980,7 +23912,6 @@
 			{
 				"name": "Waffen-SS Infantry (Late) (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -24126,7 +24057,6 @@
 			{
 				"name": "Waffen-SS Infantry (Late) (BA)",
 				"baUnits": true,
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -24401,7 +24331,6 @@
 			},
 			{
 				"name": "Volksgrenadier Squad (K'47)",
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -24435,7 +24364,12 @@
 				"unlockKey": "Columnist",
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BTeam",
 						"limit": 2,
 						"perParent": true
 					}
@@ -24570,8 +24504,8 @@
 				"equipment": ["Rifles"]
 			},
 			{
-				"name": "Volksgrenadier Squad (K'47)",
-				"validationKeys": ["RifleTeams"],
+				"name": "Volksgrenadier Squad (K'47) ",
+				"validationKeys": ["BATeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -24602,7 +24536,7 @@
 				"unlockKey": "Columnist",
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BTeam",
 						"limit": 4,
 						"perParent": true
 					}
@@ -24737,7 +24671,7 @@
 				"equipment": ["Rifles"]
 			},
 			{
-				"name": "Volksgrenadier Squad (Engineers) (K'47)",
+				"name": "Volksgrenadier Squad (K'47)  ",
 				"validationKeys": ["EngineerTeams"],
 				"factions": [],
 				"order": 1,
@@ -24904,8 +24838,8 @@
 				"equipment": ["Rifles"]
 			},
 			{
-				"name": "Shocktrooper Squad (K'47)",
-				"validationKeys": ["RifleTeams"],
+				"name": "Shocktrooper Squad (K'47) ",
+				"validationKeys": ["BATeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -24936,7 +24870,7 @@
 				"unlockKey": "Columnist",
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -25013,7 +24947,6 @@
 			},
 			{
 				"name": "Shocktrooper Squad (K'47)",
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -25050,7 +24983,12 @@
 				"unlockKey": "Columnist",
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BTeam",
 						"limit": 2,
 						"perParent": true
 					}
@@ -25126,8 +25064,8 @@
 				"equipment": ["Assault Rifles","Advanced Body Armor"]
 			},
 			{
-				"name": "Legion Aquila Squad (K'47)",
-				"validationKeys": ["RifleTeams"],
+				"name": "Legion Aquila Squad (K'47) ",
+				"validationKeys": ["BATeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -25157,7 +25095,7 @@
 				"sortPriority": 4,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -25234,7 +25172,6 @@
 			},
 			{
 				"name": "Legion Aquila Squad (K'47)",
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -25267,7 +25204,12 @@
 				"sortPriority": 4,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BTeam",
 						"limit": 2,
 						"perParent": true
 					}
@@ -25343,7 +25285,7 @@
 				"equipment": ["Rifles","Advanced Body Armor"]
 			},
 			{
-				"name": "Legion Aquila Squad (Engineers) (K'47)",
+				"name": "Legion Aquila Squad (K'47)  ",
 				"validationKeys": ["EngineerTeams"],
 				"factions": [],
 				"order": 1,
@@ -25493,7 +25435,12 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BATeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -25587,7 +25534,7 @@
 				"equipment": ["Assault Rifles"]
 			},
 			{
-				"name": "Schwertruppen Squad (K'47)",
+				"name": "Schwertruppen Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -25618,7 +25565,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
 						"limit": 2,
 						"perParent": true
 					}
@@ -25712,7 +25659,7 @@
 				"equipment": ["Assault Rifles"]
 			},
 			{
-				"name": "Schwertruppen Squad (Engineers) (K'47)",
+				"name": "Schwertruppen Squad (K'47)  ",
 				"validationKeys": ["EngineerTeams"],
 				"factions": [],
 				"order": 1,
@@ -25871,7 +25818,12 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BATeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -25915,7 +25867,7 @@
 				"equipment": ["Assault Rifles","Ballistic Shield"]
 			},
 			{
-				"name": "Schwertruppen Squad (K'47)",
+				"name": "Schwertruppen Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -25946,7 +25898,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
 						"limit": 2,
 						"perParent": true
 					}
@@ -26025,7 +25977,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -26105,7 +26057,7 @@
 				"equipment": ["StG 44Zs"]
 			},
 			{
-				"name": "Stahltruppen Squad (K'47)",
+				"name": "Stahltruppen Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -26137,7 +26089,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -26252,7 +26204,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -26305,7 +26257,7 @@
 				"equipment": ["Assault Rifles"]
 			},
 			{
-				"name": "Fallschirmjäger Falke Squad (K'47)",
+				"name": "Fallschirmjäger Falke Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -26337,7 +26289,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -26425,7 +26377,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -26478,7 +26430,7 @@
 				"equipment": ["SMGs"]
 			},
 			{
-				"name": "Paracadutsti Falko Squad (K'47)",
+				"name": "Paracadutsti Falko Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -26510,7 +26462,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -26598,7 +26550,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -26624,7 +26576,7 @@
 				"equipment": ["SMGs"]
 			},
 			{
-				"name": "Totenkorps Squad (K'47)",
+				"name": "Totenkorps Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -26656,8 +26608,66 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 126,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 21,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 6,
+						"addsModels": 1
+					}
+				],
+				"keywords": ["Fearless","Horror","Infiltrator","Limited Intelligence","Lumbering","Tough FIghters"],
+				"specialText": "6 Totenkorps",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Totenkorps Squad (K'47)  ",
+				"validationKeys": ["Totenkorps"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Totenrotte Platoon"	}, { "in": "Axis" }]
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Fists",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Totenkorps",
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -26717,7 +26727,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -26743,7 +26753,7 @@
 				"equipment": ["Teeth and Claws"]
 			},
 			{
-				"name": "Schreckwulfen Squad (K'47)",
+				"name": "Schreckwulfen Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -26775,7 +26785,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -26836,7 +26846,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -26862,7 +26872,7 @@
 				"equipment": ["Talons"]
 			},
 			{
-				"name": "Nachtjäger Squad (K'47)",
+				"name": "Nachtjäger Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -26894,7 +26904,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -26955,7 +26965,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -27044,7 +27054,7 @@
 				"equipment": ["SMGs"]
 			},
 			{
-				"name": "Nachtalben Squad (K'47)",
+				"name": "Nachtalben Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -27076,7 +27086,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -27165,7 +27175,7 @@
 				"equipment": ["SMGs"]
 			},
 			{
-				"name": "Nachtalben Squad (Engineers) (K'47)",
+				"name": "Nachtalben Squad (K'47)   ",
 				"validationKeys": ["EngineerTeams"],
 				"factions": [],
 				"order": 1,
@@ -27287,7 +27297,6 @@
 			},
 			{
 				"name": "Rifle Squad (K'47)",
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"riftDice": 0,
@@ -27321,7 +27330,12 @@
 				"sortPriority": 4,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BTeam",
 						"limit": 2,
 						"perParent": true
 					}
@@ -27465,14 +27479,14 @@
 				"equipment": ["Rifles"]
 			},
 			{
-				"name": "Rifle Squad (K'47)",
-				"validationKeys": ["RifleTeams"],
+				"name": "Rifle Squad (K'47) ",
+				"validationKeys": ["BATeams"],
 				"factions": [],
 				"order": 1,
 				"riftDice": 0,
 				"availableIn": [
 					{
-						"all": [{ "in": "Assault Platoon"	}, { "in": "British Commonwealth" }]			
+						"all": [{ "in": "Recce Platoon"	}, { "in": "British Commonwealth" }]			
 					}
 				],
 				"points": 0,
@@ -27497,7 +27511,7 @@
 				"sortPriority": 4,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -27641,7 +27655,7 @@
 				"equipment": ["Rifles"]
 			},
 			{
-				"name": "Rifle Squad (Engineers) (K'47)",
+				"name": "Rifle Squad (K'47)  ",
 				"validationKeys": ["EngineerTeams"],
 				"factions": [],
 				"order": 1,
@@ -27826,7 +27840,7 @@
 				"equipment": ["Rifles"]
 			},
 			{
-				"name": "Galahad Armored Infantry Squad (K'47)",
+				"name": "Galahad Armored Infantry Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -27858,7 +27872,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
 						"limit": 2,
 						"perParent": true
 					}
@@ -27969,7 +27983,12 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BATeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -28045,7 +28064,7 @@
 				"equipment": ["LMGs"]
 			},
 			{
-				"name": "Galahad Armored Infantry Squad (Engineers) (K'47)",
+				"name": "Galahad Armored Infantry Squad (K'47)  ",
 				"validationKeys": ["EngineerTeam"],
 				"factions": [],
 				"order": 1,
@@ -28153,7 +28172,7 @@
 				"equipment": ["LMGs"]
 			},
 			{
-				"name": "Italian Bersaglieri Squad (K'47)",
+				"name": "Italian Bersaglieri Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -28185,7 +28204,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
 						"limit": 2,
 						"perParent": true
 					}
@@ -28255,7 +28274,12 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BATeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -28325,7 +28349,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -28360,15 +28384,79 @@
 				"equipment": ["MMGs"]
 			},
 			{
-				"name": "MK I Automated Infantry with MMGs (K'47)",
-				"validationKeys": ["ASTeams","lilGuy"],
+				"name": "MK I Automated Infantry with MMGs (K'47) ",
+				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
 				"riftDice": 1,
 				"availableIn": [
 					{
 						"all": [{ "in": "Assault Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
 					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "MMGs",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 175,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 35,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Close Combat Blades for MMGs",
+						"points": 3,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"British Commonwealth"
+						]
+					}
+				],
+				"keywords": ["Augmented","Computational Systems","Fearless","First Off the Line","Large","Lumbering"],
+				"specialText": "5 Automations",
+				"equipment": ["MMGs"]
+			},
+			{
+				"name": "MK I Automated Infantry with MMGs (K'47)  ",
+				"validationKeys": ["lilGuy"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
 					{
 						"all": [{ "in": "Automated Infantry Platoon"	}, { "in": "British Commonwealth" }]			
 					}
@@ -28395,7 +28483,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "lilGuy",
 						"limit": 4,
 						"perParent": true
 					}
@@ -28465,7 +28553,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -28500,7 +28588,7 @@
 				"equipment": ["HMGs"]
 			},
 			{
-				"name": "MK I Automated Infantry with HMGs (K'47)",
+				"name": "MK I Automated Infantry with HMGs (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -28508,7 +28596,71 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Assault Platoon"	}, { "in": "British Commonwealth" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
 					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "HMGs",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 225,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 45,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Close Combat Blades for MMGs",
+						"points": 3,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"British Commonwealth"
+						]
+					}
+				],
+				"keywords": ["Augmented","Computational Systems","Fearless","First Off the Line","Large","Lumbering"],
+				"specialText": "5 Automations",
+				"equipment": ["HMGs"]
+			},
+			{
+				"name": "MK I Automated Infantry with HMGs (K'47)  ",
+				"validationKeys": ["lilGuy"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
 					{
 						"all": [{ "in": "Automated Infantry Platoon"	}, { "in": "British Commonwealth" }]			
 					}
@@ -28535,7 +28687,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "lilGuy",
 						"limit": 4,
 						"perParent": true
 					}
@@ -28605,7 +28757,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -28659,7 +28811,7 @@
 				"equipment": ["Light Autocannons"]
 			},
 			{
-				"name": "MK II Heavy Automated Infantry with Light Autocannons (K'47)",
+				"name": "MK II Heavy Automated Infantry with Light Autocannons (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -28691,7 +28843,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -28745,8 +28897,8 @@
 				"equipment": ["Light Autocannons"]
 			},
 			{
-				"name": "MK II Heavy Automated Infantry with Light Autocannons (K'47)",
-				"validationKeys": ["ASTeams","bigGuy"],
+				"name": "MK II Heavy Automated Infantry with Light Autocannons (K'47)  ",
+				"validationKeys": ["bigGuy"],
 				"factions": [],
 				"order": 1,
 				"riftDice": 1,
@@ -28777,7 +28929,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "bigGuy",
 						"limit": 2,
 						"perParent": true
 					}
@@ -28866,7 +29018,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -28896,7 +29048,7 @@
 				"equipment": ["Heavy Autocannons"]
 			},
 			{
-				"name": "MK II Heavy Automated Infantry with Heavy Autocannons (K'47)",
+				"name": "MK II Heavy Automated Infantry with Heavy Autocannons (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -28928,7 +29080,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -28958,8 +29110,8 @@
 				"equipment": ["Heavy Autocannons"]
 			},
 			{
-				"name": "MK II Heavy Automated Infantry with Heavy Autocannons (K'47)",
-				"validationKeys": ["ASTeams","bigGuy"],
+				"name": "MK II Heavy Automated Infantry with Heavy Autocannons (K'47)  ",
+				"validationKeys": ["bigGuy"],
 				"factions": [],
 				"order": 1,
 				"riftDice": 1,
@@ -28990,7 +29142,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "bigGuy",
 						"limit": 2,
 						"perParent": true
 					}
@@ -29055,7 +29207,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -29085,7 +29237,7 @@
 				"equipment": ["M21 Light Tesla Cannons"]
 			},
 			{
-				"name": "MK II Heavy Automated Infantry with M21 Light Tesla Cannons (K'47)",
+				"name": "MK II Heavy Automated Infantry with M21 Light Tesla Cannons (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -29117,7 +29269,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -29147,8 +29299,8 @@
 				"equipment": ["M21 Light Tesla Cannons"]
 			},
 			{
-				"name": "MK II Heavy Automated Infantry with M21 Light Tesla Cannons (K'47)",
-				"validationKeys": ["ASTeams","bigGuy"],
+				"name": "MK II Heavy Automated Infantry with M21 Light Tesla Cannons (K'47)  ",
+				"validationKeys": ["bigGuy"],
 				"factions": [],
 				"order": 1,
 				"riftDice": 1,
@@ -29179,7 +29331,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "bigGuy",
 						"limit": 2,
 						"perParent": true
 					}
@@ -29244,7 +29396,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -29303,7 +29455,7 @@
 				"equipment": ["Assault Rifles"]
 			},
 			{
-				"name": "British Grenadiers (K'47)",
+				"name": "British Grenadiers (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -29335,7 +29487,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -29434,7 +29586,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -29480,7 +29632,7 @@
 				"equipment": ["Pistols"]
 			},
 			{
-				"name": "Cerberus Squad (K'47)",
+				"name": "Cerberus Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -29512,7 +29664,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -29553,7 +29705,6 @@
 			},
 			{
 				"name": "Imperial Japanese Infantry Squad (K'47)",
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -29586,7 +29737,12 @@
 				"sortPriority": 4,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BTeam",
 						"limit": 2,
 						"perParent": true
 					}
@@ -29730,8 +29886,7 @@
 				"equipment": ["Rifles"]
 			},
 			{
-				"name": "Imperial Japanese Infantry Squad (K'47)",
-				"validationKeys": ["RifleTeams"],
+				"name": "Imperial Japanese Infantry Squad (K'47) ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -29761,7 +29916,7 @@
 				"sortPriority": 4,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -29905,7 +30060,7 @@
 				"equipment": ["Rifles"]
 			},
 			{
-				"name": "Imperial Japanese Infantry Squad (Engineers) (K'47)",
+				"name": "Imperial Japanese Infantry Squad (K'47)  ",
 				"validationKeys": ["EngineerTeams"],
 				"factions": [],
 				"order": 1,
@@ -30090,7 +30245,6 @@
 			},
 			{
 				"name": "Imperial Japanese Shiboru Rifle Squad (K'47)",
-				"validationKeys": ["RifleTeams"],
 				"factions": [],
 				"order": 1,
 				"riftDice": 1,
@@ -30124,7 +30278,12 @@
 				"sortPriority": 4,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BTeam",
 						"limit": 2,
 						"perParent": true
 					}
@@ -30185,8 +30344,7 @@
 				"equipment": ["Type 10 Shiboru Rifle"]
 			},
 			{
-				"name": "Imperial Japanese Shiboru Rifle Squad (K'47)",
-				"validationKeys": ["RifleTeams"],
+				"name": "Imperial Japanese Shiboru Rifle Squad (K'47) ",
 				"factions": [],
 				"order": 1,
 				"riftDice": 1,
@@ -30218,7 +30376,7 @@
 				"unlockKey": "Columnist",
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BATeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -30279,7 +30437,7 @@
 				"equipment": ["Type 10 Shiboru Rifle"]
 			},
 			{
-				"name": "Imperial Japanese Shiboru Rifle Squad (Engineers) (K'47)",
+				"name": "Imperial Japanese Shiboru Rifle Squad (K'47)  ",
 				"validationKeys": ["EngineerTeams"],
 				"factions": [],
 				"order": 1,
@@ -30408,8 +30566,13 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
-						"limit": 2,
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BATeams",
+						"limit": 4,
 						"perParent": true
 					}
 				],
@@ -30478,7 +30641,7 @@
 				"equipment": ["SMGs"]
 			},
 			{
-				"name": "Battle-Frame Armored SMG Squad (K'47)",
+				"name": "Battle-Frame Armored SMG Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -30511,8 +30674,8 @@
 				"unlockKey": "Columnist",
 				"limits": [
 					{
-						"key": "Rifle Team",
-						"limit": 4,
+						"key": "BATeams",
+						"limit": 2,
 						"perParent": true
 					}
 				],
@@ -30616,8 +30779,13 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
-						"limit": 2,
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BATeams",
+						"limit": 4,
 						"perParent": true
 					}
 				],
@@ -30686,7 +30854,7 @@
 				"equipment": ["Type 10 Shiboru Rifles"]
 			},
 			{
-				"name": "Battle-Frame Armored Shiboru Rifle Squad (K'47)",
+				"name": "Battle-Frame Armored Shiboru Rifle Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -30718,8 +30886,8 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
-						"limit": 4,
+						"key": "BATeams",
+						"limit": 2,
 						"perParent": true
 					}
 				],
@@ -30828,8 +30996,13 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
-						"limit": 2,
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BATeams",
+						"limit": 4,
 						"perParent": true
 					}
 				],
@@ -30881,7 +31054,7 @@
 				"equipment": ["Type 10 Shiboru Rifles"]
 			},
 			{
-				"name": "Assault-Frame Armored Shiboru Rifle Squad (K'47)",
+				"name": "Assault-Frame Armored Shiboru Rifle Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -30918,8 +31091,8 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
-						"limit": 4,
+						"key": "BATeams",
+						"limit": 2,
 						"perParent": true
 					}
 				],
@@ -31011,8 +31184,13 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
-						"limit": 2,
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BATeams",
+						"limit": 4,
 						"perParent": true
 					}
 				],
@@ -31064,7 +31242,7 @@
 				"equipment": ["SMGs"]
 			},
 			{
-				"name": "Assault-Frame Armored SMG Squad (K'47)",
+				"name": "Assault-Frame Armored SMG Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -31101,8 +31279,8 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
-						"limit": 4,
+						"key": "BATeams",
+						"limit": 2,
 						"perParent": true
 					}
 				],
@@ -31189,7 +31367,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -31215,7 +31393,7 @@
 				"equipment": ["Fists"]
 			},
 			{
-				"name": "Shibito Squad (K'47)",
+				"name": "Shibito Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -31247,7 +31425,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -31308,7 +31486,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -31360,7 +31538,7 @@
 				"equipment": ["Type 10 Shiboru Rifle"]
 			},
 			{
-				"name": "Ghost Attack Shiboru Rifle Squad (K'47)",
+				"name": "Ghost Attack Shiboru Rifle Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -31392,7 +31570,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -31444,7 +31622,7 @@
 				"equipment": ["Type 10 Shiboru Rifle"]
 			},
 			{
-				"name": "Ghost Attack Shiboru Rifle Squad (Engineers) (Engineers) (K'47)",
+				"name": "Ghost Attack Shiboru Rifle Squad (K'47)  ",
 				"validationKeys": ["EngineerTeams"],
 				"factions": [],
 				"order": 1,
@@ -31563,7 +31741,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "STeams",
 						"limit": 1,
 						"perParent": true
 					}
@@ -31615,7 +31793,7 @@
 				"equipment": ["SMGs"]
 			},
 			{
-				"name": "Ghost Attack SMGs Squad (K'47)",
+				"name": "Ghost Attack SMGs Squad (K'47) ",
 				"validationKeys": ["ASTeams"],
 				"factions": [],
 				"order": 1,
@@ -31647,7 +31825,7 @@
 				"sortPriority": 3,
 				"limits": [
 					{
-						"key": "Rifle Team",
+						"key": "BASTeams",
 						"limit": 4,
 						"perParent": true
 					}
@@ -31699,7 +31877,7 @@
 				"equipment": ["SMGs"]
 			},
 			{
-				"name": "Ghost Attack SMGs Squad (Engineers) (K'47)",
+				"name": "Ghost Attack SMGs Squad (K'47)  ",
 				"validationKeys": ["EngineerTeams"],
 				"factions": [],
 				"order": 1,
@@ -33577,7 +33755,7 @@
 				"equipment": ["Turret Mounted Light AT Gun","Turret Mounted Coaxial Light Autocannon"]
 			},
 			{
-				"name": "Pz.Kpfl. 1 AusF. A Spinne Light Walker (K'47)",
+				"name": "Pz.Kpfl. 1 AusF. A Spinne Light Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -33664,7 +33842,7 @@
 				"equipment": ["Turret Mounted Infantry Flamethrower"]
 			},
 			{
-				"name": "Pz.Kpfl. 1 AusF. B FlammenSpinne Light Walker (K'47)",
+				"name": "Pz.Kpfl. 1 AusF. B FlammenSpinne Light Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -33782,7 +33960,7 @@
 				"equipment": ["Hull Mounted German MMG"]
 			},
 			{
-				"name": "Pz.Kpfl. II VogelSpinne Light Walker (K'47)",
+				"name": "Pz.Kpfl. II VogelSpinne Light Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -33908,7 +34086,7 @@
 				"equipment": ["Hull Mounted German MMG","Left and Right Arms"]
 			},
 			{
-				"name": "Sd.Kfz. 501/1 Nachtzehrer Light Walker (K'47)",
+				"name": "Sd.Kfz. 501/1 Nachtzehrer Light Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -34056,7 +34234,7 @@
 				"equipment": ["Hull Mounted German MMG","Left and Right Arms Mounted Vehicle Flamethrower"]
 			},
 			{
-				"name": "Sd.Kfz. 501/4 InfernoSpinne Light Walker (K'47)",
+				"name": "Sd.Kfz. 501/4 InfernoSpinne Light Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -34181,7 +34359,7 @@
 				"equipment": ["Hull Mounted German MMG"]
 			},
 			{
-				"name": "Panzer. IV AusF. X Mit Nachtüstsatz Oanzerläufer Medium Walker (K'47)",
+				"name": "Panzer. IV AusF. X Mit Nachtüstsatz Oanzerläufer Medium Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -34329,7 +34507,7 @@
 				"equipment": ["Left and Right Arms"]
 			},
 			{
-				"name": "Pz.Kpfl. VII Heuschrecke Medium Walker (K'47)",
+				"name": "Pz.Kpfl. VII Heuschrecke Medium Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -34458,7 +34636,7 @@
 				"equipment": ["Turret Mounted Heavy Howitzer","Turret Mounted Coaxial German MMG","Hull Mounted Light Autocannon","Pintle Mounted German MMG"]
 			},
 			{
-				"name": "Pz.Kpfl. V AusF. A Thor Super Heavy Walker (K'47)",
+				"name": "Pz.Kpfl. V AusF. A Thor Super Heavy Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -34580,7 +34758,7 @@
 				"equipment": ["Hull Mounted Light Autocannon","Pintle Mounted German MMG"]
 			},
 			{
-				"name": "Pz.Kpfl. V AusF. B Wotan Super Heavy Walker (K'47)",
+				"name": "Pz.Kpfl. V AusF. B Wotan Super Heavy Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -34713,7 +34891,7 @@
 				"equipment": ["Forward Facing HMG","Left Arm","Right Arm with MMG"]
 			},
 			{
-				"name": "Guardian MK I Light Walker (K'47)",
+				"name": "Guardian MK I Light Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -34845,7 +35023,7 @@
 				"equipment": ["Left Arm","Right Arm with MMG"]
 			},
 			{
-				"name": "Jackal MK I Light Jump Walker (K'47)",
+				"name": "Jackal MK I Light Jump Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -34979,7 +35157,7 @@
 				"equipment": ["Forward Facing Twin Light Autocannon","Hull Mounted HMG","Left and Right Arms with HMGs"]
 			},
 			{
-				"name": "Mudskipper MK I Medium Jump Walker (K'47)",
+				"name": "Mudskipper MK I Medium Jump Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -35092,7 +35270,7 @@
 				"equipment": ["Hull Mounted M17 Tesla Cannon","Forward Facing Medium Rocket System"]
 			},
 			{
-				"name": "Percival Medium Assault Walker (K'47)",
+				"name": "Percival Medium Assault Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -35193,7 +35371,7 @@
 				"equipment": ["Hull Mounted Heavy Autocannon","Hull Mounted HMGs"]
 			},
 			{
-				"name": "Hornet Medium Support Walker (K'47)",
+				"name": "Hornet Medium Support Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -35294,7 +35472,7 @@
 				"equipment": ["Hull Mounted Heavy AT Gun","Hull Mounted MMGs","Left Arm with Twin HMGs","Right Arm"]
 			},
 			{
-				"name": "Merlin Heavy Walker (K'47)",
+				"name": "Merlin Heavy Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -35389,7 +35567,7 @@
 				"equipment": ["Hull Mounted Twin MMGs"]
 			},
 			{
-				"name": "Type 6 Ke-Ho Light Walker (K'47)",
+				"name": "Type 6 Ke-Ho Light Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -35502,7 +35680,7 @@
 				"equipment": ["Hull Mounted Twin MMGs"]
 			},
 			{
-				"name": "Type 6-Kai Ke-Ho Light Walker (K'47)",
+				"name": "Type 6-Kai Ke-Ho Light Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -35616,7 +35794,7 @@
 				"equipment": ["Type 61 Light Shiboru Cannon","Hull Mounted Twin MMGs"]
 			},
 			{
-				"name": "Type 7 Sasori Light Walker (K'47)",
+				"name": "Type 7 Sasori Light Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -35729,7 +35907,7 @@
 				"equipment": ["Forward Facing Twin Light Autocannon","Left and Right Arms"]
 			},
 			{
-				"name": "Inago Medium Battle Walker (K'47)",
+				"name": "Inago Medium Battle Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
