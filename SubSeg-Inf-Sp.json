@@ -1,0 +1,228 @@
+
+			{
+				"name": "Stahltruppen Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Axis" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Axis" }]
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "StG 44Zs",
+						"quantity": 3
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "STeams",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 90,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 30,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 3,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO LMGs",
+						"points": 8,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "LMGs",
+						"points": 8,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 5
+					},
+					{
+						"name": "Light AT Gun",
+						"points": 35,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Panzerfausts",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Fanatics",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					}
+				],
+				"keywords": ["Large","Augmented","Wide Formation"],
+				"specialText": "1 NCO\n 2 Riflemen",
+				"equipment": ["StG 44Zs"]
+			},
+			{
+				"name": "Stahltruppen Squad (K'47) ",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Axis" }]
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "StG 44Zs",
+						"quantity": 3
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 90,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 30,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 3,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO LMGs",
+						"points": 8,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "LMGs",
+						"points": 8,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 5
+					},
+					{
+						"name": "Light AT Gun",
+						"points": 35,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Panzerfausts",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Fanatics",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					}
+				],
+				"keywords": ["Large","Augmented","Wide Formation"],
+				"specialText": "1 NCO\n 2 Riflemen",
+				"equipment": ["StG 44Zs"]
+			},

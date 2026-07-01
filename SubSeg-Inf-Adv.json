@@ -1,0 +1,159 @@
+
+			{
+				"name": "Schwertruppen Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Axis" }]
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Axis" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Assault Rifles & Ballistic Shield",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 125,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 25,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Fanatics",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Assault Rifles","Ballistic Shield"]
+			},
+			{
+				"name": "Schwertruppen Squad (K'47) ",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Axis" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Assault Rifles & Ballistic Shield",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BATeams",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 125,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 25,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Fanatics",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Assault Rifles","Ballistic Shield"]
+			},

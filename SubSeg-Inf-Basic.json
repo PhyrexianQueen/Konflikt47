@@ -1,0 +1,222 @@
+
+			{
+				"name": "Legion Aquila Squad (K'47) ",
+				"validationKeys": ["BATeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Axis" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Rifles",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 75,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 12,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "LMGs",
+						"points": 9,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Panzerfausts",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Rifles","Advanced Body Armor"]
+			},
+			{
+				"name": "Legion Aquila Squad (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Axis" }]
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Axis" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Rifles",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BTeam",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 75,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 12,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "LMGs",
+						"points": 9,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Panzerfausts",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Axis"
+						]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Rifles","Advanced Body Armor"]
+			},
