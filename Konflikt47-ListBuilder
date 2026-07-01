@@ -94,6 +94,7 @@
 				"label": "Platoon",
 				"type": "main",
 				"dataSource": "platoons",
+				 "sortMainOptionsAlphabetically": false,
 				"children": [
 					{
 						"propertyName": "units",
