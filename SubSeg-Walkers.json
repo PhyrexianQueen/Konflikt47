@@ -1,6 +1,6 @@
 
 			{
-				"name": "Pz.Kpfl. V AusF. B Wotan Super Heavy Walker",
+				"name": "Pz.Kpfl. 1 AusF. A Spinne Light Walker (K'47)",
 				"validationKeys": ["TotalVehicle"],
 				"factions": [],
 				"order": 1,
@@ -12,17 +12,10 @@
 				"points": 0,
 				"models": 1,
 				"sortPriority": 11,
-				"localQuantityDisplay": [
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					}
-				],
 				"limits": [
 					{
 						"key": "Tanks",
-						"limit": 4,
+						"limit": 5,
 						"perParent": true
 					}
 				],
@@ -30,44 +23,27 @@
 					{
 						"name": "Regular",
 						"addsPrefix": "Regular ",
-						"points": 500,
+						"points": 135,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"addsPrefix": "Veteran ",
-						"points": 600,
+						"points": 162,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Command Vehicle",
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"points": 10
-					},
-					{
-						"name": "Turret Mounted Schienenkanone",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"points": 0,
-						"requireChooseOneKey": "priWeapon"
-					},
-					{
-						"name": "Turret Mounted Super Heavy AT Gun with Coaxial German MMG",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"points": -35,
-						"requireChooseOneKey": "priWeapon"
-					},
-					{
-						"name": "Reinforced Front Armor",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"points": 55
 					}
 				],
-				"keywords": ["Multi-Legged","Slow"],
-				"specialText": "Damage Value: 9+",
-				"equipment": ["Hull Mounted Light Autocannon","Pintle Mounted German MMG"]
+				"keywords": ["Multi-Legged","Open Topped","Recce"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Turret Mounted Light AT Gun","Turret Mounted Coaxial Light Autocannon"]
 			},
 			{
-				"name": "Pz.Kpfl. V AusF. B Wotan Super Heavy Walker",
+				"name": "Pz.Kpfl. 1 AusF. A Spinne Light Walker (K'47) ",
 				"validationKeys": ["Walker"],
 				"factions": [],
 				"order": 1,
@@ -79,13 +55,6 @@
 				"points": 0,
 				"models": 1,
 				"sortPriority": 11,
-				"localQuantityDisplay": [
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					}
-				],
 				"limits": [
 					{
 						"key": "Walker",
@@ -97,39 +66,22 @@
 					{
 						"name": "Regular",
 						"addsPrefix": "Regular ",
-						"points": 500,
+						"points": 135,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"addsPrefix": "Veteran ",
-						"points": 600,
+						"points": 162,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Command Vehicle",
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"points": 10
-					},
-					{
-						"name": "Turret Mounted Schienenkanone",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"points": 0,
-						"requireChooseOneKey": "priWeapon"
-					},
-					{
-						"name": "Turret Mounted Super Heavy AT Gun with Coaxial German MMG",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"points": -35,
-						"requireChooseOneKey": "priWeapon"
-					},
-					{
-						"name": "Reinforced Front Armor",
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"points": 55
 					}
 				],
-				"keywords": ["Multi-Legged","Slow"],
-				"specialText": "Damage Value: 9+",
-				"equipment": ["Hull Mounted Light Autocannon","Pintle Mounted German MMG"]
+				"keywords": ["Multi-Legged","Open Topped","Recce"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Turret Mounted Light AT Gun","Turret Mounted Coaxial Light Autocannon"]
 			},
