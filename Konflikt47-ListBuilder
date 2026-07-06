@@ -230,7 +230,7 @@
 					"Arsenal of Democracy - When firing any weapon that has more than a single shot, you may reroll one failed 'to Hit' roll per weapon type; Konflikt '47 Army List - United States: Pg. 2",
 					"Death from Above - Infantry Units and Vehicles do not suffer the usual -1 Morale Penalty for moving on to the table from Reserves using the Flight/Jump Special Rule; Konflikt '47 Army List - United States: Pg. 2",
 					"Tough as Nails - All non-Hero Company/Platoon Commanders start the game with an additional point of Guts.; Konflikt '47 Army List - United States: Pg. 2",
-					"Tesla's Gift - When a Rift Die is drawn from the Dice bag, rolled, and assigned to a unit with the Tesla Arc special rule, you may reroll the result; Konflikt '47 Army List - United States: Pg. 2"
+					"Tesla's Gift - When a Rift Die is drawn from the Dice bag, rolled, and assigned to a unit with the Tesla Arc special rule, you may reroll the result; Konflikt '47 Army List - United States: Pg. 2","Modern Communications - US Artillery and Air Forward Observers may re-roll their D6 when rolling on the Artillery Barrage or Airstrike Chart; Konflikt '47 Army List - United States: Pg. 15/17"
 				]
 			}
 		],
@@ -1381,6 +1381,20 @@
 				]
 			},
 			{
+				"name": "Super Bazooka",
+				"specialRules": [],
+				"adjustlocalQuantities": [
+					{
+						"key": "primary",
+						"quantity": -1
+					},
+					{
+						"property": "Super Bazooka",
+						"quantity": 1
+					}
+				]
+			},
+			{
 				"name": "Battle Flag",
 				"specialRules": [],
 				"adjustlocalQuantities": [
@@ -2262,6 +2276,40 @@
 				"models": 0
 			},
 			{
+				"name": "Firefly Platoon",
+				"specialText": "Platoon Commander / Roverta Wells: 1\n Firefly Squads: 2-4\n M2A5 Linebacker Jump Walker: 1-3\n Firefly Medic: 0-1\n Firefly FAO (Arty or Air): 0-1\n Firefly Flamethrower: 0-2\n M5A5 Jackal Light Jump Walkers: 0-3\n M2A1 Mudskipper Jump Walkers: 0-3\n Roberta Wells if not Platoon Commander: 0-1\n",
+				"decreaseModelCount": 1,
+				"validations":[
+					{
+						"requiredChildren": [
+							{
+								"key": "PlatCommander",
+								"quantity": 1,
+								"message": "This platoon requires at least 1 Platoon Commander."
+							},
+							{
+								"key": "FFTeams",
+								"quantity": 2,
+								"message": "This platoon requires at least 2 Firefly Squads"
+							},
+							{
+								"key": "FFWalker",
+								"quantity": 1,
+								"message": "This platoon requires at least 1 M2A5 Linebacker Jump Walker"
+							}
+						]
+					}
+				],
+				"unlimited": true,
+				"factions": [
+					{
+						"name": "United States of America"
+					}
+				],
+				"points": 0,
+				"models": 0
+			},
+			{
 				"name": "Recce Platoon",
 				"unlimited": true,
 				"specialText": "Platoon Commander: 1\n Basic or Advanced Infantry Squads: 1\n Basic or Advanced Infantry Squads: 0-3\n Specialist Infantry Squad: 0-1\n FAO (Arty or Air): 0-1\n AT Team: 0-1\n Transport: Enough so that every soldier in the platoon may ride. Transports have Recce.\n",
@@ -2313,7 +2361,7 @@
 				],
 				"quantityLimitedBy": [
 					{
-						"unit": ["Assault Platoon","Automated Infantry Platoon","Totenrotte Platoon"],
+						"unit": ["Assault Platoon","Automated Infantry Platoon","Totenrotte Platoon","Firefly Platoon"],
 						"ratio": 1
 					}
 				],
@@ -2367,7 +2415,7 @@
 				],
 				"quantityLimitedBy": [
 					{
-						"unit": ["Assault Platoon","Assault Platoon","Totenrotte Platoon"],
+						"unit": ["Assault Platoon","Automated Infantry Platoon","Totenrotte Platoon","Firefly Platoon"],
 						"ratio": 1
 					}
 				],
@@ -2421,7 +2469,7 @@
 				],
 				"quantityLimitedBy": [
 					{
-						"unit": ["Assault Platoon","Automated Infantry Platoon","Totenrotte Platoon"],
+						"unit": ["Assault Platoon","Automated Infantry Platoon","Totenrotte Platoon","Firefly Platoon"],
 						"ratio": 1
 					}
 				],
@@ -2475,7 +2523,7 @@
 				],
 				"quantityLimitedBy": [
 					{
-						"unit": ["Assault Platoon","Automated Infantry Platoon","Totenrotte Platoon"],
+						"unit": ["Assault Platoon","Automated Infantry Platoon","Totenrotte Platoon","Firefly Platoon"],
 						"ratio": 1
 					}
 				],
@@ -2530,7 +2578,7 @@
 				],
 				"quantityLimitedBy": [
 					{
-						"unit": ["Assault Platoon","Automated Infantry Platoon","Totenrotte Platoon"],
+						"unit": ["Assault Platoon","Automated Infantry Platoon","Totenrotte Platoon","Firefly Platoon"],
 						"ratio": 1
 					}
 				],
@@ -2585,7 +2633,7 @@
 				],
 				"quantityLimitedBy": [
 					{
-						"unit": ["Assault Platoon","Automated Infantry Platoon","Totenrotte Platoon"],
+						"unit": ["Assault Platoon","Automated Infantry Platoon","Totenrotte Platoon","Firefly Platoon"],
 						"ratio": 1
 					}
 				],
@@ -2931,7 +2979,7 @@
 				"equipment": ["Pistol","Medical Implements"]
 			},
 			{
-				"name": "'Der Erntemann' Oberstarzt Albrecht von Zögling - Hero (K'47)",
+				"name": "'Der Erntemann' Oberstarzt Albrecht von Zögling    (K'47)",
 				"order":1,
 				"riftDice": 3,
 				"factions": [],
@@ -3122,7 +3170,7 @@
 				"equipment": ["HMG"]
 			},
 			{
-				"name": "'B for Bertie' - Hero (K'47)",
+				"name": "'B for Bertie'    (K'47)",
 				"order":1,
 				"riftDice": 1,
 				"factions": [],
@@ -3212,6 +3260,321 @@
 				"keywords": ["Augmented","Lumbering","Fearless","Computational Systems","Friend?","Hard to Kill","In the Nick of Time","Infiltrator","Lone Wanderer","Large"],
 				"specialText": "1 Hero\n Guts: 2\n Rift Mastery: 2\n Luck: 1",
 				"equipment": ["HMG"]
+			},
+			{
+				"name": "Slammer Samuels (CMDR) (K'47)",
+				"validationKeys": ["CompCommander"],
+				"order":1,
+				"riftDice": 2,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Hero Unit, Rift Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 2
+					},
+					{
+						"key": "primary",
+						"property": "Heavy Tesla Rifle and a Tesla Gauntlet",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 1,
+				"limit": 1,
+				"limits": [
+					{
+						"key": "Hero",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 158,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Fast","Heavy"],
+				"specialText": "1 Hero\n Damage Value: 6+\n Guts: 3\n Rift Mastery: 1\n Luck: 1",
+				"equipment": ["Heavy Tesla Rifle","Tesla Gauntlet"]
+			},
+			{
+				"name": "Slammer Samuels (K'47)",
+				"order":1,
+				"riftDice": 1,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Firefly Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Hero Unit, Rift Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 2
+					},
+					{
+						"key": "primary",
+						"property": "Heavy Tesla Rifle and a Tesla Gauntlet",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 1,
+				"limit": 1,
+				"limits": [
+					{
+						"key": "Hero",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 158,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Fast","Heavy"],
+				"specialText": "1 Hero\n Damage Value: 6+\n Guts: 3\n Rift Mastery: 1\n Luck: 1",
+				"equipment": ["Heavy Tesla Rifle","Tesla Gauntlet"]
+			},
+			{
+				"name": "Roberta Wells (CMDR) (K'47)",
+				"validationKeys": ["PlatCommander"],
+				"order":1,
+				"riftDice": 3,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "Firefly Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Hero Unit, Rift Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 3
+					},
+					{
+						"key": "primary",
+						"property": "Heavy Tesla Rifle",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 1,
+				"limit": 1,
+				"limits": [
+					{
+						"key": "Hero",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 135,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Flight","Heavy","Resourceful"],
+				"specialText": "1 Hero\n Guts: 1\n Rift Mastery: 1\n Luck: 2",
+				"equipment": ["Heavy Tesla Rifle"]
+			},
+			{
+				"name": "Roberta Wells (K'47)",
+				"order":1,
+				"riftDice": 3,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Firefly Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Hero Unit, Rift Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 3
+					},
+					{
+						"key": "primary",
+						"property": "Heavy Tesla Rifle",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 1,
+				"limit": 1,
+				"limits": [
+					{
+						"key": "Hero",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 135,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Flight","Heavy","Resourceful"],
+				"specialText": "1 Hero\n Guts: 1\n Rift Mastery: 1\n Luck: 2",
+				"equipment": ["Heavy Tesla Rifle"]
+			},
+			{
+				"name": "Roberta 'Einstein' Wells, Scientific Advisor (K'47)",
+				"order":1,
+				"riftDice": 2,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Firefly Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Hero Unit, Rift Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 3
+					},
+					{
+						"key": "primary",
+						"property": "Heavy Tesla Rifle",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 1,
+				"limit": 1,
+				"limits": [
+					{
+						"key": "Hero",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+			"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 68,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Fieldcraft","Independent","Resourceful","Infiltrator"],
+				"specialText": "1 Hero\n Guts: 1\n Rift Mastery: 1\n Luck: 1",
+				"equipment": ["Assault Rifle"]
 			},
 			{
 				"name": "Company Commander (K'47)",
@@ -3315,7 +3678,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -3328,7 +3692,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -3341,7 +3706,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -3387,7 +3753,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -3401,7 +3768,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -3414,7 +3782,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -3427,7 +3796,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -3440,7 +3810,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"Axis",
-							"British Commonwealth"
+							"British Commonwealth",
+							"United States of America"
 						]
 					},
 					{
@@ -3453,7 +3824,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"Axis",
-							"British Commonwealth"
+							"British Commonwealth",
+							"United States of America"
 						]
 					},
 					{
@@ -3508,6 +3880,15 @@
 						]
 					},
 					{
+						"name": "ATRDs",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
 						"name": "Officer: Guts",
 						"points": 10,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
@@ -3515,7 +3896,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -3526,7 +3908,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					}
 				],
@@ -4259,6 +4642,243 @@
 				"equipment": ["SMGs"]
 			},
 			{
+				"name": "Company Commander in Heavy Armor (K'47)",
+				"validationKeys": ["CompCommander"],
+				"order":1,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "LMG",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "Commander",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 80,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 98,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 30,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 33,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Officer: Guts",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Officer: Rift Mastery",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 Officer",
+				"equipment": ["LMG","Grade 1 Heavy Powered Armor"]
+			},
+			{
+				"name": "Firefly Company Commander (K'47)",
+				"validationKeys": ["CompCommander"],
+				"order":1,
+				"riftDice": 1,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Thompson M1X1/2",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "Commander",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 92,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 27,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Officer: Guts",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Officer: Rift Mastery",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Flight","Only Human"],
+				"specialText": "1 Officer",
+				"equipment": ["Thompson M1X1/2"]
+			},
+			{
 				"name": "Major-General Orde Wingate (BA)",
 				"baUnits": true,
 				"validationKeys": ["CompCommander"],
@@ -4964,7 +5584,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -4977,7 +5598,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -4990,7 +5612,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -5044,7 +5667,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"Axis",
-							"British Commonwealth"
+							"British Commonwealth",
+							"United States of America"
 						]
 					},
 					{
@@ -5057,7 +5681,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"Axis",
-							"British Commonwealth"
+							"British Commonwealth",
+							"United States of America"
 						]
 					},
 					{
@@ -5094,7 +5719,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -5107,7 +5733,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -5121,7 +5748,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -5135,7 +5763,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -5157,6 +5786,15 @@
 						]
 					},
 					{
+						"name": "ATRDs",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
 						"name": "Yoroi-kumi Anti Tank Launchers",
 						"points": 5,
 						"perModel": true,
@@ -5173,7 +5811,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -5184,7 +5823,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					}
 				],
@@ -5918,7 +6558,7 @@
 					},
 					{
 						"key": "riftDice",
-						"property": "Rift/ Dice",
+						"property": "Rift Dice",
 						"quantity": 2
 					},
 					{
@@ -6290,6 +6930,282 @@
 				"equipment": ["SMGs"]
 			},
 			{
+				"name": "Platoon Commander in Heavy Armor (K'47)",
+				"validationKeys": ["PlatCommander"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "LMG",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "Commander",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 50,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 59,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 30,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 33,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Officer: Guts",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Officer: Rift Mastery",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": " 1 Officer",
+				"equipment": ["LMG","Grade 1 Heavy Powered Armor"]
+			},
+			{
+				"name": "Firefly Platoon Commander (K'47)",
+				"validationKeys": ["PlatCommander"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Firefly Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Thompson M1X1/2",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "Commander",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 27,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 30,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 33,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Officer: Guts",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Officer: Rift Mastery",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Flight","Only Human"],
+				"specialText": " 1 Officer",
+				"equipment": ["Thompson M1X1/2"]
+			},
+			{
 				"name": "Kempeitai Inspirational Officer (K'47)",
 				"factions": [],
 				"order": 1,
@@ -6608,7 +7524,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"Axis",
-							"British Commonwealth"
+							"British Commonwealth",
+							"United States of America"
 						]
 					},
 					{
@@ -6621,7 +7538,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -6634,7 +7552,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					}
 				],
@@ -6715,6 +7634,111 @@
 				"keywords": ["Specialist Medic"],
 				"specialText": "1 Medic",
 				"equipment": ["Pistols","Advanced Body Armor"]
+			},
+			{
+				"name": "Firefly Medic (K'47)",
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Firefly Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Thompson M1X1/2",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 9,
+				"limits": [
+					{
+						"key": "Medic",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 4,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 27,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 2,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO Automatic Rifles",
+						"points": -2,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Automatic Rifles",
+						"points": -2,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO SMGs",
+						"points": -4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": -4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Medic","Flight","Only Human"],
+				"specialText": "1 Medic",
+				"equipment": ["Thompson M1X1/2"]
 			},
 			{
 				"name": "Sd.Kfz 251/8 Karnkenpanzerwagen Medical Vehicle (BA)",
@@ -7006,7 +8030,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -7020,7 +8045,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -7033,7 +8059,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -7046,7 +8073,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -7059,7 +8087,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"Axis",
-							"British Commonwealth"
+							"British Commonwealth",
+							"United States of America"
 						]
 					},
 					{
@@ -7072,7 +8101,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"Axis",
-							"British Commonwealth"
+							"British Commonwealth",
+							"United States of America"
 						]
 					},
 					{
@@ -7243,7 +8273,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -7257,7 +8288,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -7270,7 +8302,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan"	,
+							"United States of America"
 						]
 					},
 					{
@@ -7283,7 +8316,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -7296,7 +8330,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"Axis",
-							"British Commonwealth"
+							"British Commonwealth",
+							"United States of America"
 						]
 					},
 					{
@@ -7309,7 +8344,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"Axis",
-							"British Commonwealth"
+							"British Commonwealth",
+							"United States of America"
 						]
 					},
 					{
@@ -7604,6 +8640,258 @@
 				"equipment": ["Rifles"]
 			},
 			{
+				"name": "Firefly Forward Air Observer (K'47)",
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Firefly Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Thompson M1X1/2",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 9,
+				"limits": [
+					{
+						"key": "Observer",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 90,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 27,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 2,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO SMGs",
+						"points": -4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 5,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": -4,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO Assault Rifle",
+						"points": -2,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Automatic Rifles",
+						"points": -2,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Infiltrator","Observer","Flight","Only Human"],
+				"specialText": "1 Forward Observer",
+				"equipment": ["Thompson M1X1/2"]
+			},
+			{
+				"name": "Firfly Forward Artillery Observer (K'47)",
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Firefly Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Thompson M1X1/2",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 9,
+				"limits": [
+					{
+						"key": "Observer",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 90,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 27,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 2,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO SMGs",
+						"points": -4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 5,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": -4,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO Assault Rifle",
+						"points": -2,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Automatic Rifles",
+						"points": -2,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Infiltrator","Observer","Flight","Only Human"],
+				"specialText": "1 Forward Observer",
+				"equipment": ["Thompson M1X1/2"]
+			},
+			{
 				"name": "Sniper Team (K'47)",
 				"factions": [],
 				"order": 1,
@@ -7701,7 +8989,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -7715,7 +9004,8 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -7728,7 +9018,8 @@
 						"localLimit": 1,
 						"availableIn": [
 							"Axis",
-							"British Commonwealth"
+							"British Commonwealth",
+							"United States of America"
 						]
 					}
 				],
@@ -8044,19 +9335,15 @@
 				"equipment": ["AT Rifle Team"]
 			},
 			{
-				"name": "Bazooka (BA)",
-				"baUnits": true,
+				"name": "Bazooka Team (K'47)",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
 					{
-						"all": [{ "in": "Assault Platoon"	}, { "in": "Sweden (PL)" }]			
+						"all": [{ "in": "Assault Platoon" }, { "in": "United States of America" }]			
 					},
 					{
-						"all": [{ "in": "Recce Platoon"	}, { "in": "Sweden (PL)" }]			
-					},
-					{
-						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]			
+						"all": [{ "in": "Armored Walker Platoon" }, { "in": "United States of America" }]			
 					},
 					{
 						"all": [{ "in": "Recce Platoon"	}, { "in": "United States of America" }]			
@@ -8064,6 +9351,28 @@
 				],
 				"points": 0,
 				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Bazooka Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Assistant/Loader",
+						"quantity": 1
+					}
+				],
 				"sortPriority": 5,
 				"limits": [
 					{
@@ -8090,67 +9399,22 @@
 						"addsPrefix": "Veteran ",
 						"points": 78,
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Skis",
-						"points": 0,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden (PL)"]
-					},
-					{
-						"name": "Det Fria Kriget",
-						"points": 2,
-						"perModel": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"availableIn": ["Sweden (PL)"]
-					},
-					{
-						"name": "By Air, Land, and Sea (Airborne)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
-					},
-					{
-						"name": "By Air, Land, and Sea (Marines)",
-						"points": 0,
-						"unlockedByLocal": ["Inexperienced","Regular"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
-					},
-					{
-						"name": "By Air, Land, and Sea (Marines Vet)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
-					},
-					{
-						"name": "By Air, Land, and Sea (Rangers)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
 					}
 				],
-				"keywords": ["Period: M|L"],
-				"specialText": "1 Bazooka Operator\n 1 Loader",
+				"keywords": [],
+				"specialText": "1 Bazooka Operator\n 1 Assistant/Loader",
 				"equipment": ["Bazooka Team"]
 			},
 			{
-				"name": "Bazooka - Heavy Weapons Platoon (BA)",
-				"baUnits": true,
+				"name": "Bazooka Team - Heavy Weapons Platoon (K'47)",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
 					{
-						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Sweden (PL)" }]			
+						"all": [{ "in": "Automated Infantry Platoon" }, { "in": "United States of America" }]			
 					},
 					{
-						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "United States of America" }]			
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -8168,12 +9432,12 @@
 					},
 					{
 						"key": "primary",
-						"property": "Bazooka",
+						"property": "Bazooka Operator",
 						"quantity": 1
 					},
 					{
 						"key": "secondary",
-						"property": "Loader/Assistant",
+						"property": "Assistant/Loader",
 						"quantity": 1
 					}
 				],
@@ -8203,55 +9467,138 @@
 						"addsPrefix": "Veteran ",
 						"points": 78,
 						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Skis",
-						"points": 0,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["Sweden (PL)"]
-					},
-					{
-						"name": "Det Fria Kriget",
-						"points": 2,
-						"perModel": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"availableIn": ["Sweden (PL)"]
-					},
-					{
-						"name": "By Air, Land, and Sea (Airborne)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
-					},
-					{
-						"name": "By Air, Land, and Sea (Marines)",
-						"points": 0,
-						"unlockedByLocal": ["Inexperienced","Regular"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
-					},
-					{
-						"name": "By Air, Land, and Sea (Marines Vet)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
-					},
-					{
-						"name": "By Air, Land, and Sea (Rangers)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
 					}
 				],
-				"keywords": ["Period: M|L"],
-				"specialText": "1 Bazooka Operator\n 1 Loader",
+				"keywords": [],
+				"specialText": "1 Bazooka Operator\n 1 Assistant/Loader",
 				"equipment": ["Bazooka Team"]
+			},
+			{
+				"name": "Super Bazooka Team (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Super Bazooka Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Assistant/Loader",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "AT Team",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 105,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 129,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 Super Bazooka Operator\n 1 Assistant/Loader",
+				"equipment": ["Super Bazooka Team"]
+			},
+			{
+				"name": "Super Bazooka Team - Heavy Weapons Platoon (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Automated Infantry Platoon" }, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Super Bazooka Operator",
+						"quantity": 1
+					},
+					{
+						"key": "secondary",
+						"property": "Assistant/Loader",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "AT Team",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 105,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 129,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 Super Bazooka Operator\n 1 Assistant/Loader",
+				"equipment": ["Super Bazooka Team"]
 			},
 			{
 				"name": "Armored Infantry Bazooka - Assault Platoon (BA)",
@@ -12924,6 +14271,9 @@
 					},
 					{
 						"all": [{ "in": "Engineer Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -12985,10 +14335,10 @@
 				"equipment": ["Infantry Flamethrower"]
 			},
 			{
-				"name": "Flamethrower Team (US) (BA)",
-				"baUnits": true,
+				"name": "Flamethrower Team (K'47)",
 				"factions": [],
 				"order": 1,
+				"riftDice": 1,
 				"availableIn": [
 					{
 						"all": [{ "in": "Engineer Platoon"	}, { "in": "United States of America" }]			
@@ -13005,7 +14355,7 @@
 					{
 						"key": "riftDice",
 						"property": "Rift Dice",
-						"quantity": 0
+						"quantity": 1
 					},
 					{
 						"key": "primary",
@@ -13013,7 +14363,7 @@
 						"quantity": 1
 					},
 					{
-						"property": "Loader/Assistant",
+						"property": "Pistol",
 						"quantity": 1
 					}
 				],
@@ -13027,37 +14377,92 @@
 				],
 				"options": [
 					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 50,
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 77,
 						"requireChooseOneKey": "morale"
 					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 Flamethrower Operator\n 1 Weapon Assitant",
+				"equipment": ["Infantry Flamethrower"]
+			},
+			{
+				"name": "Flamethrower Team (K'47)",
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Firefly Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 2,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Flamethrower",
+						"quantity": 1
+					},
+					{
+						"property": "Pistol",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 5,
+				"limits": [
+					{
+						"key": "Flamethrower",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
 					{
 						"name": "Veteran",
 						"addsPrefix": "Veteran ",
-						"points": 65,
+						"points": 77,
 						"requireChooseOneKey": "morale"
 					},
 					{
-						"name": "By Air, Land, and Sea (Marines)",
-						"points": 0,
+						"name": "ATRDs",
+						"points": 5,
 						"perModel": true,
-						"unlockedByLocal": ["Regular"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					},
 					{
-						"name": "By Air, Land, and Sea (Marines)",
+						"name": "Stubborn",
 						"points": 1,
 						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					}
 				],
-				"keywords": ["Period: M|L"],
+				"keywords": [],
 				"specialText": "1 Flamethrower Operator\n 1 Weapon Assitant",
-				"equipment": ["Flamethrower - Team Weapon"]
+				"equipment": ["Infantry Flamethrower"]
 			},
 			{
 				"name": "Pioneer Squad (Early) (BA)",
@@ -15836,6 +17241,9 @@
 					},
 					{
 						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -15904,10 +17312,13 @@
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Axis" }]			
 					},
 					{
-						"all": [{ "in": "Assault Platoon"	}, { "in": "British Commonwealth" }]			
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "British Commonwealth" }]			
 					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -15972,9 +17383,6 @@
 				"factions": [],
 				"order": 1,
 				"availableIn": [
-					{
-						"all": [{ "in": "Assault Platoon"	}, { "in": "British Commonwealth" }]			
-					},
 					{
 						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]			
 					}
@@ -16131,9 +17539,6 @@
 				"order": 1,
 				"availableIn": [
 					{
-						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "British Commonwealth" }]			
-					},
-					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Soviet Bloc" }]			
 					}
 				],
@@ -16279,206 +17684,6 @@
 				],
 				"keywords": ["Period: E|M|L"],
 				"specialText": "1 Mortar Operator\n 1 Weapon Assitant",
-				"equipment": ["Light Mortar"]
-			},
-			{
-				"name": "Light Mortar Team (USA) (BA)",
-				"baUnits": true,
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]			
-					}
-				],
-				"points": 0,
-				"models": 3,
-				"localQuantityDisplay": [
-					{
-						"key": "unitType",
-						"property": "Basic Unit",
-						"quantity": 1
-					},
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					},
-					{
-						"key": "primary",
-						"property": "Mortar Operator",
-						"quantity": 1
-					},
-					{
-						"key": "secondary",
-						"property": "Loader/Assistant",
-						"quantity": 2
-					}
-				],
-				"sortPriority": 5,
-				"limits": [
-					{
-						"key": "Mortar",
-						"limit": 1,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
-						"points": 24,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 35,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"addsPrefix": "Veteran ",
-						"points": 46,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Reduced Manning",
-						"points": -5,
-						"addsModels": -1,
-						"availableIn": ["United States of America"],
-						"unlockedByLocal": ["By Air, Land, and Sea (Airborne)","By Air, Land, and Sea (Rangers)"]
-					},
-					{
-						"name": "By Air, Land, and Sea (Airborne)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
-					},
-					{
-						"name": "By Air, Land, and Sea (Marines)",
-						"points": 0,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
-					},
-					{
-						"name": "By Air, Land, and Sea (Rangers)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
-					}
-				],
-				"keywords": ["Period: E|M|L"],
-				"specialText": "1 Mortar Operator\n 2 Weapon Assitants",
-				"equipment": ["Light Mortar"]
-			},
-			{
-				"name": "Light Mortar Team (USA) Heavy Weapons Platoon (BA)",
-				"baUnits": true,
-				"validationKeys": ["HeavyWepTeams"],
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "United States of America" }]			
-					}
-				],
-				"points": 0,
-				"models": 3,
-				"localQuantityDisplay": [
-					{
-						"key": "unitType",
-						"property": "Basic Unit",
-						"quantity": 1
-					},
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					},
-					{
-						"key": "primary",
-						"property": "Mortar Operator",
-						"quantity": 1
-					},
-					{
-						"key": "secondary",
-						"property": "Loader/Assistant",
-						"quantity": 2
-					}
-				],
-				"sortPriority": 7,
-				"limits": [
-					{
-						"key": "Main Team",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
-						"points": 24,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 35,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"addsPrefix": "Veteran ",
-						"points": 46,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Reduced Manning",
-						"points": -5,
-						"addsModels": -1,
-						"availableIn": ["United States of America"],
-						"unlockedByLocal": ["By Air, Land, and Sea (Airborne)","By Air, Land, and Sea (Rangers)"]
-					},
-					{
-						"name": "By Air, Land, and Sea (Airborne)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
-					},
-					{
-						"name": "By Air, Land, and Sea (Marines)",
-						"points": 0,
-						"unlockedByLocal": ["Inexperienced","Regular"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
-					},
-					{
-						"name": "By Air, Land, and Sea (Marines)",
-						"points": 1,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
-					},
-					{
-						"name": "By Air, Land, and Sea (Rangers)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["United States of America"],
-						"chooseOneKey": "natRuUSA"
-					}
-				],
-				"keywords": ["Period: E|M|L"],
-				"specialText": "1 Mortar Operator\n 2 Weapon Assitants",
 				"equipment": ["Light Mortar"]
 			},
 			{
@@ -16787,6 +17992,9 @@
 					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -31962,6 +33170,1539 @@
 				"equipment": ["SMGs"]
 			},
 			{
+				"name": "Rifle Squad (K'47) ",
+				"validationKeys": ["BATeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Rifles",
+						"quantity": 6
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 42,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 78,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced"],
+						"max": 6,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 6,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 6,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO Assault Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Assault Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Automatic Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "LMGs",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Rifle Grenade Modfication",
+						"points": 6,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 3
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 NCO\n 5 Riflemen",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Rifle Squad (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Rifles",
+						"quantity": 6
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BTeam",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 42,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 60,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 78,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced"],
+						"max": 6,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 6,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 6,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO Assault Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Assault Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Automatic Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "LMGs",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Rifle Grenade Modfication",
+						"points": 6,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 3
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 NCO\n 5 Riflemen",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Rifle Squad (K'47)   ",
+				"validationKeys": ["EngineerTeam"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "United States of America" }]
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Rifles",
+						"quantity": 6
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 48,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 66,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 84,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 8,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced"],
+						"max": 6,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 11,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 6,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 14,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 6,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO Assault Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Assault Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Automatic Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "LMGs",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Flamethrower",
+						"points": 30,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Rifle Grenade Modfication",
+						"points": 6,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 3
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Engineers"],
+				"specialText": "1 NCO\n 5 Riflemen",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Heavy Infantry Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "LMGs",
+						"quantity": 3
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 90,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 99,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 30,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 3,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 33,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 3,
+						"addsModels": 1
+					},
+					{
+						"name": "Super Bazooka",
+						"points": 55,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 NCO\n 2 Riflemen",
+				"equipment": ["LMG","Grade 1 Heavy Powered Armor"]
+			},
+			{
+				"name": "Heavy Infantry Squad (K'47) ",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "LMGs",
+						"quantity": 3
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BATeams",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 90,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 99,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 30,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 3,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 33,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 3,
+						"addsModels": 1
+					},
+					{
+						"name": "Super Bazooka",
+						"points": 55,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 NCO\n 2 Riflemen",
+				"equipment": ["LMG","Grade 1 Heavy Powered Armor"]
+			},
+			{
+				"name": "Firefly Airborne Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Thompson M1X1/2",
+						"quantity": 6
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "STeams",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 162,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 27,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 6,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO SMGs",
+						"points": -4,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": -4,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11
+					},
+					{
+						"name": "Automatic Rifles",
+						"points": -2,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Flamethrower",
+						"points": 22,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Flight","Only Human"],
+				"specialText": "1 NCO\n 5 Riflemen",
+				"equipment": ["Thompson M1X1/2"]
+			},
+			{
+				"name": "Firefly Airborne Squad (K'47) ",
+				"validationKeys": ["ASTeams","FFTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]
+					},
+					{
+						"all": [{ "in": "Firefly Platoon"	}, { "in": "United States of America" }]
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Thompson M1X1/2",
+						"quantity": 6
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 162,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 27,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 6,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO SMGs",
+						"points": -4,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "SMGs",
+						"points": -4,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11
+					},
+					{
+						"name": "Automatic Rifles",
+						"points": -2,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Flamethrower",
+						"points": 22,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Flight","Only Human"],
+				"specialText": "1 NCO\n 5 Riflemen",
+				"equipment": ["Thompson M1X1/2"]
+			},
+			{
+				"name": "Paracadutisti Firefly Airborne Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "STeams",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 120,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 24,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Grenade Launcher",
+						"points": 22,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Flight","Only Human","Stubborn"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Paracadutisti Firefly Airborne Squad (K'47) ",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 120,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 24,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Grenade Launcher",
+						"points": 22,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Flight","Only Human","Stubborn"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Paragon Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 3
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "STeams",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 84,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 28,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Heavy Tesla Rifle",
+						"points": 6,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Flamethrower",
+						"points": 26,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Additional NCO Close Combat Weapon",
+						"points": 2,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Additional Close Combat Weapon",
+						"points": 2,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 5
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Fanatics",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Fast","Heavy","Infiltrator","Tank Hunters"],
+				"specialText": "1 NCO\n 2 Riflemen",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Paragon Squad (K'47) ",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 3
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 84,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 28,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Heavy Tesla Rifle",
+						"points": 6,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Flamethrower",
+						"points": 26,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Additional NCO Close Combat Weapon",
+						"points": 2,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Additional Close Combat Weapon",
+						"points": 2,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 5
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Fanatics",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Fast","Heavy","Infiltrator","Tank Hunters"],
+				"specialText": "1 NCO\n 2 Riflemen",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Paragon Squad (K'47)   ",
+				"validationKeys": ["EngineerTeam"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "United States of America" }]
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 3
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 87,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 31,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Heavy Tesla Rifle",
+						"points": 6,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Flamethrower",
+						"points": 26,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Additional NCO Close Combat Weapon",
+						"points": 2,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Additional Close Combat Weapon",
+						"points": 2,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 5
+					},
+					{
+						"name": "ATRDs",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					},
+					{
+						"name": "Fanatics",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"United States of America"
+						]
+					}
+				],
+				"keywords": ["Fast","Heavy","Infiltrator","Tank Hunters","Engineers"],
+				"specialText": "1 NCO\n 2 Riflemen",
+				"equipment": ["SMGs"]
+			},
+			{
 				"name": "Heavy Artillery Team (K'47)",
 				"validationKeys": ["ArtyTeams"],
 				"factions": [],
@@ -31978,6 +34719,9 @@
 					},
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -32059,6 +34803,9 @@
 					},
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -32140,6 +34887,9 @@
 					},
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -32212,6 +34962,9 @@
 					},
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -32267,7 +35020,8 @@
 						"requireChooseOneKey": "gShield",
 						"availableIn": [
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -32300,6 +35054,9 @@
 					},
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -32355,7 +35112,8 @@
 						"requireChooseOneKey": "gShield",
 						"availableIn": [
 							"British Commonwealth",
-							"Empire of Japan"
+							"Empire of Japan",
+							"United States of America"
 						]
 					},
 					{
@@ -32385,6 +35143,9 @@
 					},
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -32403,7 +35164,7 @@
 					{
 						"key": "primary",
 						"property": "Weapon Crew Members",
-						"quantity": 3
+						"quantity": 4
 					}
 				],
 				"sortPriority": 8,
@@ -32439,7 +35200,8 @@
 						"points": 0,
 						"requireChooseOneKey": "gShield",
 						"availableIn": [
-							"British Commonwealth"
+							"British Commonwealth",
+							"United States of America"
 						]
 					},
 					{
@@ -32454,6 +35216,67 @@
 				"keywords": [],
 				"specialText": "4 Crew Members",
 				"equipment": ["Heavy AT Gun Team"]
+			},
+			{
+				"name": "Super Heavy AT Gun Team (K'47)",
+				"validationKeys": ["ArtyTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Weapon Crew Members",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 8,
+				"limits": [
+					{
+						"key": "Gun Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 98,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 140,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 182,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "5 Crew Members",
+				"equipment": ["Heavy AT Gun Team","Gun Shield"]
 			},
 			{
 				"name": "Schwerefeld Projektor Team (K'47)",
@@ -32597,7 +35420,7 @@
 				"equipment": ["Forward Facing Pintle Mounted German MMG"]
 			},
 			{
-				"name": "Sd.Kfz. 251 Half-Track 'Hanomag' Transport - Recce (K'47)",
+				"name": "Sd.Kfz. 251 Half-Track 'Hanomag' Transport (K'47)  ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -32705,7 +35528,7 @@
 				"equipment": ["Forward Facing Pintle Mounted German MMG"]
 			},
 			{
-				"name": "Sd.Kfz. 250 Half-Track Transport - Recce (K'47)",
+				"name": "Sd.Kfz. 250 Half-Track Transport (K'47)  ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -32807,7 +35630,7 @@
 				"equipment": []
 			},
 			{
-				"name": "Opel Blitz Transport - Recce (K'47)",
+				"name": "Opel Blitz Transport (K'47)  ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -32903,7 +35726,7 @@
 				"equipment": []
 			},
 			{
-				"name": "Opel Maultier Transport - Recce (K'47)",
+				"name": "Opel Maultier Transport (K'47)  ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -32999,7 +35822,7 @@
 				"equipment": []
 			},
 			{
-				"name": "Kubelwagen Transport - Recce (K'47)",
+				"name": "Kubelwagen Transport (K'47)  ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -33257,7 +36080,7 @@
 				"equipment": []
 			},
 			{
-				"name": "Bren Carrier - Recce (K'47)",
+				"name": "Bren Carrier (K'47)  ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -33374,7 +36197,7 @@
 				"equipment": []
 			},
 			{
-				"name": "Bedford QLT Troop Transport - Recce (K'47)",
+				"name": "Bedford QLT Troop Transport (K'47)  ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -33443,6 +36266,24 @@
 					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -33474,12 +36315,15 @@
 				"equipment": []
 			},
 			{
-				"name": "Jeep Transport - Recce (K'47)",
+				"name": "Jeep Transport (K'47)  ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
 					{
 						"all": [{ "in": "Recce Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -33573,7 +36417,7 @@
 				"equipment": []
 			},
 			{
-				"name": "Truck Transport - Recce (K'47)",
+				"name": "Truck Transport (K'47)  ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -33671,7 +36515,7 @@
 				"equipment": []
 			},
 			{
-				"name": "Type 95 Lurogane Scout Car Transport - Recce (K'47)",
+				"name": "Type 95 Lurogane Scout Car Transport (K'47)  ",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -33710,6 +36554,321 @@
 				],
 				"keywords": ["Transport"],
 				"specialText": "Damage Value: 6+\n Wheeled Vehicle\n Transport: 4",
+				"equipment": []
+			},
+			{
+				"name": "M17 Tesla Cannon Team Team",
+				"validationKeys": ["ArtyTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Axis" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Weapon Crew Members",
+						"quantity": 3
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Gun Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 88,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 125,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 163,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Schwertruppen Grade I Heavy Powered Armor",
+						"points": 51,
+						"unlockedByLocal": ["Regular","Veteran"]
+					},
+					{
+						"name": "Grade 1 Heavy Powered Armor",
+						"points": 15,
+						"unlockedByLocal": ["Regular","Veteran"]
+					},
+					{
+						"name": "Gun Shield",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+				],
+				"keywords": [],
+				"specialText": "3 Crew Members",
+				"equipment": ["M17 Tesla Cannon Team"]
+			},
+			{
+				"name": "M3 Half-Track Transport (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 62,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 77,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 92,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Left Facing Pintle MMG",
+						"points": 15,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Right Facing Pintle MMG",
+						"points": 15,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Rear Facing Pintle MMG",
+						"points": 15,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+						
+				],
+				"keywords": ["Transport","Tow","Open Topped"],
+				"specialText": "Damage Value: 7+\n Half-Track Vehicle\n Transport: 12\n Tow: Any except Super Heavy AT Gun",
+				"equipment": []
+			},
+			{
+				"name": "M3 Half-Track Transport (K'47) ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 62,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 77,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 92,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Left Facing Pintle MMG",
+						"points": 15,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Right Facing Pintle MMG",
+						"points": 15,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Rear Facing Pintle MMG",
+						"points": 15,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+						
+				],
+				"keywords": ["Transport","Tow","Open Topped"],
+				"specialText": "Damage Value: 7+\n Half-Track Vehicle\n Transport: 12\n Tow: Any except Super Heavy AT Gun",
+				"equipment": []
+			},
+			{
+				"name": "Studebaker US6 (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "United States of America" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 26,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 33,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 40,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Forward Facing Pintle LMG",
+						"points": 10,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+						
+				],
+				"keywords": ["Transport","Tow","Open Topped"],
+				"specialText": "Damage Value: 6+\n Wheeled Vehicle\n Transport: 18\n Tow: L/M/H AT Gun, L/M Howitzer, L AA Gun, M17 Tesla Cannon",
+				"equipment": []
+			},
+			{
+				"name": "Studebaker US6 (K'47) ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 26,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 33,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 40,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Forward Facing Pintle LMG",
+						"points": 10,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+						
+				],
+				"keywords": ["Transport","Tow","Open Topped"],
+				"specialText": "Damage Value: 6+\n Wheeled Vehicle\n Transport: 18\n Tow: L/M/H AT Gun, L/M Howitzer, L AA Gun, M17 Tesla Cannon",
 				"equipment": []
 			},
 			{
@@ -35970,6 +39129,1185 @@
 				"equipment": ["Forward Facing Twin Light Autocannon","Left and Right Arms"]
 			},
 			{
+				"name": "M3 A2 Pondskater Scout Walker (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 80,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 96,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Pintle Mounted Twin HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 20,
+						"requireChooseOneKey": "secWeapon"
+					}
+				],
+				"keywords": ["Two-Legged","Open Topped","Recce","Amphibious"],
+				"specialText": "Damage Value: 7+",
+				"equipment": ["Hull Mounted MMG"]
+			},
+			{
+				"name": "M3 A2 Pondskater Scout Walker (K'47) ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 80,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 96,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Pintle Mounted Twin HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 20,
+						"requireChooseOneKey": "secWeapon"
+					}
+				],
+				"keywords": ["Two-Legged","Open Topped","Recce","Amphibious"],
+				"specialText": "Damage Value: 7+",
+				"equipment": ["Hull Mounted MMG"]
+			},
+			{
+				"name": "M3 A5 Pondskater Scout Walker (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 80,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 96,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Two-Legged","Open Topped","Improved HE","Amphibious"],
+				"specialText": "Damage Value: 7+",
+				"equipment": ["Hull Mounted Light AT Gun","Hull Mounted MMG"]
+			},
+			{
+				"name": "M3 A5 Pondskater Scout Walker (K'47) ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 80,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 96,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Two-Legged","Open Topped","Improved HE","Amphibious"],
+				"specialText": "Damage Value: 7+",
+				"equipment": ["Hull Mounted Light AT Gun","Hull Mounted MMG"]
+			},
+			{
+				"name": "M5 A2 Coyote Light Walker (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 105,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 126,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Two-Legged","Single-crew Walker"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Left Arm","Right Arm Mounted MMG","Hull Mounted HMG"]
+			},
+			{
+				"name": "M5 A2 Coyote Light Walker (K'47) ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 105,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 126,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Two-Legged","Single-crew Walker"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Left Arm","Right Arm Mounted MMG","Hull Mounted HMG"]
+			},
+			{
+				"name": "M5 A5 Jackal Light Jump Walker (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 105,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 126,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Left Arm",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Left Arm Mounted Flamethrower",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 30,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Two-Legged","Single-crew Walker","Jump"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Right Arm Mounted MMG"]
+			},
+			{
+				"name": "M5 A5 Jackal Light Jump Walker (K'47) ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 105,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 126,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Left Arm",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Left Arm Mounted Flamethrower",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 30,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Two-Legged","Single-crew Walker","Jump"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Right Arm Mounted MMG"]
+			},
+			{
+				"name": "M5 A5 Jackal Light Jump Walker (K'47)  ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Firefly Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"limits": [
+					{
+						"key": "Jackal",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 105,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 126,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Left Arm",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Left Arm Mounted Flamethrower",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 30,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Two-Legged","Single-crew Walker","Jump"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Right Arm Mounted MMG"]
+			},
+			{
+				"name": "M2 A1 Mudskipper Jump Walker (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 290,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 348,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Left Arm HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Left Arm Bazooka",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 5,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Right Arm HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Right Arm Bazooka",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 5,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Two-Legged","Jump"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Hull Mounted MMG","Hull Mounted Twin Light Autocannon"]
+			},
+			{
+				"name": "M2 A1 Mudskipper Jump Walker (K'47) ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 290,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 348,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Left Arm HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Left Arm Bazooka",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 5,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Right Arm HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Right Arm Bazooka",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 5,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Two-Legged","Jump"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Hull Mounted MMG","Hull Mounted Twin Light Autocannon"]
+			},
+			{
+				"name": "M2 A1 Mudskipper Jump Walker (K'47)  ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Firefly Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"limits": [
+					{
+						"key": "Mudskipper",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 290,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 348,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Left Arm HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Left Arm Bazooka",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 5,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Right Arm HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Right Arm Bazooka",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 5,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Two-Legged","Jump"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Hull Mounted MMG","Hull Mounted Twin Light Autocannon"]
+			},
+			{
+				"name": "M2 A5 Linebacker Jump Walker (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 328,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 394,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Arm Mounted Twin HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Arm Mounted Twin Light Autocannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Arm Mounted Twin Super Bazooka",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 60,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Arm Mounted Infantry Flamethrower",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Two-Legged","Jump","Reinforced Front Armor"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Arm Mounted M21 Tesla Cannon"]
+			},
+			{
+				"name": "M2 A5 Linebacker Jump Walker (K'47) ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					}
+				],
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 328,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 394,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Arm Mounted Twin HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Arm Mounted Twin Light Autocannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Arm Mounted Twin Super Bazooka",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 60,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Arm Mounted Infantry Flamethrower",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Two-Legged","Jump","Reinforced Front Armor"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Arm Mounted M21 Tesla Cannon"]
+			},
+			{
+				"name": "M2 A5 Linebacker Jump Walker (K'47)  ",
+				"validationKeys": ["Walker","FFWalker"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Firefly Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					}
+				],
+				"limits": [
+					{
+						"key": "Linebacker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 328,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 394,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Arm Mounted Twin HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Arm Mounted Twin Light Autocannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Arm Mounted Twin Super Bazooka",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 60,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Arm Mounted Infantry Flamethrower",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Two-Legged","Jump","Reinforced Front Armor"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Arm Mounted M21 Tesla Cannon"]
+			},
+			{
+				"name": "M8 A1 Grizzly Medium Assault Walker (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 225,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 270,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Two-Legged","Improved HE"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Hull Mounted Medium AT Gun","Pintle Moutned HMG","Left and Right Arms"]
+			},
+			{
+				"name": "M8 A1 Grizzly Medium Assault Walker (K'47) ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 225,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 270,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Two-Legged","Improved HE"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Hull Mounted Medium AT Gun","Pintle Moutned HMG","Left and Right Arms"]
+			},
+			{
+				"name": "M8 A4 Bruin Medium Support Walker (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 275,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 330,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Two-Legged","Improved HE"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Hull Mounted Medium AT Gun","Pintle Moutned HMG","Forward Facing Medium Rocket System"]
+			},
+			{
+				"name": "M8 A4 Bruin Medium Support Walker (K'47) ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 275,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 330,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Two-Legged","Improved HE"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Hull Mounted Medium AT Gun","Pintle Moutned HMG","Forward Facing Medium Rocket System"]
+			},
+			{
+				"name": "M9 A2 Kodiak Close Assault Walker (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 335,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 402,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Two-Legged"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Left Arm Mounted Light Autocannon and Twin HMGs","Right Arm Mounted Light Autocannon and Twin HMGs"]
+			},
+			{
+				"name": "M9 A2 Kodiak Close Assault Walker (K'47) ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 335,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 402,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Two-Legged"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Left Arm Mounted Light Autocannon and Twin HMGs","Right Arm Mounted Light Autocannon and Twin HMGs"]
+			},
+			{
 				"name": "Pz.Kpfw. IV AusF. X Medium Tank (K'47)",
 				"validationKeys": ["TotalVehicle"],
 				"factions": [],
@@ -37576,6 +41914,784 @@
 				"keywords": [],
 				"specialText": "Damage Value: 8+\n Tracked Vehicle",
 				"equipment": ["Hull Mounted MMG","Rear Facing Turret Mounted MMG"]
+			},
+			{
+				"name": "M3 A4(T) Stuart Light Tank (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 104,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 130,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted M21 Light Tesla Cannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Light AT Cannon with Coaxial MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Vulnerable"],
+				"specialText": "Damage Value: 8+\n Tracked Vehicle",
+				"equipment": ["Hull Mounted MMG"]
+			},
+			{
+				"name": "M3 A4(T) Stuart Light Tank (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 104,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 130,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted M21 Light Tesla Cannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Light AT Cannon with Coaxial MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Vulnerable"],
+				"specialText": "Damage Value: 8+\n Tracked Vehicle",
+				"equipment": ["Hull Mounted MMG"]
+			},
+			{
+				"name": "M5 A2(T) Stuart Light Tank (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 112,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 140,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 178,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted Gyro-Stabilised M21 Light Tesla Cannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Gyro-Stabilised Light AT Cannon with Coaxial MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 15,
+						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 25,
+						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Reinforced Front Armor",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 20
+					}
+				],
+				"keywords": ["Vulnerable"],
+				"specialText": "Damage Value: 8+\n Tracked Vehicle",
+				"equipment": ["Hull Mounted MMG"]
+			},
+			{
+				"name": "M5 A2(T) Stuart Light Tank (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 112,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 140,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 178,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted Gyro-Stabilised M21 Light Tesla Cannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Gyro-Stabilised Light AT Cannon with Coaxial MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 15,
+						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 25,
+						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Reinforced Front Armor",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 20
+					}
+				],
+				"keywords": ["Vulnerable"],
+				"specialText": "Damage Value: 8+\n Tracked Vehicle",
+				"equipment": ["Hull Mounted MMG"]
+			},
+			{
+				"name": "M4 A9(T) Sherman Medium Tank (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 200,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 250,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 310,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted Gyro-Stabilised M17 Tesla Cannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Gyro-Stabilised, Improved HE Medium AT Cannon with Coaxial MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -40,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Gyro-Stabilised, Heavy AT Cannon with Coaxial MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -25,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 15,
+						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 25,
+						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Reinforced Front Armor",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 20
+					}
+				],
+				"keywords": [],
+				"specialText": "Damage Value: 9+\n Tracked Vehicle",
+				"equipment": ["Hull Mounted MMG"]
+			},
+			{
+				"name": "M4 A9(T) Sherman Medium Tank (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 200,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 250,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 310,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted Gyro-Stabilised M17 Tesla Cannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Gyro-Stabilised, Improved HE Medium AT Cannon with Coaxial MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -40,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Gyro-Stabilised, Heavy AT Cannon with Coaxial MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -25,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 15,
+						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 25,
+						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Reinforced Front Armor",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 20
+					}
+				],
+				"keywords": [],
+				"specialText": "Damage Value: 9+\n Tracked Vehicle",
+				"equipment": ["Hull Mounted MMG"]
+			},
+			{
+				"name": "M17 Tesla Cannon Emplacement (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 168,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 210,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 252,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Emplacement","Armored All Round"],
+				"specialText": "Damage Value: 8+\n Emplacement Weapon",
+				"equipment": ["Turret Mounted M17 Tesla Cannon"]
+			},
+			{
+				"name": "M17 Tesla Cannon Emplacement (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 168,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 210,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 252,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Emplacement","Armored All Round"],
+				"specialText": "Damage Value: 8+\n Emplacement Weapon",
+				"equipment": ["Turret Mounted M17 Tesla Cannon"]
+			},
+			{
+				"name": "M8 A3(T) Scout Car (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 88,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 132,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted M21 Light Tesla Cannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Light AT Cannon with Coaxial MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -40,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 15,
+						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 25,
+						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": [],
+				"specialText": "Damage Value: 7+\n Wheeled Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "M8 A3(T) Scout Car (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "United States of America" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 88,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 132,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted M21 Light Tesla Cannon",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Light AT Cannon with Coaxial MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -40,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Pintle Mounted MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 15,
+						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Pintle Mounted HMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 25,
+						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": [],
+				"specialText": "Damage Value: 7+\n Wheeled Vehicle",
+				"equipment": []
 			},
 			{
 				"name": "Barbed Wire (BA)",
