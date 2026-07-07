@@ -1619,6 +1619,16 @@
 				]
 			},
 			{
+				"name": "Additional Ursus Bodyguards",
+				"specialRules": [],
+				"adjustlocalQuantities": [
+					{
+						"property": "Ursus Teeth and Claws",
+						"quantity": 1
+					}
+				]
+			},
+			{
 				"name": "Alexander 'Zus' Bielski",
 				"specialRules": [],
 				"adjustlocalQuantities": [
@@ -3170,7 +3180,7 @@
 				"equipment": ["HMG"]
 			},
 			{
-				"name": "'B for Bertie'    (K'47)",
+				"name": "'B for Bertie' (K'47)   ",
 				"order":1,
 				"riftDice": 1,
 				"factions": [],
@@ -3260,6 +3270,141 @@
 				"keywords": ["Augmented","Lumbering","Fearless","Computational Systems","Friend?","Hard to Kill","In the Nick of Time","Infiltrator","Lone Wanderer","Large"],
 				"specialText": "1 Hero\n Guts: 2\n Rift Mastery: 2\n Luck: 1",
 				"equipment": ["HMG"]
+			},
+			{
+				"name": "Commissar Gregor Drugov (CMDR) (K'47)",
+				"validationKeys": ["PlatCommander"],
+				"order":1,
+				"riftDice": 2,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon" }, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Hero Unit, Rift Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 2
+					},
+					{
+						"key": "primary",
+						"property": "Assault Rifle with Teeth and Claws",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 1,
+				"limit": 1,
+				"limits": [
+					{
+						"key": "Hero",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 160,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Ursus Bodyguards",
+						"points": 43,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 2,
+						"addsModels": 1
+					}
+				],
+				"keywords": ["Deadly (3)","Fearless","Hard to Kill","Horror","Large","Tough Fighters","Wide Formation","Not One Step Back!"],
+				"specialText": "Damage Value: 7+\n 1 Hero\n Guts: 3\n Rift Mastery: 1\n Luck: 1",
+				"equipment": ["Assault Rifle","Teeth and Claws"]
+			},
+			{
+				"name": "Commissar Gregor Drugov (K'47)",
+				"order":1,
+				"riftDice": 2,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon" }, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon" }, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Armored Platoon" }, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Hero Unit, Rift Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 3
+					},
+					{
+						"key": "primary",
+						"property": "Assault Rifle",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 1,
+				"limit": 1,
+				"limits": [
+					{
+						"key": "Hero",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+			"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 160,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Ursus Bodyguards",
+						"points": 43,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 2,
+						"addsModels": 1
+					}
+				],
+				"keywords": ["Deadly (3)","Fearless","Hard to Kill","Horror","Large","Tough Fighters","Wide Formation","Not One Step Back!"],
+				"specialText": "Damage Value: 7+\n 1 Hero\n Guts: 3\n Rift Mastery: 1\n Luck: 1",
+				"equipment": ["Assault Rifle","Teeth and Claws"]
 			},
 			{
 				"name": "Slammer Samuels (CMDR) (K'47)",
@@ -3589,6 +3734,9 @@
 						"all": [{ "in": "HQ Platoon" }, { "in": "British Commonwealth" }]			
 					},
 					{
+						"all": [{ "in": "HQ Platoon" }, { "in": "Empire of Japan" }]			
+					},
+					{
 						"all": [{ "in": "HQ Platoon" }, { "in": "Soviet Bloc" }]			
 					},
 					{
@@ -3679,6 +3827,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -3693,6 +3842,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -3707,6 +3857,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -3754,6 +3905,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -3769,6 +3921,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -3783,6 +3936,7 @@
 						"availableIn": [
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -3797,6 +3951,7 @@
 						"availableIn": [
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -3811,6 +3966,7 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -3825,6 +3981,7 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -3880,6 +4037,15 @@
 						]
 					},
 					{
+						"name": "RPG-1s",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
 						"name": "ATRDs",
 						"points": 5,
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
@@ -3897,6 +4063,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -3909,6 +4076,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					}
@@ -4640,6 +4808,151 @@
 				"keywords": ["Heavy","Deadly (2)"],
 				"specialText": "1 Officer",
 				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Company Commander in Guards MK II Armor (K'47)",
+				"validationKeys": ["CompCommander"],
+				"order":1,
+				"riftDice": 0,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon" }, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "SMG",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "Commander",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 69,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 87,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 19,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 22,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "NCO AT Rifle",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": 1,
+						"maxKey": "gun"
+					},
+					{
+						"name": "AT Rifle",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": 1,
+						"maxKey": "gun"
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Officer: Guts",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Officer: Rift Mastery",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 Officer",
+				"equipment": ["SMG","Grade 1 Heavy Powered Armor"]
 			},
 			{
 				"name": "Company Commander in Heavy Armor (K'47)",
@@ -5585,6 +5898,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -5599,6 +5913,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -5613,6 +5928,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -5668,6 +5984,7 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -5682,6 +5999,7 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -5720,6 +6038,7 @@
 						"availableIn": [
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -5734,6 +6053,7 @@
 						"availableIn": [
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -5749,6 +6069,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -5764,6 +6085,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -5783,6 +6105,15 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"British Commonwealth"
+						]
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
 						]
 					},
 					{
@@ -5812,6 +6143,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -5824,6 +6156,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					}
@@ -6930,6 +7263,163 @@
 				"equipment": ["SMGs"]
 			},
 			{
+				"name": "Platoon Commander in Guards MK II Armor (K'47)",
+				"validationKeys": ["PlatCommander"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon" }, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon" }, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "SMG",
+						"quantity": 1
+					}
+				],
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "Commander",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 39,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 48,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 19,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Regular"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 22,
+						"increment": true,
+						"max": 2,
+						"addsModels": 1,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "NCO AT Rifle",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": 1,
+						"maxKey": "gun"
+					},
+					{
+						"name": "AT Rifle",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": 1,
+						"maxKey": "gun"
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"perModel": true,
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Officer: Guts",
+						"points": 10,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Officer: Rift Mastery",
+						"points": 15,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"chooseOneKey": "hero",
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 Officer",
+				"equipment": ["SMG","Grade 1 Heavy Powered Armor"]
+			},
+			{
 				"name": "Platoon Commander in Heavy Armor (K'47)",
 				"validationKeys": ["PlatCommander"],
 				"factions": [],
@@ -7346,13 +7836,12 @@
 				"equipment": ["Pistol"]
 			},
 			{
-				"name": "Commissar (BA)",
-				"baUnits": true,
+				"name": "Commissar (K'47)",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
 					{
-						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]			
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Soviet Bloc" }]			
 					}
 				],
 				"points": 0,
@@ -7370,7 +7859,7 @@
 					},
 					{
 						"key": "primary",
-						"property": "Rifles",
+						"property": "Pistols",
 						"quantity": 1
 					}
 				],
@@ -7391,54 +7880,101 @@
 						"requireChooseOneKey": "morale"
 					},
 					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 21,
+						"availableIn": ["Soviet Bloc"],
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 27,
+						"availableIn": ["Soviet Bloc"],
+						"requireChooseOneKey": "morale"
+					},
+					{
 						"name": "Additional Men",
-						"points": 7,
+						"points": 6,
 						"increment": true,
 						"unlockedByLocal": ["Inexperienced"],
 						"max": 2,
 						"addsModels": 1
 					},
 					{
-						"name": "Victory Banner",
-						"points": 20,
-						"limit": 1,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"unlockedByLocalStat": [
-                            {
-                                "stat": "models",
-                                "modifier": "above",
-                                "value": 1
-                            }
-                        ],
-						"availableIn": ["Soviet Bloc"]
+						"name": "Additional Men",
+						"points": 9,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 2,
+						"addsModels": 1
 					},
 					{
-						"name": "SMGs",
-						"points": 4,
+						"name": "Additional Men",
+						"points": 12,
 						"increment": true,
-						"unlockedByLocal": ["Inexperienced"],
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 2
+						"unlockedByLocal": ["Veteran"],
+						"max": 2,
+						"addsModels": 1
 					},
 					{
 						"name": "NCO SMG",
-						"points": 4,
+						"points": 5,
 						"increment": true,
-						"unlockedByLocal": ["Inexperienced"],
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"max": "parentModels",
 						"maxKey": "gun",
 						"localLimit": 1
 					},
 					{
-						"name": "Guard Dog",
-						"unlockedByLocal": ["Inexperienced"],
-						"points": 2
+						"name": "SMGs",
+						"points": 5,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "NCO Rifle",
+						"points": 1,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Rifles",
+						"points": 1,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "NCO Assault Rifles",
+						"points": 7,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{
+						"name": "Assault Rifles",
+						"points": 7,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
 					}
 				],
-				"keywords": ["Period: E|M","Fanatics","Not One Step Back"],
+				"keywords": ["Not One Step Back"],
 				"specialText": "1 Officer",
-				"equipment": ["Rifles"]
+				"equipment": ["Pistols"]
 			},
 			{
 				"name": "Medic (K'47)",
@@ -7493,6 +8029,15 @@
 				],
 				"options": [
 					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 23,
+						"requireChooseOneKey": "morale",
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
 						"name": "Veteran",
 						"addsPrefix": "Veteran ",
 						"points": 30,
@@ -7505,6 +8050,14 @@
 							"Sweden (PL)",
 							"United States of America"
 						]
+					},
+					{
+						"name": "Additional Men",
+						"points": 9,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 2,
+						"addsModels": 1
 					},
 					{
 						"name": "Additional Men",
@@ -7525,6 +8078,7 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -7539,6 +8093,7 @@
 						"availableIn": [
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -7553,6 +8108,7 @@
 						"availableIn": [
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					}
@@ -8031,6 +8587,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -8046,6 +8603,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -8060,6 +8618,7 @@
 						"availableIn": [
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -8074,6 +8633,7 @@
 						"availableIn": [
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -8088,6 +8648,7 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -8102,6 +8663,7 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -8202,24 +8764,12 @@
 						"name": "Regular",
 						"addsPrefix": "Regular ",
 						"points": 75,
-						"availableIn": [
-							"Axis",
-							"British Commonwealth",
-							"Sweden (PL)",
-							"United States of America"
-						],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
 						"addsPrefix": "Veteran ",
 						"points": 90,
-						"availableIn": [
-							"Axis",
-							"British Commonwealth",
-							"Sweden (PL)",
-							"United States of America"
-						],
 						"requireChooseOneKey": "morale"
 					},
 					{
@@ -8274,6 +8824,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -8289,6 +8840,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -8302,7 +8854,8 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
 						"availableIn": [
 							"British Commonwealth",
-							"Empire of Japan"	,
+							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -8317,6 +8870,7 @@
 						"availableIn": [
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -8331,6 +8885,7 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -8345,6 +8900,7 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -8376,268 +8932,6 @@
 				"keywords": ["Infiltrator","Observer"],
 				"specialText": "1 Forward Observer",
 				"equipment": ["Pistols"]
-			},
-			{
-				"name": "Forward Artillery Observer (SU) (BA)",
-				"baUnits": true,
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]			
-					},
-					{
-						"all": [{ "in": "Recce Platoon"	}, { "in": "Soviet Bloc" }]			
-					}
-				],
-				"points": 0,
-				"models": 1,
-				"localQuantityDisplay": [
-					{
-						"key": "unitType",
-						"property": "Basic Unit",
-						"quantity": 1
-					},
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					},
-					{
-						"key": "primary",
-						"property": "Rifles",
-						"quantity": 1
-					}
-				],
-				"sortPriority": 9,
-				"limits": [
-					{
-						"key": "Observer",
-						"limit": 1,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 75,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"addsPrefix": "Veteran ",
-						"points": 90,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 11,
-						"increment": true,
-						"unlockedByLocal": ["Regular"],
-						"max": 2,
-						"addsModels": 1
-					},
-					{
-						"name": "Additional Men",
-						"points": 14,
-						"increment": true,
-						"unlockedByLocal": ["Veteran"],
-						"max": 2,
-						"addsModels": 1
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 2
-					},
-					{
-						"name": "NCO SMG",
-						"points": 4,
-						"increment": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1
-					},
-					{
-						"name": "Pistols",
-						"points": -1,
-						"increment": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 2
-					},
-					{
-						"name": "Hammer and Sickle (Airborne)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"chooseOneKey": "natRuSU"
-					},
-					{
-						"name": "Hammer and Sickle (Naval Brigade)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"chooseOneKey": "natRuSU"
-					},
-					{
-						"name": "Hammer and Sickle (NKVD)",
-						"points": 2,
-						"perModel": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"chooseOneKey": "natRuSU"
-					}
-				],
-				"keywords": ["Period: E|M|L","Infiltrator","Observer","Massed Batteries"],
-				"specialText": "1 Forward Observer",
-				"equipment": ["Rifles"]
-			},
-			{
-				"name": "Forward Air Observer (SU) (BA)",
-				"baUnits": true,
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]			
-					},
-					{
-						"all": [{ "in": "Recce Platoon"	}, { "in": "Soviet Bloc" }]			
-					}
-				],
-				"points": 0,
-				"models": 1,
-				"localQuantityDisplay": [
-					{
-						"key": "unitType",
-						"property": "Basic Unit",
-						"quantity": 1
-					},
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					},
-					{
-						"key": "primary",
-						"property": "Rifles",
-						"quantity": 1
-					}
-				],
-				"sortPriority": 9,
-				"limits": [
-					{
-						"key": "Observer",
-						"limit": 1,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 75,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"addsPrefix": "Veteran ",
-						"points": 90,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Men",
-						"points": 11,
-						"increment": true,
-						"unlockedByLocal": ["Regular"],
-						"max": 2,
-						"addsModels": 1
-					},
-					{
-						"name": "Additional Men",
-						"points": 14,
-						"increment": true,
-						"unlockedByLocal": ["Veteran"],
-						"max": 2,
-						"addsModels": 1
-					},
-					{
-						"name": "SMGs",
-						"points": 4,
-						"increment": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 2
-					},
-					{
-						"name": "NCO SMG",
-						"points": 4,
-						"increment": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1
-					},
-					{
-						"name": "NCO Pistol",
-						"points": -1,
-						"increment": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 1
-					},
-					{
-						"name": "Pistols",
-						"points": -1,
-						"increment": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 2
-					},
-					{
-						"name": "Hammer and Sickle (Airborne)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"chooseOneKey": "natRuSU"
-					},
-					{
-						"name": "Hammer and Sickle (Naval Brigade)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"chooseOneKey": "natRuSU"
-					},
-					{
-						"name": "Hammer and Sickle (NKVD)",
-						"points": 2,
-						"perModel": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"chooseOneKey": "natRuSU"
-					}
-				],
-				"keywords": ["Period: E|M|L","Infiltrator","Observer","Flying Tank"],
-				"specialText": "1 Forward Observer",
-				"equipment": ["Rifles"]
 			},
 			{
 				"name": "Firefly Forward Air Observer (K'47)",
@@ -8962,7 +9256,8 @@
 						"localLimit": 1,
 						"availableIn": [
 							"Axis",
-							"British Commonwealth"
+							"British Commonwealth",
+							"Soviet Bloc"
 						]
 					},
 					{
@@ -8990,6 +9285,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -9005,6 +9301,7 @@
 							"Axis",
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -9019,6 +9316,7 @@
 						"availableIn": [
 							"Axis",
 							"British Commonwealth",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					}
@@ -11222,6 +11520,15 @@
 					},
 					{
 						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Soviet Bloc" }]			
 					}
 				],
 				"points": 0,
@@ -11287,6 +11594,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Soviet Bloc" }]			
 					}
 				],
 				"points": 0,
@@ -14273,6 +14583,9 @@
 						"all": [{ "in": "Engineer Platoon"	}, { "in": "Empire of Japan" }]			
 					},
 					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
 						"all": [{ "in": "Engineer Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
@@ -14335,7 +14648,7 @@
 				"equipment": ["Infantry Flamethrower"]
 			},
 			{
-				"name": "Flamethrower Team (K'47)",
+				"name": "Firefly Flamethrower Team (K'47)",
 				"factions": [],
 				"order": 1,
 				"riftDice": 1,
@@ -14395,12 +14708,12 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					}
 				],
-				"keywords": [],
+				"keywords": ["Flight","Only Humnan"],
 				"specialText": "1 Flamethrower Operator\n 1 Weapon Assitant",
 				"equipment": ["Infantry Flamethrower"]
 			},
 			{
-				"name": "Flamethrower Team (K'47)",
+				"name": "Firefly Flamethrower Team (K'47)",
 				"factions": [],
 				"order": 1,
 				"riftDice": 1,
@@ -14460,7 +14773,7 @@
 						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
 					}
 				],
-				"keywords": [],
+				"keywords": ["Flight","Only Humnan"],
 				"specialText": "1 Flamethrower Operator\n 1 Weapon Assitant",
 				"equipment": ["Infantry Flamethrower"]
 			},
@@ -17243,6 +17556,9 @@
 						"all": [{ "in": "Assault Platoon"	}, { "in": "Empire of Japan" }]			
 					},
 					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
 						"all": [{ "in": "Assault Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
@@ -17318,6 +17634,9 @@
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
 					},
 					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
@@ -17375,315 +17694,6 @@
 				],
 				"keywords": [],
 				"specialText": "1 Mortar Operator\n 1 Weapon Assitants",
-				"equipment": ["Light Mortar"]
-			},
-			{
-				"name": "Light Mortar Team (GB|SU) (BA)",
-				"baUnits": true,
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]			
-					}
-				],
-				"points": 0,
-				"models": 2,
-				"localQuantityDisplay": [
-					{
-						"key": "unitType",
-						"property": "Basic Unit",
-						"quantity": 1
-					},
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					},
-					{
-						"key": "primary",
-						"property": "Mortar Operator",
-						"quantity": 1
-					},
-					{
-						"key": "secondary",
-						"property": "Loader/Assistant",
-						"quantity": 1
-					}
-				],
-				"sortPriority": 5,
-				"limits": [
-					{
-						"key": "Mortar",
-						"limit": 2,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
-						"points": 21,
-						"availableIn": [
-							"British Commonwealth",
-							"Soviet Bloc"
-						],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 30,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"addsPrefix": "Veteran ",
-						"points": 39,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Man",
-						"points": 3,
-						"increment": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"max": 1,
-						"addsModels": 1,
-						"availableIn": ["British Commonwealth"]
-					},
-					{
-						"name": "Additional Commando SMGs",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 2,
-						"availableIn": ["British Commonwealth"],
-						"chooseOneKey": "natRuGB",
-						"unlockedByLocal": "For King and Country! (Commandos)"
-					},
-					{
-						"name": "Welbikes",
-						"points": 1,
-						"perModel": true,
-						"availableIn": ["British Commonwealth"],
-						"chooseOneKey": "natRuGB",
-						"unlockedByLocal": "For King and Country! (Airborne)"
-					},
-					{
-						"name": "For King and Country! (Airborne)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["British Commonwealth"],
-						"chooseOneKey": "natRuGB"
-					},
-					{
-						"name": "For King and Country! (Commandos)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["British Commonwealth"],
-						"chooseOneKey": "natRuGB"
-					},
-					{
-						"name": "For King and Country! (Commandos) w/ SAS",
-						"points": 5,
-						"perModel": true,
-						"unlockedByLocal": ["For King and Country! (Commandos)"],
-						"availableIn": ["British Commonwealth"],
-						"chooseOneKey": "natRuGB"
-					},
-					{
-						"name": "For King and Country! (Guards)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"availableIn": ["British Commonwealth"],
-						"chooseOneKey": "natRuGB"
-					},
-					{
-						"name": "Hammer and Sickle (Airborne)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Soviet Bloc"],
-						"chooseOneKey": "natRuSU"
-					},
-					{
-						"name": "Hammer and Sickle (Naval Brigade)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"availableIn": ["Soviet Bloc"],
-						"chooseOneKey": "natRuSU"
-					},
-					{
-						"name": "Hammer and Sickle (NVKD)",
-						"points": 2,
-						"perModel": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"availableIn": ["Soviet Bloc"],
-						"chooseOneKey": "natRuSU"
-					}
-				],
-				"keywords": ["Period: E|M|L"],
-				"specialText": "1 Mortar Operator\n 1 Weapon Assitant",
-				"equipment": ["Light Mortar"]
-			},
-			{
-				"name": "Light Mortar Team (GB|SU) - Heavy Weapons platoon (BA)",
-				"baUnits": true,
-				"validationKeys": ["HeavyWepTeams"],
-				"factions": [],
-				"order": 1,
-				"availableIn": [
-					{
-						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Soviet Bloc" }]			
-					}
-				],
-				"points": 0,
-				"models": 2,
-				"localQuantityDisplay": [
-					{
-						"key": "unitType",
-						"property": "Basic Unit",
-						"quantity": 1
-					},
-					{
-						"key": "riftDice",
-						"property": "Rift Dice",
-						"quantity": 0
-					},
-					{
-						"key": "primary",
-						"property": "Mortar Operator",
-						"quantity": 1
-					},
-					{
-						"key": "secondary",
-						"property": "Loader/Assistant",
-						"quantity": 1
-					}
-				],
-				"sortPriority": 7,
-				"limits": [
-					{
-						"key": "Main Team",
-						"limit": 5,
-						"perParent": true
-					}
-				],
-				"options": [
-					{
-						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
-						"points": 21,
-						"availableIn": [
-							"British Commonwealth",
-							"Soviet Bloc"
-						],
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Regular",
-						"addsPrefix": "Regular ",
-						"points": 30,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Veteran",
-						"addsPrefix": "Veteran ",
-						"points": 39,
-						"requireChooseOneKey": "morale"
-					},
-					{
-						"name": "Additional Man",
-						"points": 3,
-						"increment": true,
-						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
-						"max": 1,
-						"addsModels": 1,
-						"availableIn": ["British Commonwealth"]
-					},
-					{
-						"name": "Additional Commando SMGs",
-						"points": 3,
-						"increment": true,
-						"max": "parentModels",
-						"maxKey": "gun",
-						"localLimit": 2,
-						"availableIn": ["British Commonwealth"],
-						"chooseOneKey": "natRuGB",
-						"unlockedByLocal": "For King and Country! (Commandos)"
-					},
-					{
-						"name": "Welbikes",
-						"points": 1,
-						"perModel": true,
-						"availableIn": ["British Commonwealth"],
-						"chooseOneKey": "natRuGB",
-						"unlockedByLocal": "For King and Country! (Airborne)"
-					},
-					{
-						"name": "For King and Country! (Airborne)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["British Commonwealth"],
-						"chooseOneKey": "natRuGB"
-					},
-					{
-						"name": "For King and Country! (Commandos)",
-						"points": 3,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["British Commonwealth"],
-						"chooseOneKey": "natRuGB"
-					},
-					{
-						"name": "For King and Country! (Commandos) w/ SAS",
-						"points": 5,
-						"perModel": true,
-						"unlockedByLocal": ["For King and Country! (Commandos)"],
-						"availableIn": ["British Commonwealth"],
-						"chooseOneKey": "natRuGB"
-					},
-					{
-						"name": "For King and Country! (Guards)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"availableIn": ["British Commonwealth"],
-						"chooseOneKey": "natRuGB"
-					},
-					{
-						"name": "Hammer and Sickle (Airborne)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Veteran"],
-						"availableIn": ["Soviet Bloc"],
-						"chooseOneKey": "natRuSU"
-					},
-					{
-						"name": "Hammer and Sickle (Naval Brigade)",
-						"points": 1,
-						"perModel": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"availableIn": ["Soviet Bloc"],
-						"chooseOneKey": "natRuSU"
-					},
-					{
-						"name": "Hammer and Sickle (NVKD)",
-						"points": 2,
-						"perModel": true,
-						"unlockedByLocal": ["Regular","Veteran"],
-						"availableIn": ["Soviet Bloc"],
-						"chooseOneKey": "natRuSU"
-					}
-				],
-				"keywords": ["Period: E|M|L"],
-				"specialText": "1 Mortar Operator\n 1 Weapon Assitant",
 				"equipment": ["Light Mortar"]
 			},
 			{
@@ -17994,6 +18004,9 @@
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
 					},
 					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
@@ -18047,6 +18060,14 @@
 						"addsPrefix": "Veteran ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Gun Shield",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
 					}
 				],
 				"keywords": [],
@@ -18061,6 +18082,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "British Commonwealth" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Soviet Bloc" }]			
 					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Sweden (PL)" }]			
@@ -18119,6 +18143,22 @@
 						"addsPrefix": "Veteran ",
 						"points": 91,
 						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Gun Shield",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Flak",
+						"points": 5,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
 					}
 				],
 				"keywords": [],
@@ -30031,7 +30071,7 @@
 					}
 				],
 				"points": 0,
-				"models": 5,
+				"models": 2,
 				"localQuantityDisplay": [
 					{
 						"key": "unitType",
@@ -30268,7 +30308,7 @@
 					}
 				],
 				"points": 0,
-				"models": 5,
+				"models": 2,
 				"localQuantityDisplay": [
 					{
 						"key": "unitType",
@@ -30457,7 +30497,7 @@
 					}
 				],
 				"points": 0,
-				"models": 5,
+				"models": 2,
 				"localQuantityDisplay": [
 					{
 						"key": "unitType",
@@ -33170,6 +33210,1739 @@
 				"equipment": ["SMGs"]
 			},
 			{
+				"name": "Soviet Infantry Squad (K'47) ",
+				"validationKeys": ["BATeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Rifles",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 35,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 65,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced"],
+						"max": 7,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 7,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 7,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO Assault Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Assault Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "LMGs",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Tough Fighters",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Shirkers",
+						"points": -2,
+						"perModel": true,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Green",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Soviet Infantry Squad (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]
+					}
+				],
+				"points": 0,
+				"models": 6,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Rifles",
+						"quantity": 6
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BTeam",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 35,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 50,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 65,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 7,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced"],
+						"max": 7,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 10,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 7,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 13,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 7,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO Assault Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Assault Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "LMGs",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Tough Fighters",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Shirkers",
+						"points": -2,
+						"perModel": true,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Green",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": [],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Soviet Infantry Squad (K'47)   ",
+				"validationKeys": ["EngineerTeam"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Soviet Bloc" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Rifles",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 40,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 55,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 70,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 8,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced"],
+						"max": 7,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 11,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 7,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 14,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 7,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO Assault Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Assault Rifles",
+						"points": 6,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "NCO SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "SMGs",
+						"points": 4,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 11,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "LMGs",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Tough Fighters",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Shirkers",
+						"points": -2,
+						"perModel": true,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Green",
+						"points": 0,
+						"perModel": true,
+						"unlockedByLocal": ["Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Engineers"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Rifles"]
+			},
+			{
+				"name": "Guards MK I Armored Infantry Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "DPM Pulemet-Poykbi",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 135,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 150,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 27,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 30,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional DPM Pulemet-Poykbi",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": 4
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Heavy","Lumbering"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["DPM Pulemet-Poykbi","Grade 1 Heavy Powered Armor"]
+			},
+			{
+				"name": "Guards MK I Armored Infantry Squad (K'47) ",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "DPM Pulemet-Poykbi",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BATeams",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 135,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 150,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 27,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 30,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional DPM Pulemet-Poykbi",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": 4
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Heavy","Lumbering"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["DPM Pulemet-Poykbi","Grade 1 Heavy Powered Armor"]
+			},
+			{
+				"name": "Guards MK I Armored Infantry Squad (K'47)   ",
+				"validationKeys": ["EngineerTeam"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Soviet Bloc" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Rifles",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 140,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 155,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 28,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 31,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional DPM Pulemet-Poykbi",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": 4
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Heavy","Lumbering","Engineers"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["DPM Pulemet-Poykbi","Grade 1 Heavy Powered Armor"]
+			},
+			{
+				"name": "Guards MK II Armored Infantry Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "BATeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 95,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 19,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 22,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "AT Rifle",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["SMGs","Grade 1 Heavy Powered Armor"]
+			},
+			{
+				"name": "Guards MK II Armored Infantry Squad (K'47) ",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Advanced Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BATeams",
+						"limit": 2,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 95,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 19,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 22,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "AT Rifle",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["SMGs","Grade 1 Heavy Powered Armor"]
+			},
+			{
+				"name": "Guards MK II Armored Infantry Squad (K'47)   ",
+				"validationKeys": ["EngineerTeam"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Soviet Bloc" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					},
+					{
+						"key": "primary",
+						"property": "Rifles",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 95,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 110,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 19,
+						"increment": true,
+						"unlockedByLocal": ["Regular"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "Additional Men",
+						"points": 22,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "AT Rifle",
+						"points": 15,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "Stubborn",
+						"points": 1,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Heavy"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["SMGs","Grade 1 Heavy Powered Armor"]
+			},
+			{
+				"name": "Moroz Gul Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "STeams",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 140,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 28,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO Assault Rifles",
+						"points": 2,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Assault Rifles",
+						"points": 2,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 9,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Fast","Fieldcraft","Infiltrator","Frozen Meat","Horror"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Moroz Gul Squad (K'47) ",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 3
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 140,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 28,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "NCO Assault Rifles",
+						"points": 2,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Assault Rifles",
+						"points": 2,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 9,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Fast","Fieldcraft","Infiltrator","Frozen Meat","Horror"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["SMGs"]
+			},
+			{
+				"name": "Ursus Infantry Squad (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Teeth and Claws",
+						"quantity": 3
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "STeams",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 129,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 43,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 3,
+						"addsModels": 1
+					},
+					{
+						"name": "Mauls",
+						"points": 10,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Deadly (4)","Fearless","Hard to Kill","Wide Formation","Horror","Large"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Teeth and Claws"]
+			},
+			{
+				"name": "Ursus Infantry Squad (K'47) ",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 3
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 129,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Men",
+						"points": 43,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 3,
+						"addsModels": 1
+					},
+					{
+						"name": "Mauls",
+						"points": 10,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Deadly (4)","Fearless","Hard to Kill","Wide Formation","Horror","Large"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Teeth and Claws"]
+			},
+			{
+				"name": "Daughters of the Motherland (K'47)",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]
+					}
+				],
+				"points": 0,
+				"models": 5,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Assault Rifles",
+						"quantity": 5
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "STeams",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 145,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Daughters",
+						"points": 28,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "LMGs",
+						"points": 9,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Zvukovoy Avtomat",
+						"points": 29,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Fanatics","Fast"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Assault Rifle"]
+			},
+			{
+				"name": "Daughters of the Motherland (K'47) ",
+				"validationKeys": ["ASTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Specialist Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "SMGs",
+						"quantity": 3
+					}
+				],
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "BASTeams",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 145,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Additional Daughters",
+						"points": 28,
+						"increment": true,
+						"unlockedByLocal": ["Veteran"],
+						"max": 5,
+						"addsModels": 1
+					},
+					{
+						"name": "LMGs",
+						"points": 9,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "Zvukovoy Avtomat",
+						"points": 29,
+						"increment": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 2
+					},
+					{
+						"name": "RPG-1s",
+						"points": 5,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					},
+					{
+						"name": "AT Grenades",
+						"points": 2,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"availableIn": [
+							"Soviet Bloc"
+						]
+					}
+				],
+				"keywords": ["Fanatics","Fast"],
+				"specialText": "1 NCO\n 4 Riflemen",
+				"equipment": ["Assault Rifle"]
+			},
+			{
 				"name": "Rifle Squad (K'47) ",
 				"validationKeys": ["BATeams"],
 				"factions": [],
@@ -34964,6 +36737,9 @@
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "Empire of Japan" }]			
 					},
 					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
@@ -35021,6 +36797,7 @@
 						"availableIn": [
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -35113,6 +36890,7 @@
 						"availableIn": [
 							"British Commonwealth",
 							"Empire of Japan",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -35201,6 +36979,7 @@
 						"requireChooseOneKey": "gShield",
 						"availableIn": [
 							"British Commonwealth",
+							"Soviet Bloc",
 							"United States of America"
 						]
 					},
@@ -35223,6 +37002,9 @@
 				"factions": [],
 				"order": 1,
 				"availableIn": [
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
 					{
 						"all": [{ "in": "Artillery Platoon"	}, { "in": "United States of America" }]			
 					}
@@ -36382,6 +38164,24 @@
 					},
 					{
 						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Soviet Bloc" }]			
 					}
 				],
 				"points": 0,
@@ -36423,6 +38223,9 @@
 				"availableIn": [
 					{
 						"all": [{ "in": "Recce Platoon"	}, { "in": "Empire of Japan" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Soviet Bloc" }]			
 					}
 				],
 				"points": 0,
@@ -36557,14 +38360,381 @@
 				"equipment": []
 			},
 			{
-				"name": "M17 Tesla Cannon Team Team",
+				"name": "Zvukovoy Proeyektor Team",
 				"validationKeys": ["ArtyTeams"],
 				"factions": [],
 				"order": 1,
 				"riftDice": 1,
 				"availableIn": [
 					{
-						"all": [{ "in": "Artillery Platoon"	}, { "in": "Axis" }]			
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 3,
+				"localQuantityDisplay": [
+					{
+						"key": "unitType",
+						"property": "Basic Unit",
+						"quantity": 1
+					},
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					},
+					{
+						"key": "primary",
+						"property": "Weapon Crew Members",
+						"quantity": 3
+					}
+				],
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Gun Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 84,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 120,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 156,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": [],
+				"specialText": "3 Crew Members",
+				"equipment": ["Zvukovoy Proeyektor Team"]
+			},
+			{
+				"name": "M3 White Scout Car (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 54,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 68,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 82,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Right Rear Facing Pintle MMG",
+						"points": 15,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Left Rear Facing Pintle MMG",
+						"points": 15,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+						
+				],
+				"keywords": ["Transport","Tow","Open Topped"],
+				"specialText": "Damage Value: 6+\n Wheeled Vehicle\n Transport: 8\n Tow: L/M AT Gun, L Howitzer, L AA Gun",
+				"equipment": ["Pintle Mounted HMG"]
+			},
+			{
+				"name": "M3 White Scout Car (K'47) ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 54,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 68,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 82,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Right Rear Facing Pintle MMG",
+						"points": 15,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					},
+					{
+						"name": "Left Rear Facing Pintle MMG",
+						"points": 15,
+						"perModel": true,
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"]
+					}
+						
+				],
+				"keywords": ["Transport","Tow","Open Topped"],
+				"specialText": "Damage Value: 6+\n Wheeled Vehicle\n Transport: 8\n Tow: L/M AT Gun, L Howitzer, L AA Gun",
+				"equipment": ["Pintle Mounted HMG"]
+			},
+			{
+				"name": "T-20 Komsomolets (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 37,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 46,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 55,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Tow","Open Topped"],
+				"specialText": "Damage Value: 7+\n Tracked Vehicle\n Transport: 6\n Tow: Any",
+				"equipment": ["Hull mounted LMG"]
+			},
+			{
+				"name": "T-20 Komsomolets (K'47) ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 37,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 46,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 55,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport","Tow","Open Topped"],
+				"specialText": "Damage Value: 7+\n Tracked Vehicle\n Transport: 6\n Tow: Any",
+				"equipment": ["Hull mounted LMG"]
+			},
+			{
+				"name": "GAZ 'Jeep' (K'47)",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Assault Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Soviet Bloc" }]			
+					},
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 14,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 18,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 2,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Damage Value: 6+\n Tracked Vehicle\n Transport: 3",
+				"equipment": []
+			},
+			{
+				"name": "GAZ 'Jeep' (K'47) ",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Recce Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 16,
+				"options": [
+					{
+						"name": "Recce",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10,
+						"requireChooseOneKey": "Recce"
+					},
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Inexperienced ",
+						"points": 14,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 18,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 2,
+						"requireChooseOneKey": "morale"
+					}
+				],
+				"keywords": ["Transport"],
+				"specialText": "Damage Value: 6+\n Tracked Vehicle\n Transport: 3",
+				"equipment": []
+			},
+			{
+				"name": "M17 Tesla Cannon Team ",
+				"validationKeys": ["ArtyTeams"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "United States of America" }]			
 					}
 				],
 				"points": 0,
@@ -39127,6 +41297,454 @@
 				"keywords": ["Two-Legged"],
 				"specialText": "Damage Value: 9+",
 				"equipment": ["Forward Facing Twin Light Autocannon","Left and Right Arms"]
+			},
+			{
+				"name": "Kazak Light Walker (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 115,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 138,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Hull Mounted Light Autocannon",
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Hull Mounted Light AT Gun",
+						"points": 20,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Two-Legged","Recce"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Hull Mounted MMG"]
+			},
+			{
+				"name": "Kazak Light Walker (K'47) ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 115,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 138,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Hull Mounted Light Autocannon",
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Hull Mounted Light AT Gun",
+						"points": 20,
+						"requireChooseOneKey": "priWeapon"
+					}
+				],
+				"keywords": ["Two-Legged","Recce"],
+				"specialText": "Damage Value: 8+",
+				"equipment": ["Hull Mounted MMG"]
+			},
+			{
+				"name": "DM-40 Molot Medium Walker (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 238,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 286,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Two-Legged","Slow","Reinforced Front Armor"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Hull Mounted Medium AT Gun","Hull Mounted Twin MMGs"]
+			},
+			{
+				"name": "DM-40 Molot Medium Walker (K'47) ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 238,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 286,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Two-Legged","Slow","Reinforced Front Armor"],
+				"specialText": "Damage Value: 9+",
+				"equipment": ["Hull Mounted Medium AT Gun","Hull Mounted Twin MMGs"]
+			},
+			{
+				"name": "Mahmot Heavy Walker (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 495,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 594,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Reinforced Front Armor",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 55
+					}
+				],
+				"keywords": ["Multi-Legged","Slow"],
+				"specialText": "Damage Value: 11+",
+				"equipment": ["Turret Mounted Light Howitzer","Hull Mounted Heavy Howitzer","Front Left Facing Turret Mounted HMG","Front Right Facing Turret Mounted HMG"]
+			},
+			{
+				"name": "Mahmot Heavy Walker (K'47) ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 495,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 594,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Reinforced Front Armor",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 55
+					}
+				],
+				"keywords": ["Multi-Legged","Slow"],
+				"specialText": "Damage Value: 11+",
+				"equipment": ["Turret Mounted Light Howitzer","Hull Mounted Heavy Howitzer","Front Left Facing Turret Mounted HMG","Front Right Facing Turret Mounted HMG"]
+			},
+			{
+				"name": "Mastodont Heavy Walker (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 430,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 516,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Reinforced Front Armor",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 55
+					}
+				],
+				"keywords": ["Multi-Legged","Slow"],
+				"specialText": "Damage Value: 11+",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Hull Mounted MMG"]
+			},
+			{
+				"name": "Mastodont Heavy Walker (K'47) ",
+				"validationKeys": ["Walker"],
+				"factions": [],
+				"order": 1,
+				"rifDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 11,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Walker",
+						"limit": 3,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 430,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 516,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Reinforced Front Armor",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 55
+					}
+				],
+				"keywords": ["Multi-Legged","Slow"],
+				"specialText": "Damage Value: 11+",
+				"equipment": ["Turret Mounted Super Heavy AT Gun","Hull Mounted MMG"]
 			},
 			{
 				"name": "M3 A2 Pondskater Scout Walker (K'47)",
@@ -41914,6 +44532,396 @@
 				"keywords": [],
 				"specialText": "Damage Value: 8+\n Tracked Vehicle",
 				"equipment": ["Hull Mounted MMG","Rear Facing Turret Mounted MMG"]
+			},
+			{
+				"name": "T-34/ZP Medium Tank (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 192,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 240,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 288,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted Zvukovoy Proeyektor",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Heavy AT Cannon with Coaxial MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -15,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Hull Mounted MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Hull Mounted Flamethrower",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 25,
+						"chooseOneKey": "secWeapon"
+					}
+				],
+				"keywords": [],
+				"specialText": "Damage Value: 9+\n Tracked Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "T-34/ZP Medium Tank (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 0,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 0
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 192,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 240,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 288,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					},
+					{
+						"name": "Turret Mounted Zvukovoy Proeyektor",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Turret Mounted Heavy AT Cannon with Coaxial MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": -15,
+						"requireChooseOneKey": "priWeapon"
+					},
+					{
+						"name": "Hull Mounted MMG",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 0,
+						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Hull Mounted Flamethrower",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 25,
+						"chooseOneKey": "secWeapon"
+					}
+				],
+				"keywords": [],
+				"specialText": "Damage Value: 9+\n Tracked Vehicle",
+				"equipment": []
+			},
+			{
+				"name": "KV-ZP Heavy Tank (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 256,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 320,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 384,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": [],
+				"specialText": "Damage Value: 10+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Zvokovoy Proeyektor","Hull Mounted MMG"]
+			},
+			{
+				"name": "KV-ZP Heavy Tank (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 256,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 320,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 384,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": [],
+				"specialText": "Damage Value: 10+\n Tracked Vehicle",
+				"equipment": ["Turret Mounted Zvokovoy Proeyektor","Hull Mounted MMG"]
+			},
+			{
+				"name": "Zvukovoy Proeyektor Emplacement (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 160,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 200,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 240,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Emplacement","Armored All Round"],
+				"specialText": "Damage Value: 10+\n Emplacement Weapon",
+				"equipment": ["Turret Mounted Zvokovoy Proeyektor"]
+			},
+			{
+				"name": "Zvukovoy Proeyektor Emplacement (K'47)",
+				"validationKeys": ["TotalVehicle"],
+				"factions": [],
+				"order": 1,
+				"riftDice": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Armored Walker Platoon"	}, { "in": "Soviet Bloc" }]			
+					}
+				],
+				"points": 0,
+				"models": 1,
+				"sortPriority": 12,
+				"localQuantityDisplay": [
+					{
+						"key": "riftDice",
+						"property": "Rift Dice",
+						"quantity": 1
+					}
+				],
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{
+						"name": "Inexperienced",
+						"addsPrefix": "Regular ",
+						"points": 160,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Regular",
+						"addsPrefix": "Regular ",
+						"points": 200,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Veteran",
+						"addsPrefix": "Veteran ",
+						"points": 240,
+						"requireChooseOneKey": "morale"
+					},
+					{
+						"name": "Command Vehicle",
+						"unlockedByLocal": ["Inexperienced","Regular","Veteran"],
+						"points": 10
+					}
+				],
+				"keywords": ["Emplacement","Armored All Round"],
+				"specialText": "Damage Value: 10+\n Emplacement Weapon",
+				"equipment": ["Turret Mounted Zvokovoy Proeyektor"]
 			},
 			{
 				"name": "M3 A4(T) Stuart Light Tank (K'47)",
