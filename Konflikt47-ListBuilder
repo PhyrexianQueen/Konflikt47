@@ -180,6 +180,7 @@
 ],
 "data": 
 	{
+		"dataTableKeys": ["units"],
 		"factions": [
 			{
 				"name": "Axis",
