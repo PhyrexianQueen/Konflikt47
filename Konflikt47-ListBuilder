@@ -94,6 +94,7 @@
 				"label": "Platoon",
 				"type": "main",
 				"dataSource": "platoons",
+				"sumChildPoints": true,
 				 "sortMainOptionsAlphabetically": false,
 				"children": [
 					{
@@ -103,6 +104,11 @@
 						"allowCollapse": true,
 						"label": "Units",
 						"type": "list",
+						"costDisplayIfEmpty": 
+							{
+								"propertyName": "options",
+								"names": ["Regular","Inexperienced","Inexperienced ","Veteran","Hollywood"]
+							},
 						"sortPrioritySeparators": true,
                         "sortPriorityLabels": {
                             "1": "Heroes",
@@ -2757,7 +2763,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 170,
 						"requireChooseOneKey": "morale"
 					},
@@ -2869,7 +2875,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 170,
 						"requireChooseOneKey": "morale"
 					},
@@ -2971,7 +2977,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 121,
 						"requireChooseOneKey": "morale"
 					},
@@ -3053,7 +3059,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 121,
 						"requireChooseOneKey": "morale"
 					},
@@ -3112,7 +3118,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 121,
 						"requireChooseOneKey": "morale"
 					},
@@ -3171,7 +3177,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					}
@@ -3263,7 +3269,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					}
@@ -3314,7 +3320,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 160,
 						"requireChooseOneKey": "morale"
 					},
@@ -3390,7 +3396,7 @@
 			"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 160,
 						"requireChooseOneKey": "morale"
 					},
@@ -3449,7 +3455,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 158,
 						"requireChooseOneKey": "morale"
 					}
@@ -3520,7 +3526,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 158,
 						"requireChooseOneKey": "morale"
 					}
@@ -3571,7 +3577,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 135,
 						"requireChooseOneKey": "morale"
 					}
@@ -3642,7 +3648,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 135,
 						"requireChooseOneKey": "morale"
 					}
@@ -3713,7 +3719,7 @@
 			"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 68,
 						"requireChooseOneKey": "morale"
 					}
@@ -3777,7 +3783,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 42,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -3791,7 +3797,7 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -3805,7 +3811,7 @@
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 78,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -4126,7 +4132,7 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 71,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -4135,7 +4141,7 @@
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 89,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -4288,7 +4294,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 95,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -4442,7 +4448,7 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 80,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -4451,7 +4457,7 @@
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 98,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -4591,7 +4597,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 87,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -4727,7 +4733,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 91,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -4851,7 +4857,7 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 69,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -4860,7 +4866,7 @@
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 87,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -4995,7 +5001,7 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 80,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -5004,7 +5010,7 @@
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 98,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -5124,7 +5130,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 92,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -5235,7 +5241,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 150,
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "morale"
@@ -5314,7 +5320,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 150,
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "morale"
@@ -5393,7 +5399,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 140,
 						"availableIn": ["United States of America"],
 						"requireChooseOneKey": "morale"
@@ -5682,7 +5688,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 17,
 						"availableIn": [
 							"Axis",
@@ -5694,7 +5700,7 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 25,
 						"availableIn": [
 							"Axis",
@@ -5706,7 +5712,7 @@
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 33,
 						"availableIn": [
 							"Axis",
@@ -5848,7 +5854,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 21,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -5862,7 +5868,7 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 30,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -5876,7 +5882,7 @@
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 39,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -6218,7 +6224,7 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 41,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -6232,7 +6238,7 @@
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 50,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -6402,7 +6408,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 56,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -6558,7 +6564,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 40,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -6747,7 +6753,7 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -6756,7 +6762,7 @@
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 59,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -6922,7 +6928,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 110,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -7032,7 +7038,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 48,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -7180,7 +7186,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 52,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -7316,7 +7322,7 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 39,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -7325,7 +7331,7 @@
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 48,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -7473,7 +7479,7 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -7482,7 +7488,7 @@
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 59,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -7617,7 +7623,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 27,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -7735,19 +7741,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 21,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 30,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 39,
 						"requireChooseOneKey": "morale"
 					},
@@ -7875,21 +7881,21 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 15,
 						"availableIn": ["Soviet Bloc"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 21,
 						"availableIn": ["Soviet Bloc"],
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 27,
 						"availableIn": ["Soviet Bloc"],
 						"requireChooseOneKey": "morale"
@@ -8031,7 +8037,7 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 23,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -8040,7 +8046,7 @@
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 30,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -8160,7 +8166,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 36,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -8235,7 +8241,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 4,
 						"requireChooseOneKey": "morale"
 					},
@@ -8320,13 +8326,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 58,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					}
@@ -8372,13 +8378,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 38,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 46,
 						"requireChooseOneKey": "morale"
 					}
@@ -8409,13 +8415,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 75,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 90,
 						"requireChooseOneKey": "morale"
 					}
@@ -8446,13 +8452,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 58,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					}
@@ -8526,13 +8532,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 75,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 90,
 						"requireChooseOneKey": "morale"
 					},
@@ -8763,13 +8769,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 75,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 90,
 						"requireChooseOneKey": "morale"
 					},
@@ -8980,7 +8986,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 90,
 						"requireChooseOneKey": "morale"
 					},
@@ -9106,7 +9112,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 90,
 						"requireChooseOneKey": "morale"
 					},
@@ -9237,13 +9243,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 52,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 67,
 						"requireChooseOneKey": "morale"
 					},
@@ -9366,19 +9372,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 28,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 52,
 						"requireChooseOneKey": "morale"
 					},
@@ -9441,19 +9447,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 21,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 30,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 39,
 						"requireChooseOneKey": "morale"
 					},
@@ -9560,19 +9566,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 21,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 30,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 39,
 						"requireChooseOneKey": "morale"
 					},
@@ -9683,19 +9689,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 42,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 78,
 						"requireChooseOneKey": "morale"
 					}
@@ -9751,19 +9757,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 42,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 78,
 						"requireChooseOneKey": "morale"
 					}
@@ -9822,13 +9828,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 129,
 						"requireChooseOneKey": "morale"
 					}
@@ -9884,13 +9890,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 129,
 						"requireChooseOneKey": "morale"
 					}
@@ -9955,19 +9961,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 42,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 78,
 						"requireChooseOneKey": "morale"
 					},
@@ -10063,19 +10069,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 42,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 78,
 						"requireChooseOneKey": "morale"
 					},
@@ -10163,19 +10169,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 44,
 						"requireChooseOneKey": "morale"
 					},
@@ -10241,19 +10247,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 44,
 						"requireChooseOneKey": "morale"
 					},
@@ -10320,19 +10326,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 33,
 						"requireChooseOneKey": "morale"
 					},
@@ -10422,19 +10428,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 33,
 						"requireChooseOneKey": "morale"
 					},
@@ -10528,19 +10534,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 33,
 						"requireChooseOneKey": "morale"
 					},
@@ -10634,19 +10640,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 33,
 						"requireChooseOneKey": "morale"
 					},
@@ -10738,19 +10744,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					},
@@ -10883,13 +10889,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 80,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 104,
 						"requireChooseOneKey": "morale"
 					}
@@ -10942,13 +10948,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 80,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 104,
 						"requireChooseOneKey": "morale"
 					}
@@ -11007,13 +11013,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 96,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 112,
 						"requireChooseOneKey": "morale"
 					},
@@ -11091,13 +11097,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 96,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 112,
 						"requireChooseOneKey": "morale"
 					},
@@ -11181,19 +11187,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 28,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 52,
 						"requireChooseOneKey": "morale"
 					}
@@ -11246,19 +11252,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 28,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 52,
 						"requireChooseOneKey": "morale"
 					}
@@ -11317,19 +11323,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 56,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 80,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 104,
 						"requireChooseOneKey": "morale"
 					}
@@ -11382,19 +11388,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 56,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 80,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 104,
 						"requireChooseOneKey": "morale"
 					}
@@ -11448,7 +11454,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 84,
 						"requireChooseOneKey": "morale"
 					}
@@ -11499,7 +11505,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 84,
 						"requireChooseOneKey": "morale"
 					}
@@ -11567,19 +11573,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 33,
 						"requireChooseOneKey": "morale"
 					}
@@ -11635,19 +11641,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 33,
 						"requireChooseOneKey": "morale"
 					}
@@ -11706,7 +11712,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 110,
 						"requireChooseOneKey": "morale"
 					},
@@ -11768,7 +11774,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 110,
 						"requireChooseOneKey": "morale"
 					},
@@ -11829,19 +11835,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 21,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 30,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 39,
 						"requireChooseOneKey": "morale"
 					},
@@ -11966,19 +11972,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 21,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 30,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 39,
 						"requireChooseOneKey": "morale"
 					},
@@ -12106,19 +12112,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 20,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					}
@@ -12167,19 +12173,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 20,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					}
@@ -12241,19 +12247,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 20,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					}
@@ -12312,19 +12318,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 20,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					}
@@ -12376,19 +12382,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 20,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					}
@@ -12437,19 +12443,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 20,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					}
@@ -12511,19 +12517,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 20,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					}
@@ -12582,19 +12588,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 20,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					}
@@ -12646,19 +12652,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 22,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 28,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 34,
 						"requireChooseOneKey": "morale"
 					},
@@ -12775,19 +12781,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 22,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 28,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 34,
 						"requireChooseOneKey": "morale"
 					},
@@ -12911,19 +12917,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 22,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 28,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 34,
 						"requireChooseOneKey": "morale"
 					},
@@ -13049,19 +13055,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 22,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 28,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 34,
 						"requireChooseOneKey": "morale"
 					},
@@ -13194,19 +13200,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 28,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 52,
 						"requireChooseOneKey": "morale"
 					}
@@ -13259,19 +13265,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 28,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 52,
 						"requireChooseOneKey": "morale"
 					}
@@ -13328,19 +13334,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 36,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 46,
 						"requireChooseOneKey": "morale"
 					},
@@ -13436,19 +13442,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 36,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 46,
 						"requireChooseOneKey": "morale"
 					},
@@ -13543,19 +13549,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					}
@@ -13608,19 +13614,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					}
@@ -13684,19 +13690,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 20,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					}
@@ -13751,19 +13757,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 20,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					}
@@ -13819,19 +13825,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 28,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 52,
 						"requireChooseOneKey": "morale"
 					}
@@ -13884,19 +13890,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 28,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 52,
 						"requireChooseOneKey": "morale"
 					}
@@ -13958,19 +13964,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 28,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 52,
 						"requireChooseOneKey": "morale"
 					},
@@ -14144,19 +14150,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 28,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 52,
 						"requireChooseOneKey": "morale"
 					},
@@ -14348,19 +14354,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					},
@@ -14485,19 +14491,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					},
@@ -14624,13 +14630,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -14692,7 +14698,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 77,
 						"requireChooseOneKey": "morale"
 					},
@@ -14757,7 +14763,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 77,
 						"requireChooseOneKey": "morale"
 					},
@@ -14819,19 +14825,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -14984,19 +14990,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -15155,7 +15161,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -15285,7 +15291,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 84,
 						"requireChooseOneKey": "morale"
 					},
@@ -15415,7 +15421,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 84,
 						"requireChooseOneKey": "morale"
 					},
@@ -15556,13 +15562,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -15616,7 +15622,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 240,
 						"requireChooseOneKey": "morale"
 					},
@@ -15658,7 +15664,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					}
@@ -15708,19 +15714,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -15905,19 +15911,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -16111,19 +16117,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -16309,13 +16315,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -16442,19 +16448,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 48,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 66,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 84,
 						"requireChooseOneKey": "morale"
 					},
@@ -16552,7 +16558,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -16664,7 +16670,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -16783,19 +16789,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -16932,7 +16938,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 84,
 						"requireChooseOneKey": "morale"
 					},
@@ -17050,7 +17056,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 84,
 						"requireChooseOneKey": "morale"
 					},
@@ -17175,13 +17181,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -17312,7 +17318,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 75,
 						"requireChooseOneKey": "morale"
 					},
@@ -17423,19 +17429,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 21,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 30,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 39,
 						"requireChooseOneKey": "morale"
 					},
@@ -17504,19 +17510,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 21,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 30,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 39,
 						"requireChooseOneKey": "morale"
 					},
@@ -17598,19 +17604,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 21,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 30,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 39,
 						"requireChooseOneKey": "morale"
 					}
@@ -17676,19 +17682,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 21,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 30,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 39,
 						"requireChooseOneKey": "morale"
 					}
@@ -17757,19 +17763,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 45,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 59,
 						"requireChooseOneKey": "morale"
 					},
@@ -17854,19 +17860,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 42,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 78,
 						"requireChooseOneKey": "morale"
 					},
@@ -17946,7 +17952,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -17960,7 +17966,7 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale",
 						"availableIn": [
@@ -17974,7 +17980,7 @@
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"availableIn": [
 							"British Commonwealth",
@@ -18046,19 +18052,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -18129,19 +18135,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 49,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 91,
 						"requireChooseOneKey": "morale"
 					},
@@ -18202,7 +18208,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 99,
 						"requireChooseOneKey": "morale"
 					}
@@ -18247,7 +18253,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 99,
 						"requireChooseOneKey": "morale"
 					}
@@ -18292,7 +18298,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 84,
 						"requireChooseOneKey": "morale"
 					}
@@ -18337,7 +18343,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 84,
 						"requireChooseOneKey": "morale"
 					}
@@ -18392,19 +18398,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 49,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 91,
 						"requireChooseOneKey": "morale"
 					},
@@ -18480,19 +18486,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 21,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 30,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 39,
 						"requireChooseOneKey": "morale"
 					},
@@ -18603,7 +18609,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -18670,7 +18676,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -18734,13 +18740,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -18860,13 +18866,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -18983,7 +18989,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 95,
 						"requireChooseOneKey": "morale"
 					},
@@ -19095,7 +19101,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 95,
 						"requireChooseOneKey": "morale"
 					},
@@ -19204,13 +19210,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -19311,13 +19317,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -19415,7 +19421,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -19526,7 +19532,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -19634,7 +19640,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -19752,7 +19758,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -19866,7 +19872,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					},
@@ -19973,7 +19979,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					},
@@ -20077,7 +20083,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 56,
 						"requireChooseOneKey": "morale"
 					},
@@ -20211,7 +20217,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 56,
 						"requireChooseOneKey": "morale"
 					},
@@ -20343,7 +20349,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -20422,7 +20428,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -20498,7 +20504,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -20597,7 +20603,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -20693,7 +20699,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -20817,7 +20823,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -20938,7 +20944,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -21051,7 +21057,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -21161,7 +21167,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -21274,7 +21280,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -21384,7 +21390,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -21485,7 +21491,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -21586,7 +21592,7 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
@@ -21693,7 +21699,7 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
@@ -21800,13 +21806,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -21905,13 +21911,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -22010,7 +22016,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -22125,7 +22131,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -22240,7 +22246,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
@@ -22323,7 +22329,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
@@ -22405,13 +22411,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 72,
 						"requireChooseOneKey": "morale"
 					},
@@ -22509,13 +22515,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 72,
 						"requireChooseOneKey": "morale"
 					},
@@ -22614,7 +22620,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -22709,7 +22715,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -22804,7 +22810,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -22902,7 +22908,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -23000,7 +23006,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
@@ -23086,7 +23092,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
@@ -23172,13 +23178,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -23310,13 +23316,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -23448,7 +23454,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
@@ -23534,7 +23540,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
@@ -23620,7 +23626,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 45,
 						"requireChooseOneKey": "morale"
 					},
@@ -23709,7 +23715,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 45,
 						"requireChooseOneKey": "morale"
 					},
@@ -23798,7 +23804,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -23884,7 +23890,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -23969,13 +23975,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 52,
 						"requireChooseOneKey": "morale"
 					},
@@ -24066,13 +24072,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 52,
 						"requireChooseOneKey": "morale"
 					},
@@ -24191,7 +24197,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
@@ -24291,7 +24297,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 25,
 						"requireChooseOneKey": "morale"
 					},
@@ -24391,7 +24397,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
@@ -24499,7 +24505,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
@@ -24610,7 +24616,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -24699,7 +24705,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
@@ -24791,13 +24797,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 75,
 						"requireChooseOneKey": "morale"
 					},
@@ -24903,13 +24909,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 75,
 						"requireChooseOneKey": "morale"
 					},
@@ -25015,7 +25021,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 75,
 						"requireChooseOneKey": "morale"
 					},
@@ -25109,7 +25115,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 75,
 						"requireChooseOneKey": "morale"
 					},
@@ -25203,19 +25209,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 45,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 75,
 						"requireChooseOneKey": "morale"
 					},
@@ -25345,19 +25351,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 45,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 75,
 						"requireChooseOneKey": "morale"
 					},
@@ -25491,7 +25497,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 30,
 						"requireChooseOneKey": "morale"
 					},
@@ -25559,7 +25565,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 30,
 						"requireChooseOneKey": "morale"
 					},
@@ -25627,19 +25633,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 42,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 78,
 						"requireChooseOneKey": "morale"
 					},
@@ -25794,19 +25800,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 42,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 78,
 						"requireChooseOneKey": "morale"
 					},
@@ -25961,19 +25967,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 48,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 66,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 84,
 						"requireChooseOneKey": "morale"
 					},
@@ -26128,13 +26134,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 100,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 115,
 						"requireChooseOneKey": "morale"
 					},
@@ -26246,13 +26252,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 100,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 115,
 						"requireChooseOneKey": "morale"
 					},
@@ -26353,13 +26359,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 75,
 						"requireChooseOneKey": "morale"
 					},
@@ -26467,13 +26473,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 75,
 						"requireChooseOneKey": "morale"
 					},
@@ -26574,13 +26580,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 80,
 						"requireChooseOneKey": "morale"
 					},
@@ -26698,13 +26704,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 144,
 						"requireChooseOneKey": "morale"
 					},
@@ -26823,13 +26829,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 144,
 						"requireChooseOneKey": "morale"
 					},
@@ -26948,13 +26954,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 132,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 150,
 						"requireChooseOneKey": "morale"
 					},
@@ -27081,7 +27087,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 125,
 						"requireChooseOneKey": "morale"
 					},
@@ -27156,7 +27162,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 125,
 						"requireChooseOneKey": "morale"
 					},
@@ -27235,7 +27241,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 90,
 						"requireChooseOneKey": "morale"
 					},
@@ -27347,7 +27353,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 90,
 						"requireChooseOneKey": "morale"
 					},
@@ -27462,7 +27468,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 130,
 						"requireChooseOneKey": "morale"
 					},
@@ -27547,7 +27553,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 130,
 						"requireChooseOneKey": "morale"
 					},
@@ -27635,7 +27641,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 125,
 						"requireChooseOneKey": "morale"
 					},
@@ -27720,7 +27726,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 125,
 						"requireChooseOneKey": "morale"
 					},
@@ -27808,7 +27814,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -27866,7 +27872,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -27924,7 +27930,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -27985,7 +27991,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 129,
 						"requireChooseOneKey": "morale"
 					},
@@ -28043,7 +28049,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 129,
 						"requireChooseOneKey": "morale"
 					},
@@ -28104,7 +28110,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
@@ -28162,7 +28168,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
@@ -28223,7 +28229,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					},
@@ -28344,7 +28350,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					},
@@ -28465,7 +28471,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 125,
 						"requireChooseOneKey": "morale"
 					},
@@ -28593,19 +28599,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -28769,19 +28775,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -28945,19 +28951,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -29130,13 +29136,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 132,
 						"requireChooseOneKey": "morale"
 					},
@@ -29246,13 +29252,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 132,
 						"requireChooseOneKey": "morale"
 					},
@@ -29354,13 +29360,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 124,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 136,
 						"requireChooseOneKey": "morale"
 					},
@@ -29462,7 +29468,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 136,
 						"requireChooseOneKey": "morale"
 					},
@@ -29537,7 +29543,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 136,
 						"requireChooseOneKey": "morale"
 					},
@@ -29607,7 +29613,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 175,
 						"requireChooseOneKey": "morale"
 					},
@@ -29674,7 +29680,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 175,
 						"requireChooseOneKey": "morale"
 					},
@@ -29741,7 +29747,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 175,
 						"requireChooseOneKey": "morale"
 					},
@@ -29811,7 +29817,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 225,
 						"requireChooseOneKey": "morale"
 					},
@@ -29878,7 +29884,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 225,
 						"requireChooseOneKey": "morale"
 					},
@@ -29945,7 +29951,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 225,
 						"requireChooseOneKey": "morale"
 					},
@@ -30015,7 +30021,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -30101,7 +30107,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -30187,7 +30193,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -30276,7 +30282,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 146,
 						"requireChooseOneKey": "morale"
 					},
@@ -30338,7 +30344,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 146,
 						"requireChooseOneKey": "morale"
 					},
@@ -30400,7 +30406,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 146,
 						"requireChooseOneKey": "morale"
 					},
@@ -30465,7 +30471,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 166,
 						"requireChooseOneKey": "morale"
 					},
@@ -30527,7 +30533,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 166,
 						"requireChooseOneKey": "morale"
 					},
@@ -30589,7 +30595,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 166,
 						"requireChooseOneKey": "morale"
 					},
@@ -30654,7 +30660,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 95,
 						"requireChooseOneKey": "morale"
 					},
@@ -30745,7 +30751,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 95,
 						"requireChooseOneKey": "morale"
 					},
@@ -30844,7 +30850,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 107,
 						"requireChooseOneKey": "morale"
 					},
@@ -30922,7 +30928,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 107,
 						"requireChooseOneKey": "morale"
 					},
@@ -31000,19 +31006,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 49,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 91,
 						"requireChooseOneKey": "morale"
 					},
@@ -31174,19 +31180,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 49,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 91,
 						"requireChooseOneKey": "morale"
 					},
@@ -31349,19 +31355,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 56,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 77,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 98,
 						"requireChooseOneKey": "morale"
 					},
@@ -31541,7 +31547,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 161,
 						"requireChooseOneKey": "morale"
 					},
@@ -31634,7 +31640,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 161,
 						"requireChooseOneKey": "morale"
 					},
@@ -31728,7 +31734,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 168,
 						"requireChooseOneKey": "morale"
 					},
@@ -31829,7 +31835,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 110,
 						"requireChooseOneKey": "morale"
 					},
@@ -31932,7 +31938,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 110,
 						"requireChooseOneKey": "morale"
 					},
@@ -32042,7 +32048,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 146,
 						"requireChooseOneKey": "morale"
 					},
@@ -32144,7 +32150,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 146,
 						"requireChooseOneKey": "morale"
 					},
@@ -32259,7 +32265,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 166,
 						"requireChooseOneKey": "morale"
 					},
@@ -32349,7 +32355,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 166,
 						"requireChooseOneKey": "morale"
 					},
@@ -32447,7 +32453,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 130,
 						"requireChooseOneKey": "morale"
 					},
@@ -32537,7 +32543,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 130,
 						"requireChooseOneKey": "morale"
 					},
@@ -32625,7 +32631,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 114,
 						"requireChooseOneKey": "morale"
 					},
@@ -32683,7 +32689,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 114,
 						"requireChooseOneKey": "morale"
 					},
@@ -32744,7 +32750,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 160,
 						"requireChooseOneKey": "morale"
 					},
@@ -32828,7 +32834,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 160,
 						"requireChooseOneKey": "morale"
 					},
@@ -32912,7 +32918,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 165,
 						"requireChooseOneKey": "morale"
 					},
@@ -32999,7 +33005,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 130,
 						"requireChooseOneKey": "morale"
 					},
@@ -33083,7 +33089,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 130,
 						"requireChooseOneKey": "morale"
 					},
@@ -33167,7 +33173,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 135,
 						"requireChooseOneKey": "morale"
 					},
@@ -33250,19 +33256,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -33441,19 +33447,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -33626,19 +33632,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
@@ -33818,13 +33824,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 135,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 150,
 						"requireChooseOneKey": "morale"
 					},
@@ -33923,13 +33929,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 135,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 150,
 						"requireChooseOneKey": "morale"
 					},
@@ -34029,13 +34035,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 140,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 155,
 						"requireChooseOneKey": "morale"
 					},
@@ -34142,13 +34148,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 95,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 110,
 						"requireChooseOneKey": "morale"
 					},
@@ -34249,13 +34255,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 95,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 110,
 						"requireChooseOneKey": "morale"
 					},
@@ -34357,13 +34363,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 95,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 110,
 						"requireChooseOneKey": "morale"
 					},
@@ -34468,7 +34474,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 140,
 						"requireChooseOneKey": "morale"
 					},
@@ -34562,7 +34568,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 140,
 						"requireChooseOneKey": "morale"
 					},
@@ -34659,7 +34665,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 129,
 						"requireChooseOneKey": "morale"
 					},
@@ -34726,7 +34732,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 129,
 						"requireChooseOneKey": "morale"
 					},
@@ -34796,7 +34802,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 145,
 						"requireChooseOneKey": "morale"
 					},
@@ -34890,7 +34896,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 145,
 						"requireChooseOneKey": "morale"
 					},
@@ -34983,19 +34989,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 42,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 78,
 						"requireChooseOneKey": "morale"
 					},
@@ -35165,19 +35171,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 42,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 78,
 						"requireChooseOneKey": "morale"
 					},
@@ -35341,19 +35347,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 48,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 66,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 84,
 						"requireChooseOneKey": "morale"
 					},
@@ -35533,13 +35539,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 90,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 99,
 						"requireChooseOneKey": "morale"
 					},
@@ -35640,13 +35646,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 90,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 99,
 						"requireChooseOneKey": "morale"
 					},
@@ -35751,7 +35757,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 162,
 						"requireChooseOneKey": "morale"
 					},
@@ -35875,7 +35881,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 162,
 						"requireChooseOneKey": "morale"
 					},
@@ -35999,7 +36005,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					},
@@ -36075,7 +36081,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					},
@@ -36154,7 +36160,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 84,
 						"requireChooseOneKey": "morale"
 					},
@@ -36275,7 +36281,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 84,
 						"requireChooseOneKey": "morale"
 					},
@@ -36396,7 +36402,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 87,
 						"requireChooseOneKey": "morale"
 					},
@@ -36528,19 +36534,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 95,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 135,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 176,
 						"requireChooseOneKey": "morale"
 					},
@@ -36612,19 +36618,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 85,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 111,
 						"requireChooseOneKey": "morale"
 					},
@@ -36696,19 +36702,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 45,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 59,
 						"requireChooseOneKey": "morale"
 					},
@@ -36774,19 +36780,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 65,
 						"requireChooseOneKey": "morale"
 					},
@@ -36867,19 +36873,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 49,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 91,
 						"requireChooseOneKey": "morale"
 					},
@@ -36957,19 +36963,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 70,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 100,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 130,
 						"requireChooseOneKey": "morale"
 					},
@@ -37040,19 +37046,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 98,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 140,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 182,
 						"requireChooseOneKey": "morale"
 					}
@@ -37102,7 +37108,7 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 95,
 						"availableIn": [
 							"Axis"
@@ -37111,7 +37117,7 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 135,
 						"availableIn": [
 							"Axis"
@@ -37120,7 +37126,7 @@
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 176,
 						"availableIn": [
 							"Axis"
@@ -37175,19 +37181,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 62,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 74,
 						"requireChooseOneKey": "morale"
 					},
@@ -37223,19 +37229,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 62,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 74,
 						"requireChooseOneKey": "morale"
 					},
@@ -37283,19 +37289,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 44,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 66,
 						"requireChooseOneKey": "morale"
 					},
@@ -37331,19 +37337,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 44,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 66,
 						"requireChooseOneKey": "morale"
 					},
@@ -37391,19 +37397,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 22,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 27,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					}
@@ -37433,19 +37439,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 22,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 27,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					}
@@ -37487,19 +37493,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 22,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 27,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					}
@@ -37529,19 +37535,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 22,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 27,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					}
@@ -37583,19 +37589,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 22,
 						"requireChooseOneKey": "morale"
 					}
@@ -37625,19 +37631,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 22,
 						"requireChooseOneKey": "morale"
 					}
@@ -37687,19 +37693,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 88,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 125,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 163,
 						"requireChooseOneKey": "morale"
 					},
@@ -37764,19 +37770,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 98,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 140,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 182,
 						"requireChooseOneKey": "morale"
 					},
@@ -37823,19 +37829,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
@@ -37883,19 +37889,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 50,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 60,
 						"requireChooseOneKey": "morale"
 					},
@@ -37952,19 +37958,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 44,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 53,
 						"requireChooseOneKey": "morale"
 					},
@@ -38000,19 +38006,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 35,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 44,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 53,
 						"requireChooseOneKey": "morale"
 					},
@@ -38075,19 +38081,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 2,
 						"requireChooseOneKey": "morale"
 					}
@@ -38121,19 +38127,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 2,
 						"requireChooseOneKey": "morale"
 					}
@@ -38191,19 +38197,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 22,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 27,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					},
@@ -38241,19 +38247,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 22,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 27,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 32,
 						"requireChooseOneKey": "morale"
 					},
@@ -38297,19 +38303,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 15,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 19,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 23,
 						"requireChooseOneKey": "morale"
 					}
@@ -38339,19 +38345,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 15,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 19,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 23,
 						"requireChooseOneKey": "morale"
 					}
@@ -38401,19 +38407,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 84,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 156,
 						"requireChooseOneKey": "morale"
 					}
@@ -38452,19 +38458,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 54,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 68,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 82,
 						"requireChooseOneKey": "morale"
 					},
@@ -38507,19 +38513,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 54,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 68,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 82,
 						"requireChooseOneKey": "morale"
 					},
@@ -38571,19 +38577,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 37,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 46,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					}
@@ -38613,19 +38619,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 37,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 46,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 55,
 						"requireChooseOneKey": "morale"
 					}
@@ -38664,19 +38670,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 2,
 						"requireChooseOneKey": "morale"
 					}
@@ -38706,19 +38712,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 14,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 18,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 2,
 						"requireChooseOneKey": "morale"
 					}
@@ -38768,19 +38774,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 88,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 125,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 163,
 						"requireChooseOneKey": "morale"
 					},
@@ -38834,19 +38840,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 62,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 77,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 92,
 						"requireChooseOneKey": "morale"
 					},
@@ -38895,19 +38901,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 62,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 77,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 92,
 						"requireChooseOneKey": "morale"
 					},
@@ -38965,19 +38971,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 33,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
@@ -39014,19 +39020,19 @@
 					},
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 26,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 33,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 40,
 						"requireChooseOneKey": "morale"
 					},
@@ -39065,13 +39071,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 135,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 162,
 						"requireChooseOneKey": "morale"
 					},
@@ -39108,13 +39114,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 135,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 162,
 						"requireChooseOneKey": "morale"
 					},
@@ -39152,13 +39158,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -39195,13 +39201,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -39246,13 +39252,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 155,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 186,
 						"requireChooseOneKey": "morale"
 					},
@@ -39321,13 +39327,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 155,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 186,
 						"requireChooseOneKey": "morale"
 					},
@@ -39396,13 +39402,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 155,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 186,
 						"requireChooseOneKey": "morale"
 					},
@@ -39447,13 +39453,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 155,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 186,
 						"requireChooseOneKey": "morale"
 					},
@@ -39498,13 +39504,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 155,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 186,
 						"requireChooseOneKey": "morale"
 					}
@@ -39544,13 +39550,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 135,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 162,
 						"requireChooseOneKey": "morale"
 					},
@@ -39595,13 +39601,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 135,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 162,
 						"requireChooseOneKey": "morale"
 					},
@@ -39646,13 +39652,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 255,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 306,
 						"requireChooseOneKey": "morale"
 					},
@@ -39720,13 +39726,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 255,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 306,
 						"requireChooseOneKey": "morale"
 					},
@@ -39793,13 +39799,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 185,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 222,
 						"requireChooseOneKey": "morale"
 					},
@@ -39867,13 +39873,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 185,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 222,
 						"requireChooseOneKey": "morale"
 					},
@@ -39941,13 +39947,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 460,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 552,
 						"requireChooseOneKey": "morale"
 					},
@@ -39996,13 +40002,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 460,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 552,
 						"requireChooseOneKey": "morale"
 					},
@@ -40051,13 +40057,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 500,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 600,
 						"requireChooseOneKey": "morale"
 					},
@@ -40118,13 +40124,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 500,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 600,
 						"requireChooseOneKey": "morale"
 					},
@@ -40196,13 +40202,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -40262,13 +40268,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -40328,13 +40334,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -40394,13 +40400,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -40460,13 +40466,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -40528,13 +40534,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -40586,7 +40592,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 388,
 						"requireChooseOneKey": "morale"
 					},
@@ -40631,7 +40637,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 388,
 						"requireChooseOneKey": "morale"
 					},
@@ -40676,13 +40682,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 235,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 282,
 						"requireChooseOneKey": "morale"
 					},
@@ -40732,13 +40738,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 235,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 282,
 						"requireChooseOneKey": "morale"
 					},
@@ -40788,7 +40794,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 438,
 						"requireChooseOneKey": "morale"
 					},
@@ -40833,7 +40839,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 438,
 						"requireChooseOneKey": "morale"
 					},
@@ -40877,13 +40883,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 95,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 114,
 						"requireChooseOneKey": "morale"
 					},
@@ -40927,13 +40933,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 95,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 114,
 						"requireChooseOneKey": "morale"
 					},
@@ -40978,13 +40984,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 95,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 114,
 						"requireChooseOneKey": "morale"
 					},
@@ -41041,13 +41047,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 95,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 114,
 						"requireChooseOneKey": "morale"
 					},
@@ -41104,13 +41110,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 95,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 114,
 						"requireChooseOneKey": "morale"
 					},
@@ -41155,13 +41161,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 95,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 114,
 						"requireChooseOneKey": "morale"
 					},
@@ -41206,7 +41212,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 294,
 						"requireChooseOneKey": "morale"
 					},
@@ -41268,7 +41274,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 294,
 						"requireChooseOneKey": "morale"
 					},
@@ -41330,13 +41336,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 115,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 138,
 						"requireChooseOneKey": "morale"
 					},
@@ -41391,13 +41397,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 115,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 138,
 						"requireChooseOneKey": "morale"
 					},
@@ -41452,13 +41458,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 238,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 286,
 						"requireChooseOneKey": "morale"
 					},
@@ -41503,13 +41509,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 238,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 286,
 						"requireChooseOneKey": "morale"
 					},
@@ -41554,13 +41560,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 495,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 594,
 						"requireChooseOneKey": "morale"
 					},
@@ -41610,13 +41616,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 495,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 594,
 						"requireChooseOneKey": "morale"
 					},
@@ -41666,13 +41672,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 430,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 516,
 						"requireChooseOneKey": "morale"
 					},
@@ -41722,13 +41728,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 430,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 516,
 						"requireChooseOneKey": "morale"
 					},
@@ -41770,13 +41776,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 80,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 96,
 						"requireChooseOneKey": "morale"
 					},
@@ -41825,13 +41831,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 80,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 96,
 						"requireChooseOneKey": "morale"
 					},
@@ -41880,13 +41886,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 80,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 96,
 						"requireChooseOneKey": "morale"
 					},
@@ -41923,13 +41929,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 80,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 96,
 						"requireChooseOneKey": "morale"
 					},
@@ -41966,13 +41972,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -42009,13 +42015,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -42052,13 +42058,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -42107,13 +42113,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -42162,13 +42168,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 105,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 126,
 						"requireChooseOneKey": "morale"
 					},
@@ -42217,13 +42223,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 290,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 348,
 						"requireChooseOneKey": "morale"
 					},
@@ -42284,13 +42290,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 290,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 348,
 						"requireChooseOneKey": "morale"
 					},
@@ -42351,13 +42357,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 290,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 348,
 						"requireChooseOneKey": "morale"
 					},
@@ -42426,13 +42432,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 328,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 394,
 						"requireChooseOneKey": "morale"
 					},
@@ -42501,13 +42507,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 328,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 394,
 						"requireChooseOneKey": "morale"
 					},
@@ -42576,13 +42582,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 328,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 394,
 						"requireChooseOneKey": "morale"
 					},
@@ -42651,13 +42657,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 225,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 270,
 						"requireChooseOneKey": "morale"
 					},
@@ -42702,13 +42708,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 225,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 270,
 						"requireChooseOneKey": "morale"
 					},
@@ -42753,13 +42759,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 275,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 330,
 						"requireChooseOneKey": "morale"
 					},
@@ -42804,13 +42810,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 275,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 330,
 						"requireChooseOneKey": "morale"
 					},
@@ -42855,13 +42861,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 335,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 402,
 						"requireChooseOneKey": "morale"
 					},
@@ -42906,13 +42912,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 335,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 402,
 						"requireChooseOneKey": "morale"
 					},
@@ -42957,19 +42963,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 204,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 255,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 306,
 						"requireChooseOneKey": "morale"
 					},
@@ -43042,19 +43048,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 204,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 255,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 306,
 						"requireChooseOneKey": "morale"
 					},
@@ -43127,19 +43133,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 262,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 328,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 394,
 						"requireChooseOneKey": "morale"
 					},
@@ -43207,19 +43213,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 262,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 328,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 394,
 						"requireChooseOneKey": "morale"
 					},
@@ -43287,13 +43293,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 475,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 570,
 						"requireChooseOneKey": "morale"
 					},
@@ -43355,13 +43361,13 @@
 				"options": [
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 475,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 570,
 						"requireChooseOneKey": "morale"
 					},
@@ -43423,19 +43429,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 172,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 215,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 258,
 						"requireChooseOneKey": "morale"
 					},
@@ -43480,19 +43486,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 172,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 215,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 258,
 						"requireChooseOneKey": "morale"
 					},
@@ -43537,19 +43543,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 172,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 215,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 258,
 						"requireChooseOneKey": "morale"
 					},
@@ -43606,19 +43612,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 172,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 215,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 258,
 						"requireChooseOneKey": "morale"
 					},
@@ -43675,19 +43681,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 216,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 270,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 324,
 						"requireChooseOneKey": "morale"
 					},
@@ -43767,19 +43773,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 216,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 270,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 324,
 						"requireChooseOneKey": "morale"
 					},
@@ -43859,19 +43865,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 364,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 455,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 546,
 						"requireChooseOneKey": "morale"
 					},
@@ -43940,19 +43946,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 364,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 455,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 546,
 						"requireChooseOneKey": "morale"
 					},
@@ -44021,19 +44027,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 168,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 210,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 252,
 						"requireChooseOneKey": "morale"
 					},
@@ -44078,19 +44084,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 168,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 210,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 252,
 						"requireChooseOneKey": "morale"
 					},
@@ -44135,7 +44141,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 158,
 						"requireChooseOneKey": "morale"
 					},
@@ -44180,7 +44186,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 158,
 						"requireChooseOneKey": "morale"
 					},
@@ -44225,7 +44231,7 @@
 				"options": [
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 158,
 						"requireChooseOneKey": "morale"
 					}
@@ -44271,13 +44277,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 144,
 						"requireChooseOneKey": "morale"
 					},
@@ -44346,13 +44352,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 144,
 						"requireChooseOneKey": "morale"
 					},
@@ -44415,19 +44421,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 172,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 215,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 258,
 						"requireChooseOneKey": "morale"
 					},
@@ -44490,19 +44496,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 172,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 215,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 258,
 						"requireChooseOneKey": "morale"
 					},
@@ -44571,13 +44577,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 240,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 288,
 						"requireChooseOneKey": "morale"
 					},
@@ -44652,13 +44658,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 240,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 288,
 						"requireChooseOneKey": "morale"
 					},
@@ -44733,13 +44739,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 320,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 384,
 						"requireChooseOneKey": "morale"
 					},
@@ -44790,13 +44796,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 320,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 384,
 						"requireChooseOneKey": "morale"
 					},
@@ -44847,13 +44853,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 200,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 240,
 						"requireChooseOneKey": "morale"
 					},
@@ -44904,13 +44910,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 200,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 240,
 						"requireChooseOneKey": "morale"
 					},
@@ -44961,7 +44967,7 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 130,
 						"requireChooseOneKey": "morale"
 					},
@@ -45024,7 +45030,7 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 130,
 						"requireChooseOneKey": "morale"
 					},
@@ -45087,13 +45093,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 140,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 178,
 						"requireChooseOneKey": "morale"
 					},
@@ -45178,13 +45184,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 140,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 178,
 						"requireChooseOneKey": "morale"
 					},
@@ -45269,13 +45275,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 250,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 310,
 						"requireChooseOneKey": "morale"
 					},
@@ -45361,13 +45367,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 250,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 310,
 						"requireChooseOneKey": "morale"
 					},
@@ -45453,13 +45459,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 210,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 252,
 						"requireChooseOneKey": "morale"
 					},
@@ -45510,13 +45516,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 210,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 252,
 						"requireChooseOneKey": "morale"
 					},
@@ -45567,13 +45573,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 110,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 132,
 						"requireChooseOneKey": "morale"
 					},
@@ -45653,13 +45659,13 @@
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 110,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 132,
 						"requireChooseOneKey": "morale"
 					},
@@ -45744,19 +45750,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 220,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 275,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 330,
 						"requireChooseOneKey": "morale"
 					},
@@ -45813,19 +45819,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 220,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 275,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 330,
 						"requireChooseOneKey": "morale"
 					},
@@ -45885,19 +45891,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 150,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 180,
 						"requireChooseOneKey": "morale"
 					}
@@ -45928,19 +45934,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 192,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 240,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 288,
 						"requireChooseOneKey": "morale"
 					}
@@ -45971,19 +45977,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 100,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 125,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 150,
 						"requireChooseOneKey": "morale"
 					}
@@ -46015,19 +46021,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 256,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 320,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 384,
 						"requireChooseOneKey": "morale"
 					}
@@ -46059,19 +46065,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 168,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 210,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 252,
 						"requireChooseOneKey": "morale"
 					}
@@ -46104,19 +46110,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 256,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 320,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 384,
 						"requireChooseOneKey": "morale"
 					}
@@ -46148,19 +46154,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 160,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 200,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 240,
 						"requireChooseOneKey": "morale"
 					}
@@ -46191,19 +46197,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 176,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 220,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 264,
 						"requireChooseOneKey": "morale"
 					}
@@ -46234,19 +46240,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 176,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 220,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 264,
 						"requireChooseOneKey": "morale"
 					},
@@ -46290,19 +46296,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 252,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 315,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 378,
 						"requireChooseOneKey": "morale"
 					},
@@ -46350,19 +46356,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 244,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 305,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 366,
 						"requireChooseOneKey": "morale"
 					}
@@ -46393,19 +46399,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 112,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 140,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 168,
 						"requireChooseOneKey": "morale"
 					}
@@ -46436,19 +46442,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 96,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 144,
 						"requireChooseOneKey": "morale"
 					}
@@ -46479,19 +46485,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 125,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 160,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 192,
 						"requireChooseOneKey": "morale"
 					}
@@ -46522,19 +46528,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 125,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 160,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 192,
 						"requireChooseOneKey": "morale"
 					}
@@ -46566,19 +46572,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 224,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 280,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 336,
 						"requireChooseOneKey": "morale"
 					}
@@ -46609,19 +46615,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 128,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 160,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 192,
 						"requireChooseOneKey": "morale"
 					}
@@ -46652,19 +46658,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 96,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 144,
 						"requireChooseOneKey": "morale"
 					}
@@ -46695,19 +46701,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 80,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 100,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					}
@@ -46739,19 +46745,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 184,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 230,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 276,
 						"requireChooseOneKey": "morale"
 					}
@@ -46782,19 +46788,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 120,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 150,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 180,
 						"requireChooseOneKey": "morale"
 					}
@@ -46825,19 +46831,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 112,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 140,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 168,
 						"requireChooseOneKey": "morale"
 					}
@@ -46868,19 +46874,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 168,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 210,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 252,
 						"requireChooseOneKey": "morale"
 					},
@@ -46924,19 +46930,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 248,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 310,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 372,
 						"requireChooseOneKey": "morale"
 					}
@@ -46967,19 +46973,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 152,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 190,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 228,
 						"requireChooseOneKey": "morale"
 					}
@@ -47010,19 +47016,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 128,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 160,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 192,
 						"requireChooseOneKey": "morale"
 					}
@@ -47053,19 +47059,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 108,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 135,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 162,
 						"requireChooseOneKey": "morale"
 					}
@@ -47096,19 +47102,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 152,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 190,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 228,
 						"requireChooseOneKey": "morale"
 					}
@@ -47139,19 +47145,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 208,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 260,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 312,
 						"requireChooseOneKey": "morale"
 					},
@@ -47198,19 +47204,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 104,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 130,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 156,
 						"requireChooseOneKey": "morale"
 					}
@@ -47241,19 +47247,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 144,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 180,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 216,
 						"requireChooseOneKey": "morale"
 					}
@@ -47284,19 +47290,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 160,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 200,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 240,
 						"requireChooseOneKey": "morale"
 					}
@@ -47330,19 +47336,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 160,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 200,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 240,
 						"requireChooseOneKey": "morale"
 					}
@@ -47373,19 +47379,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 208,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 260,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 312,
 						"requireChooseOneKey": "morale"
 					},
@@ -47428,19 +47434,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 168,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 210,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 252,
 						"requireChooseOneKey": "morale"
 					},
@@ -47487,19 +47493,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 136,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 170,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 204,
 						"requireChooseOneKey": "morale"
 					},
@@ -47538,19 +47544,19 @@
 				"options": [
 					{
 						"name": "Inexperienced",
-						"addsPrefix": "Inexperienced ",
+						"addsPrefix": "Inex. ",
 						"points": 332,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Regular",
-						"addsPrefix": "Regular ",
+						"addsPrefix": "Reg. ",
 						"points": 415,
 						"requireChooseOneKey": "morale"
 					},
 					{
 						"name": "Veteran",
-						"addsPrefix": "Veteran ",
+						"addsPrefix": "Vet. ",
 						"points": 498,
 						"requireChooseOneKey": "morale"
 					}
